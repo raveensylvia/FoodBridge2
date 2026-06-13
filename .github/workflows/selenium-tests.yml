@@ -1,0 +1,68 @@
+name: E2E Tests & Report Generation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-and-report:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install backend dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+
+    - name: Start backend
+      run: |
+        cd backend
+        nohup python app.py > backend.log 2>&1 &
+
+    - name: Install frontend dependencies
+      run: |
+        cd frontend
+        npm install
+
+    - name: Start frontend
+      run: |
+        cd frontend
+        nohup npm run dev > frontend.log 2>&1 &
+
+    - name: Wait for servers to be ready
+      run: npx wait-on http://localhost:5000 http://localhost:5173 -t 60000
+
+    - name: Install Selenium Test Dependencies
+      run: |
+        cd selenium-tests
+        npm install
+
+    - name: Run E2E Tests
+      run: |
+        cd selenium-tests
+        npm test
+      continue-on-error: true
+
+    - name: Upload Test Reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: e2e-test-reports
+        path: |
+          selenium-tests/reports/
+          .web_results.json
