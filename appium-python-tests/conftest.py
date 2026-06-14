@@ -4,8 +4,13 @@
 import pytest
 import requests
 import time
+import os
+import json
 from helpers import driver
 from config.appium_config import CONFIG
+
+# Anchor the results file to THIS directory (appium-python-tests/)
+_RESULTS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".pytest_results.json")
 
 # Global list to hold results for report generation
 pytest_results = []
@@ -13,10 +18,9 @@ pytest_results = []
 @pytest.fixture(scope="session", autouse=True)
 def appium_driver_setup():
     # Delete old results file if exists
-    import os
-    if os.path.exists(".pytest_results.json"):
+    if os.path.exists(_RESULTS_FILE):
         try:
-            os.remove(".pytest_results.json")
+            os.remove(_RESULTS_FILE)
         except Exception:
             pass
 
@@ -70,8 +74,6 @@ def pytest_runtest_makereport(item, call):
 
         duration_ms = int(rep.duration * 1000)
         
-        import json
-        import os
         res_obj = {
             "id": test_id,
             "category": category,
@@ -84,14 +86,15 @@ def pytest_runtest_makereport(item, call):
         pytest_results.append(res_obj)
         print(f"__TEST_RESULT__:{json.dumps(res_obj)}", flush=True)
 
-        # Write to JSON file
+        # Write to JSON file (anchored path)
         try:
             results_list = []
-            if os.path.exists(".pytest_results.json"):
-                with open(".pytest_results.json", "r") as f:
+            if os.path.exists(_RESULTS_FILE):
+                with open(_RESULTS_FILE, "r") as f:
                     results_list = json.load(f)
             results_list.append(res_obj)
-            with open(".pytest_results.json", "w") as f:
+            with open(_RESULTS_FILE, "w") as f:
                 json.dump(results_list, f)
         except Exception:
             pass
+

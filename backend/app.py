@@ -216,12 +216,13 @@ import subprocess
 @app.route('/api/tests/run/web', methods=['GET'])
 def run_web_tests():
     def generate():
-        cmd = ["node", os.path.normpath("c:/Users/ravee/Downloads/food_bridge2/selenium-tests/run-tests.js")]
+        repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        selenium_dir = os.path.join(repo_root, 'selenium-tests')
+        cmd = ["node", os.path.join(selenium_dir, 'run-tests.js')]
         env = os.environ.copy()
         env["STREAM_JSON"] = "true"
-        cwd = os.path.normpath("c:/Users/ravee/Downloads/food_bridge2/selenium-tests")
         
-        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env, cwd=cwd)
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env, cwd=selenium_dir)
         
         yield "data: " + json.dumps({"event": "start", "message": "Starting Selenium Web Tests..."}) + "\n\n"
         
@@ -242,10 +243,11 @@ def run_web_tests():
 def run_mobile_tests():
     def generate():
         import sys
-        cmd = [sys.executable, os.path.normpath("c:/Users/ravee/Downloads/food_bridge2/appium-python-tests/run_tests.py")]
-        cwd = os.path.normpath("c:/Users/ravee/Downloads/food_bridge2/appium-python-tests")
+        repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        appium_dir = os.path.join(repo_root, 'appium-python-tests')
+        cmd = [sys.executable, os.path.join(appium_dir, 'run_tests.py')]
         
-        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, cwd=cwd)
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, cwd=appium_dir)
         
         yield "data: " + json.dumps({"event": "start", "message": "Starting Appium Python Mobile Tests..."}) + "\n\n"
         

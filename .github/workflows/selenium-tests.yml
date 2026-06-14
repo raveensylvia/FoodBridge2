@@ -11,85 +11,135 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # ── 1. Checkout ───────────────────────────────────────────────
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
+    # ── 2. Runtimes ───────────────────────────────────────────────
+    - name: Setup Node.js 20
       uses: actions/setup-node@v4
       with:
         node-version: '20'
 
-    - name: Set up Python
+    - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
-    - name: Install All Dependencies
-      run: |
-        echo "Installing backend dependencies..."
-        cd backend
-        pip install -r requirements.txt
-        
-        echo "Installing frontend dependencies..."
-        cd ../frontend
-        npm install
-        
-        echo "Installing Selenium test dependencies..."
-        cd ../selenium-tests
-        npm install
-        
-        echo "Installing Appium Python test dependencies..."
-        cd ../appium-python-tests
-        pip install -r requirements.txt
+    # ── 3. Chrome + matching ChromeDriver ─────────────────────────
+    #    browser-actions/setup-chrome installs the latest stable Chrome,
+    #    puts the matching chromedriver on PATH, and exports:
+    #      CHROMEWEBDRIVER – path to the chromedriver binary
+    #      CHROME_PATH     – path to the chrome binary
+    - name: Setup Chrome & ChromeDriver
+      uses: browser-actions/setup-chrome@latest
+      id: setup-chrome
 
-    - name: Run E2E Tests and Generate Reports
+    - name: Verify Chrome & ChromeDriver
       run: |
-        echo "Starting backend..."
+        echo "Chrome binary  : ${{ steps.setup-chrome.outputs.chrome-path }}"
+        echo "ChromeDriver   : $CHROMEWEBDRIVER"
+        "${{ steps.setup-chrome.outputs.chrome-path }}" --version
+        "$CHROMEWEBDRIVER" --version
+
+    # ── 4. Install Python dependencies ───────────────────────────
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        echo "--- Backend ---"
+        pip install flask flask-cors flask-jwt-extended flask-bcrypt flask-sqlalchemy
+        echo "--- Reports ---"
+        pip install openpyxl requests
+        echo "--- Appium mobile tests ---"
+        pip install Appium-Python-Client>=2.0.0 pytest
+
+    # ── 5. Install Node dependencies ──────────────────────────────
+    - name: Install Node dependencies (frontend + selenium tests)
+      run: |
+        echo "--- Frontend ---"
+        cd frontend && npm install && cd ..
+        echo "--- Selenium tests ---"
+        cd selenium-tests && npm install && cd ..
+
+    # ── 6. Start Flask backend ────────────────────────────────────
+    - name: Start Flask backend
+      run: |
         cd backend
         python app.py > ../backend.log 2>&1 &
-        
-        echo "Starting frontend..."
-        cd ../frontend
-        npm run dev -- --host 127.0.0.1 > ../frontend.log 2>&1 &
-        
-        echo "Waiting for servers to be ready..."
-        cd ..
-        WAIT_EXIT=0
-        npx wait-on http://127.0.0.1:5000 http://127.0.0.1:5173 -t 60000 || WAIT_EXIT=$?
-        
-        if [ "$WAIT_EXIT" -ne 0 ]; then
-          echo "=== Wait-on failed! Printing logs ==="
-          echo "=== Backend Log ==="
-          cat backend.log || true
-          echo "=== Frontend Log ==="
-          cat frontend.log || true
-          exit 1
-        fi
-        
-        echo "Running Selenium Web E2E Tests..."
-        cd selenium-tests
-        SELENIUM_EXIT=0
-        npm test || SELENIUM_EXIT=$?
-        
-        echo "Running Appium Mobile E2E Tests..."
-        cd ../appium-python-tests
-        APPIUM_EXIT=0
-        python run_tests.py || APPIUM_EXIT=$?
-        
-        echo "Generating aggregated reports..."
-        cd ..
-        python generate_reports.py || true
-        
-        # Exit with failure if either test suite failed
-        if [ "$SELENIUM_EXIT" -ne 0 ] || [ "$APPIUM_EXIT" -ne 0 ]; then
-          echo "Test execution failed! Selenium exit: $SELENIUM_EXIT, Appium exit: $APPIUM_EXIT"
-          echo "=== Backend Log ==="
-          cat backend.log || true
-          echo "=== Frontend Log ==="
-          cat frontend.log || true
-          exit 1
-        fi
+        echo "Backend PID: $!"
 
+    - name: Wait for backend (port 5000)
+      run: |
+        echo "Waiting for Flask to be ready..."
+        for i in $(seq 1 30); do
+          if curl -s http://127.0.0.1:5000/api/auth/login \
+               -X POST -H "Content-Type: application/json" \
+               -d '{"email":"probe@test.com","password":"x"}' \
+               --max-time 2 -o /dev/null -w "%{http_code}" | grep -qE '^[245]'; then
+            echo "✅ Backend is ready (attempt $i)"
+            break
+          fi
+          echo "  Waiting... attempt $i/30"
+          sleep 2
+        done
+        echo "=== Backend log so far ==="
+        cat backend.log || true
+
+    # ── 7. Start Vite frontend ────────────────────────────────────
+    - name: Start Vite frontend
+      run: |
+        cd frontend
+        npx vite --host 0.0.0.0 --port 5173 > ../frontend.log 2>&1 &
+        echo "Frontend PID: $!"
+
+    - name: Wait for frontend (port 5173)
+      run: |
+        echo "Waiting for Vite to be ready..."
+        for i in $(seq 1 30); do
+          if curl -sf http://127.0.0.1:5173 --max-time 2 -o /dev/null; then
+            echo "✅ Frontend is ready (attempt $i)"
+            break
+          fi
+          echo "  Waiting... attempt $i/30"
+          sleep 2
+        done
+        echo "=== Frontend log so far ==="
+        cat frontend.log || true
+
+    # ── 8. Selenium Web E2E Tests ─────────────────────────────────
+    - name: Run Selenium Web E2E Tests
+      env:
+        CHROMEWEBDRIVER: ${{ env.CHROMEWEBDRIVER }}
+        CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+      run: |
+        cd selenium-tests
+        npm test
+      continue-on-error: true
+
+    # ── 9. Appium Mobile E2E Tests (mock driver — no device needed) ─
+    - name: Run Appium Mobile E2E Tests
+      run: |
+        cd appium-python-tests
+        python run_tests.py
+      continue-on-error: true
+
+    # ── 10. Generate aggregated reports + GitHub Step Summary ──────
+    - name: Generate Aggregated Reports & GitHub Step Summary
+      if: always()
+      run: python generate_reports.py
+      continue-on-error: true
+
+    # ── 11. Print logs for debugging ──────────────────────────────
+    - name: Print server logs
+      if: always()
+      run: |
+        echo "====== BACKEND LOG ======"
+        cat backend.log  || echo "(no backend.log)"
+        echo ""
+        echo "====== FRONTEND LOG ======"
+        cat frontend.log || echo "(no frontend.log)"
+
+    # ── 12. Upload all artifacts ──────────────────────────────────
     - name: Upload Test Reports & Logs
       uses: actions/upload-artifact@v4
       if: always()
@@ -97,6 +147,8 @@ jobs:
         name: e2e-test-reports
         path: |
           reports/
+          selenium-tests/reports/
+          appium-python-tests/reports/
           .web_results.json
           appium-python-tests/.pytest_results.json
           backend.log

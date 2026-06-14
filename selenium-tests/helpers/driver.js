@@ -8,13 +8,31 @@ const chrome  = require('selenium-webdriver/chrome');
 const path    = require('path');
 const config  = require('../config/testConfig');
 
-// ── Resolve chromedriver from node_modules ───────────────────
+// ── Resolve chromedriver ─────────────────────────────────────
+// Priority:
+//  1. CHROMEWEBDRIVER env var (set by browser-actions/setup-chrome on GitHub Actions)
+//  2. npm chromedriver package (local dev)
+//  3. null → let Selenium Manager auto-download
 function getChromedriverPath() {
+  // GitHub Actions: browser-actions/setup-chrome sets this
+  if (process.env.CHROMEWEBDRIVER) {
+    const path = require('path');
+    const fs   = require('fs');
+    const bin  = process.env.CHROMEWEBDRIVER;
+    // The env var may be a directory or the binary itself
+    const candidate = fs.existsSync(bin) && fs.statSync(bin).isDirectory()
+      ? path.join(bin, 'chromedriver')
+      : bin;
+    if (fs.existsSync(candidate)) {
+      console.log(`  [driver] Using chromedriver from CHROMEWEBDRIVER: ${candidate}`);
+      return candidate;
+    }
+  }
+  // Local development fallback – npm chromedriver package
   try {
-    // chromedriver npm package exposes its binary path
     return require('chromedriver').path;
   } catch (_) {
-    return null;
+    return null; // Fall back to Selenium Manager
   }
 }
 
