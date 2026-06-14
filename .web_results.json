@@ -5,7 +5,7 @@
     "name": "Landing page loads without errors",
     "type": "Functional",
     "status": "PASS",
-    "duration": 653,
+    "duration": 360,
     "error": ""
   },
   {
@@ -14,7 +14,7 @@
     "name": "Page URL is correct (localhost:5173)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 67,
+    "duration": 199,
     "error": ""
   },
   {
@@ -23,7 +23,7 @@
     "name": "Navbar is visible on landing page",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 62,
+    "duration": 122,
     "error": ""
   },
   {
@@ -32,7 +32,7 @@
     "name": "Login navigation link is present",
     "type": "Functional",
     "status": "PASS",
-    "duration": 53,
+    "duration": 196,
     "error": ""
   },
   {
@@ -41,7 +41,7 @@
     "name": "Sign Up navigation link is present",
     "type": "Functional",
     "status": "PASS",
-    "duration": 56,
+    "duration": 100,
     "error": ""
   },
   {
@@ -50,7 +50,7 @@
     "name": "Page renders without JS console errors (check title renders)",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4076,
+    "duration": 4103,
     "error": ""
   },
   {
@@ -59,7 +59,7 @@
     "name": "FoodBridge branding / logo is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 48,
+    "duration": 85,
     "error": ""
   },
   {
@@ -68,7 +68,7 @@
     "name": "Page has proper heading (h1 or h2)",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 42,
+    "duration": 153,
     "error": ""
   },
   {
@@ -77,7 +77,7 @@
     "name": "Clicking Login link navigates to /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2099,
+    "duration": 2214,
     "error": ""
   },
   {
@@ -86,16 +86,16 @@
     "name": "Clicking Sign Up link navigates to /signup",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2133,
+    "duration": 2335,
     "error": ""
   },
   {
     "id": "TC-TC-011",
     "category": "UI/UX Testing",
-    "name": "Page is responsive \u2014 viewport meta tag exists",
+    "name": "Page is responsive — viewport meta tag exists",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 60,
+    "duration": 189,
     "error": ""
   },
   {
@@ -104,7 +104,7 @@
     "name": "Landing page has at least one call-to-action button",
     "type": "Functional",
     "status": "PASS",
-    "duration": 68,
+    "duration": 190,
     "error": ""
   },
   {
@@ -113,7 +113,7 @@
     "name": "Signup page loads at /signup",
     "type": "Functional",
     "status": "PASS",
-    "duration": 546,
+    "duration": 856,
     "error": ""
   },
   {
@@ -122,7 +122,7 @@
     "name": "Signup form contains Username field",
     "type": "Functional",
     "status": "PASS",
-    "duration": 128,
+    "duration": 317,
     "error": ""
   },
   {
@@ -131,7 +131,7 @@
     "name": "Signup form contains Email field",
     "type": "Functional",
     "status": "PASS",
-    "duration": 101,
+    "duration": 473,
     "error": ""
   },
   {
@@ -140,7 +140,7 @@
     "name": "Signup form contains Password field",
     "type": "Functional",
     "status": "PASS",
-    "duration": 80,
+    "duration": 238,
     "error": ""
   },
   {
@@ -149,7 +149,7 @@
     "name": "Signup form contains Role selector",
     "type": "Functional",
     "status": "PASS",
-    "duration": 89,
+    "duration": 187,
     "error": ""
   },
   {
@@ -158,7 +158,7 @@
     "name": "Role dropdown has Donor, NGO, Volunteer options",
     "type": "Functional",
     "status": "PASS",
-    "duration": 117,
+    "duration": 246,
     "error": ""
   },
   {
@@ -167,7 +167,7 @@
     "name": "Submitting empty form shows validation",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2374,
+    "duration": 2440,
     "error": ""
   },
   {
@@ -176,7 +176,7 @@
     "name": "Submitting with invalid email format shows validation",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2418,
+    "duration": 2768,
     "error": ""
   },
   {
@@ -185,7 +185,7 @@
     "name": "Successful signup as Donor redirects to /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8564,
+    "duration": 9079,
     "error": ""
   },
   {
@@ -194,7 +194,7 @@
     "name": "Successful signup as NGO redirects to /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8649,
+    "duration": 9018,
     "error": ""
   },
   {
@@ -203,7 +203,7 @@
     "name": "Successful signup as Volunteer redirects to /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8640,
+    "duration": 9144,
     "error": ""
   },
   {
@@ -212,7 +212,7 @@
     "name": "Duplicate email shows error message",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8493,
+    "duration": 8834,
     "error": ""
   },
   {
@@ -221,7 +221,7 @@
     "name": "\"Already have an account?\" link navigates to /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2114,
+    "duration": 2212,
     "error": ""
   },
   {
@@ -230,7 +230,7 @@
     "name": "Role pre-selected from query param ?role=ngo",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2086,
+    "duration": 2132,
     "error": ""
   },
   {
@@ -239,7 +239,7 @@
     "name": "Role pre-selected from query param ?role=volunteer",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2054,
+    "duration": 2144,
     "error": ""
   },
   {
@@ -248,7 +248,7 @@
     "name": "Login page loads at /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 572,
+    "duration": 407,
     "error": ""
   },
   {
@@ -257,7 +257,7 @@
     "name": "Login form has Email and Password fields",
     "type": "Functional",
     "status": "PASS",
-    "duration": 58,
+    "duration": 118,
     "error": ""
   },
   {
@@ -266,7 +266,7 @@
     "name": "Login form has a Submit button",
     "type": "Functional",
     "status": "PASS",
-    "duration": 45,
+    "duration": 84,
     "error": ""
   },
   {
@@ -275,7 +275,7 @@
     "name": "Empty form submission stays on /login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2305,
+    "duration": 2196,
     "error": ""
   },
   {
@@ -284,7 +284,7 @@
     "name": "Invalid credentials shows error message",
     "type": "Validation",
     "status": "PASS",
-    "duration": 8491,
+    "duration": 8550,
     "error": ""
   },
   {
@@ -293,7 +293,7 @@
     "name": "Donor login redirects to /donor dashboard",
     "type": "Functional",
     "status": "PASS",
-    "duration": 10309,
+    "duration": 10600,
     "error": ""
   },
   {
@@ -302,7 +302,7 @@
     "name": "NGO login redirects to /ngo dashboard",
     "type": "Functional",
     "status": "PASS",
-    "duration": 10467,
+    "duration": 10745,
     "error": ""
   },
   {
@@ -311,7 +311,7 @@
     "name": "Volunteer login redirects to /volunteer dashboard",
     "type": "Functional",
     "status": "PASS",
-    "duration": 10508,
+    "duration": 10916,
     "error": ""
   },
   {
@@ -320,7 +320,7 @@
     "name": "JWT token stored in localStorage after login",
     "type": "Security",
     "status": "PASS",
-    "duration": 10524,
+    "duration": 10757,
     "error": ""
   },
   {
@@ -329,7 +329,7 @@
     "name": "User info stored in localStorage after login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 10301,
+    "duration": 10615,
     "error": ""
   },
   {
@@ -338,7 +338,7 @@
     "name": "Logout clears localStorage and redirects",
     "type": "Functional",
     "status": "PASS",
-    "duration": 12519,
+    "duration": 12911,
     "error": ""
   },
   {
@@ -347,7 +347,7 @@
     "name": "Unauthenticated access to /donor redirects to /login",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4061,
+    "duration": 4065,
     "error": ""
   },
   {
@@ -356,7 +356,7 @@
     "name": "\"Don't have an account?\" link navigates to /signup",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2136,
+    "duration": 2275,
     "error": ""
   },
   {
@@ -365,7 +365,7 @@
     "name": "Password field masks characters (type=password)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 54,
+    "duration": 114,
     "error": ""
   },
   {
@@ -374,7 +374,7 @@
     "name": "Donor dashboard loads at /donor",
     "type": "Functional",
     "status": "PASS",
-    "duration": 54,
+    "duration": 149,
     "error": ""
   },
   {
@@ -383,7 +383,7 @@
     "name": "Donor dashboard has a heading",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4057,
+    "duration": 4129,
     "error": ""
   },
   {
@@ -392,7 +392,7 @@
     "name": "\"Post New Donation\" button is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4069,
+    "duration": 4119,
     "error": ""
   },
   {
@@ -401,7 +401,7 @@
     "name": "Clicking \"Post New Donation\" opens the donation form",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8121,
+    "duration": 8273,
     "error": ""
   },
   {
@@ -410,7 +410,7 @@
     "name": "Donation form has Food Name field",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4095,
+    "duration": 4286,
     "error": ""
   },
   {
@@ -419,7 +419,7 @@
     "name": "Donation form has Food Type dropdown",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4129,
+    "duration": 4219,
     "error": ""
   },
   {
@@ -428,7 +428,7 @@
     "name": "Donation form has Address field",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4132,
+    "duration": 4158,
     "error": ""
   },
   {
@@ -437,7 +437,7 @@
     "name": "Map picker is rendered in donation form",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 10124,
+    "duration": 10240,
     "error": ""
   },
   {
@@ -446,7 +446,7 @@
     "name": "Submitting empty donation form does not succeed",
     "type": "Functional",
     "status": "PASS",
-    "duration": 6178,
+    "duration": 6387,
     "error": ""
   },
   {
@@ -455,7 +455,7 @@
     "name": "Submitting valid donation form posts donation",
     "type": "Validation",
     "status": "PASS",
-    "duration": 12464,
+    "duration": 13019,
     "error": ""
   },
   {
@@ -464,7 +464,7 @@
     "name": "Donation history section is present",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4050,
+    "duration": 4135,
     "error": ""
   },
   {
@@ -473,7 +473,7 @@
     "name": "Donation status pills are color coded",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4056,
+    "duration": 4062,
     "error": ""
   },
   {
@@ -482,7 +482,7 @@
     "name": "Food type can be set to Non-Veg",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4159,
+    "duration": 4355,
     "error": ""
   },
   {
@@ -491,7 +491,7 @@
     "name": "Food type can be set to Bakery",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4163,
+    "duration": 4318,
     "error": ""
   },
   {
@@ -500,7 +500,7 @@
     "name": "Food type can be set to Cooked Meal",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4180,
+    "duration": 4312,
     "error": ""
   },
   {
@@ -509,7 +509,7 @@
     "name": "Closing the donation form hides it",
     "type": "Functional",
     "status": "PASS",
-    "duration": 11230,
+    "duration": 11363,
     "error": ""
   },
   {
@@ -518,7 +518,7 @@
     "name": "Donor dashboard shows date of donations",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4067,
+    "duration": 4048,
     "error": ""
   },
   {
@@ -527,7 +527,7 @@
     "name": "Donor cannot access NGO dashboard",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4046,
+    "duration": 4085,
     "error": ""
   },
   {
@@ -536,7 +536,7 @@
     "name": "Donor cannot access Volunteer dashboard",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4027,
+    "duration": 4100,
     "error": ""
   },
   {
@@ -545,7 +545,7 @@
     "name": "Page auto-polling updates donation list (polling is set up)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 15064,
+    "duration": 15116,
     "error": ""
   },
   {
@@ -554,7 +554,7 @@
     "name": "NGO dashboard loads at /ngo",
     "type": "Functional",
     "status": "PASS",
-    "duration": 62,
+    "duration": 192,
     "error": ""
   },
   {
@@ -563,7 +563,7 @@
     "name": "NGO dashboard has a heading",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4064,
+    "duration": 4074,
     "error": ""
   },
   {
@@ -572,7 +572,7 @@
     "name": "Leaflet map is rendered on NGO dashboard",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 8031,
+    "duration": 8066,
     "error": ""
   },
   {
@@ -581,7 +581,7 @@
     "name": "\"Available Now\" section is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4044,
+    "duration": 4114,
     "error": ""
   },
   {
@@ -590,7 +590,7 @@
     "name": "\"Your Accepted\" section is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4053,
+    "duration": 4052,
     "error": ""
   },
   {
@@ -599,7 +599,7 @@
     "name": "NGO can see pending donations in list",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4060,
+    "duration": 4050,
     "error": ""
   },
   {
@@ -608,7 +608,7 @@
     "name": "\"Claim Now\" button is present for pending donations",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8048,
+    "duration": 8140,
     "error": ""
   },
   {
@@ -617,7 +617,7 @@
     "name": "Clicking \"Claim Now\" on a donation sends accept request",
     "type": "Functional",
     "status": "PASS",
-    "duration": 16119,
+    "duration": 16261,
     "error": ""
   },
   {
@@ -626,7 +626,7 @@
     "name": "Map markers appear for pending donations",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8033,
+    "duration": 8174,
     "error": ""
   },
   {
@@ -635,7 +635,7 @@
     "name": "Map popup shows food name and quantity on marker click",
     "type": "Functional",
     "status": "PASS",
-    "duration": 9690,
+    "duration": 10267,
     "error": ""
   },
   {
@@ -644,7 +644,7 @@
     "name": "NGO dashboard auto-refreshes every 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 6177,
+    "duration": 6144,
     "error": ""
   },
   {
@@ -662,7 +662,7 @@
     "name": "NGO cannot access Volunteer dashboard",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4146,
+    "duration": 4101,
     "error": ""
   },
   {
@@ -671,7 +671,7 @@
     "name": "Sidebar donation count updates correctly",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8189,
+    "duration": 8063,
     "error": ""
   },
   {
@@ -680,7 +680,7 @@
     "name": "NGO page has responsive sidebar layout",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4196,
+    "duration": 4076,
     "error": ""
   },
   {
@@ -689,7 +689,7 @@
     "name": "Volunteer dashboard loads at /volunteer",
     "type": "Functional",
     "status": "PASS",
-    "duration": 154,
+    "duration": 143,
     "error": ""
   },
   {
@@ -698,7 +698,7 @@
     "name": "Volunteer dashboard has a heading",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4179,
+    "duration": 4055,
     "error": ""
   },
   {
@@ -707,7 +707,7 @@
     "name": "\"Available Tasks\" section is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4148,
+    "duration": 4126,
     "error": ""
   },
   {
@@ -716,7 +716,7 @@
     "name": "\"My Current Missions\" section is visible",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4133,
+    "duration": 4122,
     "error": ""
   },
   {
@@ -734,7 +734,7 @@
     "name": "Clicking \"Start Delivery\" claims a task",
     "type": "Functional",
     "status": "PASS",
-    "duration": 16222,
+    "duration": 16259,
     "error": ""
   },
   {
@@ -743,7 +743,7 @@
     "name": "\"Mark as Picked\" button appears for assigned tasks",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8178,
+    "duration": 8144,
     "error": ""
   },
   {
@@ -752,7 +752,7 @@
     "name": "\"Mark as Delivered\" button appears after picking",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8153,
+    "duration": 8151,
     "error": ""
   },
   {
@@ -761,7 +761,7 @@
     "name": "Completed tasks show COMPLETED badge",
     "type": "E2E",
     "status": "PASS",
-    "duration": 4132,
+    "duration": 4129,
     "error": ""
   },
   {
@@ -770,7 +770,7 @@
     "name": "Volunteer map renders for assigned tasks",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 8139,
+    "duration": 8131,
     "error": ""
   },
   {
@@ -779,7 +779,7 @@
     "name": "Volunteer dashboard auto-refreshes every 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 6061,
+    "duration": 6113,
     "error": ""
   },
   {
@@ -788,7 +788,7 @@
     "name": "Empty task list shows helpful message",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4186,
+    "duration": 4183,
     "error": ""
   },
   {
@@ -806,7 +806,7 @@
     "name": "Volunteer cannot access NGO dashboard",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4153,
+    "duration": 4121,
     "error": ""
   },
   {
@@ -815,7 +815,7 @@
     "name": "Task address displays location pin emoji",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4165,
+    "duration": 4153,
     "error": ""
   },
   {
@@ -824,7 +824,7 @@
     "name": "Login: Email field is required (HTML5 validation)",
     "type": "Validation",
     "status": "PASS",
-    "duration": 3206,
+    "duration": 2941,
     "error": ""
   },
   {
@@ -833,7 +833,7 @@
     "name": "Login: Password field is required (HTML5 validation)",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2567,
+    "duration": 2425,
     "error": ""
   },
   {
@@ -842,7 +842,7 @@
     "name": "Login: Invalid email format blocked",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2777,
+    "duration": 2551,
     "error": ""
   },
   {
@@ -851,7 +851,7 @@
     "name": "Signup: All required fields must be filled",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2286,
+    "duration": 2220,
     "error": ""
   },
   {
@@ -860,7 +860,7 @@
     "name": "Signup: Username is required",
     "type": "Validation",
     "status": "PASS",
-    "duration": 2749,
+    "duration": 2477,
     "error": ""
   },
   {
@@ -869,7 +869,7 @@
     "name": "Donation form: Food name is required",
     "type": "Validation",
     "status": "PASS",
-    "duration": 15264,
+    "duration": 15130,
     "error": ""
   },
   {
@@ -878,7 +878,7 @@
     "name": "Donation form: Quantity is required",
     "type": "Validation",
     "status": "PASS",
-    "duration": 6249,
+    "duration": 6491,
     "error": ""
   },
   {
@@ -887,7 +887,7 @@
     "name": "Donation form: Address is required",
     "type": "Validation",
     "status": "PASS",
-    "duration": 6282,
+    "duration": 6756,
     "error": ""
   },
   {
@@ -896,7 +896,7 @@
     "name": "Donation form: Expiry time is required",
     "type": "Validation",
     "status": "PASS",
-    "duration": 6233,
+    "duration": 6325,
     "error": ""
   },
   {
@@ -905,7 +905,7 @@
     "name": "Signup email field rejects non-email text",
     "type": "Functional",
     "status": "PASS",
-    "duration": 96,
+    "duration": 224,
     "error": ""
   },
   {
@@ -914,7 +914,7 @@
     "name": "Input fields clear properly on reset/navigation",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2361,
+    "duration": 2536,
     "error": ""
   },
   {
@@ -923,7 +923,7 @@
     "name": "Form submit button is disabled during submission (no double submit)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 8266,
+    "duration": 8573,
     "error": ""
   },
   {
@@ -932,7 +932,7 @@
     "name": "Unauthenticated /donor access redirects to /login",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4756,
+    "duration": 4520,
     "error": ""
   },
   {
@@ -941,7 +941,7 @@
     "name": "Unauthenticated /ngo access redirects to /login",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4123,
+    "duration": 4229,
     "error": ""
   },
   {
@@ -950,7 +950,7 @@
     "name": "Unauthenticated /volunteer access redirects to /login",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 4098,
+    "duration": 4204,
     "error": ""
   },
   {
@@ -959,7 +959,7 @@
     "name": "API /api/donations requires JWT token (401 without token)",
     "type": "Security",
     "status": "PASS",
-    "duration": 5,
+    "duration": 11,
     "error": ""
   },
   {
@@ -968,7 +968,7 @@
     "name": "API /api/auth/login returns 401 for wrong credentials",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 5,
     "error": ""
   },
   {
@@ -977,7 +977,7 @@
     "name": "API /api/donations/1/accept returns 403 for donor role",
     "type": "API",
     "status": "PASS",
-    "duration": 188,
+    "duration": 359,
     "error": ""
   },
   {
@@ -986,7 +986,7 @@
     "name": "API /api/donations/1/assign returns 403 for ngo role",
     "type": "API",
     "status": "PASS",
-    "duration": 186,
+    "duration": 353,
     "error": ""
   },
   {
@@ -995,7 +995,7 @@
     "name": "Donor cannot POST to /api/donations with NGO token",
     "type": "Security",
     "status": "PASS",
-    "duration": 188,
+    "duration": 349,
     "error": ""
   },
   {
@@ -1004,7 +1004,7 @@
     "name": "Tampered JWT token is rejected by API",
     "type": "Security",
     "status": "PASS",
-    "duration": 4,
+    "duration": 6,
     "error": ""
   },
   {
@@ -1013,7 +1013,7 @@
     "name": "CORS headers present on API response",
     "type": "Security",
     "status": "PASS",
-    "duration": 3,
+    "duration": 6,
     "error": ""
   },
   {
@@ -1022,7 +1022,7 @@
     "name": "App loads correctly at 1920x1080 (Full HD) resolution",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 4481,
+    "duration": 4425,
     "error": ""
   },
   {
@@ -1031,7 +1031,7 @@
     "name": "App loads correctly at 1366x768 (HD) resolution",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 4124,
+    "duration": 4180,
     "error": ""
   },
   {
@@ -1040,7 +1040,7 @@
     "name": "App loads correctly at 1280x800 (WXGA) resolution",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 4084,
+    "duration": 4185,
     "error": ""
   },
   {
@@ -1049,7 +1049,7 @@
     "name": "Viewport meta tag is present for mobile compatibility",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 68,
+    "duration": 80,
     "error": ""
   },
   {
@@ -1058,7 +1058,7 @@
     "name": "CSS stylesheet loads without 404 errors",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4064,
+    "duration": 4080,
     "error": ""
   },
   {
@@ -1067,7 +1067,7 @@
     "name": "JavaScript loads and runs without fatal errors",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4082,
+    "duration": 4102,
     "error": ""
   },
   {
@@ -1076,7 +1076,7 @@
     "name": "API base URL is reachable (CORS compatible)",
     "type": "Security",
     "status": "PASS",
-    "duration": 9,
+    "duration": 11,
     "error": ""
   },
   {
@@ -1085,7 +1085,7 @@
     "name": "HTML5 doctype declared (standards mode)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 136,
+    "duration": 150,
     "error": ""
   },
   {
@@ -1094,7 +1094,7 @@
     "name": "App uses UTF-8 charset encoding",
     "type": "Compatibility",
     "status": "PASS",
-    "duration": 112,
+    "duration": 113,
     "error": ""
   },
   {
@@ -1103,7 +1103,7 @@
     "name": "Navigation links work across page transitions",
     "type": "Functional",
     "status": "PASS",
-    "duration": 6513,
+    "duration": 6375,
     "error": ""
   },
   {
@@ -1112,7 +1112,7 @@
     "name": "Landing page loads within 10 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 2773,
+    "duration": 2037,
     "error": ""
   },
   {
@@ -1121,7 +1121,7 @@
     "name": "Login page loads within 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 2156,
+    "duration": 2147,
     "error": ""
   },
   {
@@ -1139,7 +1139,7 @@
     "name": "API /api/auth/login responds within 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 499,
+    "duration": 366,
     "error": ""
   },
   {
@@ -1148,7 +1148,7 @@
     "name": "API /api/donations responds within 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 11,
+    "duration": 13,
     "error": ""
   },
   {
@@ -1157,7 +1157,7 @@
     "name": "API /api/auth/signup responds within 5 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 462,
+    "duration": 379,
     "error": ""
   },
   {
@@ -1166,7 +1166,7 @@
     "name": "Page navigation from / to /login is fast (< 3 seconds)",
     "type": "Performance",
     "status": "PASS",
-    "duration": 1224,
+    "duration": 1210,
     "error": ""
   },
   {
@@ -1175,7 +1175,7 @@
     "name": "Multiple rapid API requests do not crash the server",
     "type": "API",
     "status": "PASS",
-    "duration": 35,
+    "duration": 38,
     "error": ""
   },
   {
@@ -1184,7 +1184,7 @@
     "name": "App page title loads within 3 seconds of navigation",
     "type": "Performance",
     "status": "PASS",
-    "duration": 114,
+    "duration": 83,
     "error": ""
   },
   {
@@ -1193,49 +1193,49 @@
     "name": "API profile endpoint responds within 3 seconds",
     "type": "Performance",
     "status": "PASS",
-    "duration": 12,
+    "duration": 16,
     "error": ""
   },
   {
     "id": "TC-TC-134",
     "category": "API Testing",
-    "name": "POST /api/auth/signup \u2014 creates new user with 201",
+    "name": "POST /api/auth/signup — creates new user with 201",
     "type": "API",
     "status": "PASS",
-    "duration": 534,
+    "duration": 336,
     "error": ""
   },
   {
     "id": "TC-TC-135",
     "category": "API Testing",
-    "name": "POST /api/auth/signup \u2014 duplicate email returns 400",
+    "name": "POST /api/auth/signup — duplicate email returns 400",
     "type": "API",
     "status": "PASS",
-    "duration": 10,
+    "duration": 7,
     "error": ""
   },
   {
     "id": "TC-TC-136",
     "category": "API Testing",
-    "name": "POST /api/auth/login \u2014 valid credentials return 200 + JWT",
+    "name": "POST /api/auth/login — valid credentials return 200 + JWT",
     "type": "Security",
     "status": "PASS",
-    "duration": 454,
+    "duration": 312,
     "error": ""
   },
   {
     "id": "TC-TC-137",
     "category": "API Testing",
-    "name": "POST /api/auth/login \u2014 wrong password returns 401",
+    "name": "POST /api/auth/login — wrong password returns 401",
     "type": "API",
     "status": "PASS",
-    "duration": 471,
+    "duration": 320,
     "error": ""
   },
   {
     "id": "TC-TC-138",
     "category": "API Testing",
-    "name": "POST /api/auth/login \u2014 unknown email returns 401",
+    "name": "POST /api/auth/login — unknown email returns 401",
     "type": "API",
     "status": "PASS",
     "duration": 8,
@@ -1244,127 +1244,127 @@
   {
     "id": "TC-TC-139",
     "category": "API Testing",
-    "name": "GET /api/auth/profile \u2014 valid token returns user object",
+    "name": "GET /api/auth/profile — valid token returns user object",
     "type": "Security",
     "status": "PASS",
-    "duration": 8,
+    "duration": 9,
     "error": ""
   },
   {
     "id": "TC-TC-140",
     "category": "API Testing",
-    "name": "GET /api/auth/profile \u2014 no token returns 401",
+    "name": "GET /api/auth/profile — no token returns 401",
     "type": "Security",
     "status": "PASS",
-    "duration": 8,
+    "duration": 4,
     "error": ""
   },
   {
     "id": "TC-TC-141",
     "category": "API Testing",
-    "name": "POST /api/donations \u2014 donor creates donation returns 201",
+    "name": "POST /api/donations — donor creates donation returns 201",
     "type": "API",
     "status": "PASS",
-    "duration": 21,
+    "duration": 30,
     "error": ""
   },
   {
     "id": "TC-TC-142",
     "category": "API Testing",
-    "name": "POST /api/donations \u2014 NGO role returns 403",
+    "name": "POST /api/donations — NGO role returns 403",
     "type": "API",
     "status": "PASS",
-    "duration": 10,
+    "duration": 5,
     "error": ""
   },
   {
     "id": "TC-TC-143",
     "category": "API Testing",
-    "name": "POST /api/donations \u2014 volunteer role returns 403",
-    "type": "API",
-    "status": "PASS",
-    "duration": 11,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-144",
-    "category": "API Testing",
-    "name": "POST /api/donations \u2014 no token returns 401",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 7,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-145",
-    "category": "API Testing",
-    "name": "GET /api/donations \u2014 donor sees own donations list",
-    "type": "API",
-    "status": "PASS",
-    "duration": 10,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-146",
-    "category": "API Testing",
-    "name": "GET /api/donations \u2014 NGO sees pending donations",
-    "type": "API",
-    "status": "PASS",
-    "duration": 10,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-147",
-    "category": "API Testing",
-    "name": "GET /api/donations \u2014 volunteer sees accepted donations",
-    "type": "API",
-    "status": "PASS",
-    "duration": 9,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-148",
-    "category": "API Testing",
-    "name": "GET /api/donations \u2014 no token returns 401",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 7,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-149",
-    "category": "API Testing",
-    "name": "POST /api/donations/:id/accept \u2014 donor role returns 403",
-    "type": "API",
-    "status": "PASS",
-    "duration": 7,
-    "error": ""
-  },
-  {
-    "id": "TC-TC-150",
-    "category": "API Testing",
-    "name": "POST /api/donations/:id/assign \u2014 NGO role returns 403",
+    "name": "POST /api/donations — volunteer role returns 403",
     "type": "API",
     "status": "PASS",
     "duration": 8,
     "error": ""
   },
   {
-    "id": "TC-TC-151",
+    "id": "TC-TC-144",
     "category": "API Testing",
-    "name": "POST /api/donations/:id/accept \u2014 NGO accepts pending donation",
+    "name": "POST /api/donations — no token returns 401",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-145",
+    "category": "API Testing",
+    "name": "GET /api/donations — donor sees own donations list",
     "type": "API",
     "status": "PASS",
-    "duration": 42,
+    "duration": 9,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-146",
+    "category": "API Testing",
+    "name": "GET /api/donations — NGO sees pending donations",
+    "type": "API",
+    "status": "PASS",
+    "duration": 7,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-147",
+    "category": "API Testing",
+    "name": "GET /api/donations — volunteer sees accepted donations",
+    "type": "API",
+    "status": "PASS",
+    "duration": 7,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-148",
+    "category": "API Testing",
+    "name": "GET /api/donations — no token returns 401",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-149",
+    "category": "API Testing",
+    "name": "POST /api/donations/:id/accept — donor role returns 403",
+    "type": "API",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-150",
+    "category": "API Testing",
+    "name": "POST /api/donations/:id/assign — NGO role returns 403",
+    "type": "API",
+    "status": "PASS",
+    "duration": 7,
+    "error": ""
+  },
+  {
+    "id": "TC-TC-151",
+    "category": "API Testing",
+    "name": "POST /api/donations/:id/accept — NGO accepts pending donation",
+    "type": "API",
+    "status": "PASS",
+    "duration": 136,
     "error": ""
   },
   {
     "id": "TC-TC-152",
     "category": "API Testing",
-    "name": "POST /api/donations/:id/status \u2014 invalid status returns 400",
+    "name": "POST /api/donations/:id/status — invalid status returns 400",
     "type": "Validation",
     "status": "PASS",
-    "duration": 9,
+    "duration": 7,
     "error": ""
   },
   {
@@ -1373,7 +1373,7 @@
     "name": "GET /api/donations returns JSON content-type",
     "type": "API",
     "status": "PASS",
-    "duration": 10,
+    "duration": 6,
     "error": ""
   },
   {
@@ -1382,7 +1382,7 @@
     "name": "All images have alt attributes on landing page",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 9543,
+    "duration": 9367,
     "error": ""
   },
   {
@@ -1391,7 +1391,7 @@
     "name": "Login form inputs have type attributes for keyboard access",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 181,
+    "duration": 149,
     "error": ""
   },
   {
@@ -1399,9 +1399,9 @@
     "category": "Accessibility Testing",
     "name": "Submit buttons have meaningful text",
     "type": "Functional",
-    "status": "PASS",
-    "duration": 180,
-    "error": ""
+    "status": "FAIL",
+    "duration": 103,
+    "error": "Submit button should have meaningful text"
   },
   {
     "id": "TC-TC-157",
@@ -1409,7 +1409,7 @@
     "name": "Page has a single h1 heading for screen readers",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4135,
+    "duration": 4086,
     "error": ""
   },
   {
@@ -1418,7 +1418,7 @@
     "name": "Form labels are associated with inputs (login page)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2144,
+    "duration": 2092,
     "error": ""
   },
   {
@@ -1427,7 +1427,7 @@
     "name": "Signup form inputs have placeholder text",
     "type": "Functional",
     "status": "PASS",
-    "duration": 2144,
+    "duration": 2074,
     "error": ""
   },
   {
@@ -1436,7 +1436,7 @@
     "name": "Navigation links are keyboard accessible (href attribute)",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 48,
+    "duration": 191,
     "error": ""
   },
   {
@@ -1445,16 +1445,16 @@
     "name": "Buttons are identifiable (have text or aria-label)",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 2067,
+    "duration": 2189,
     "error": ""
   },
   {
     "id": "TC-TC-162",
     "category": "Accessibility Testing",
-    "name": "Color contrast \u2014 page has readable text (not transparent)",
+    "name": "Color contrast — page has readable text (not transparent)",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 4056,
+    "duration": 4211,
     "error": ""
   },
   {
@@ -1463,7 +1463,7 @@
     "name": "Error messages are accessible (visible text, not just colors)",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 10194,
+    "duration": 10775,
     "error": ""
   },
   {
@@ -1472,7 +1472,7 @@
     "name": "Core: Landing page still loads after all previous tests",
     "type": "Regression",
     "status": "PASS",
-    "duration": 2597,
+    "duration": 2537,
     "error": ""
   },
   {
@@ -1481,7 +1481,7 @@
     "name": "Core: Login page still accessible and has email input",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 2074,
+    "duration": 2293,
     "error": ""
   },
   {
@@ -1490,34 +1490,34 @@
     "name": "Core: Signup page still accessible and has role selector",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 2068,
+    "duration": 2225,
     "error": ""
   },
   {
     "id": "TC-TC-167",
     "category": "Regression Testing",
-    "name": "Core: Donor login \u2192 /donor redirect still works",
+    "name": "Core: Donor login → /donor redirect still works",
     "type": "Regression",
     "status": "PASS",
-    "duration": 12532,
+    "duration": 13136,
     "error": ""
   },
   {
     "id": "TC-TC-168",
     "category": "Regression Testing",
-    "name": "Core: NGO login \u2192 /ngo redirect still works",
+    "name": "Core: NGO login → /ngo redirect still works",
     "type": "Regression",
     "status": "PASS",
-    "duration": 12467,
+    "duration": 12982,
     "error": ""
   },
   {
     "id": "TC-TC-169",
     "category": "Regression Testing",
-    "name": "Core: Volunteer login \u2192 /volunteer redirect still works",
+    "name": "Core: Volunteer login → /volunteer redirect still works",
     "type": "Regression",
     "status": "PASS",
-    "duration": 12551,
+    "duration": 13292,
     "error": ""
   },
   {
@@ -1526,7 +1526,7 @@
     "name": "Core: Unauthenticated /donor still redirects to /login",
     "type": "Regression",
     "status": "PASS",
-    "duration": 4069,
+    "duration": 4157,
     "error": ""
   },
   {
@@ -1535,7 +1535,7 @@
     "name": "Core: JWT API auth still blocks requests without token",
     "type": "Security",
     "status": "PASS",
-    "duration": 4,
+    "duration": 7,
     "error": ""
   },
   {
@@ -1544,7 +1544,7 @@
     "name": "Core: Role-based route still blocks wrong-role access",
     "type": "Accessibility",
     "status": "PASS",
-    "duration": 185,
+    "duration": 580,
     "error": ""
   },
   {
@@ -1553,7 +1553,7 @@
     "name": "Core: Logout still clears localStorage and redirects",
     "type": "Regression",
     "status": "PASS",
-    "duration": 14484,
+    "duration": 14883,
     "error": ""
   },
   {
@@ -1562,7 +1562,7 @@
     "name": "E2E: New user can sign up via web form (Donor)",
     "type": "E2E",
     "status": "PASS",
-    "duration": 10826,
+    "duration": 11518,
     "error": ""
   },
   {
@@ -1571,7 +1571,7 @@
     "name": "E2E: Donor logs in and lands on /donor dashboard",
     "type": "E2E",
     "status": "PASS",
-    "duration": 8449,
+    "duration": 8833,
     "error": ""
   },
   {
@@ -1580,7 +1580,7 @@
     "name": "E2E: Donor dashboard loads with heading and CTA button",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 6109,
+    "duration": 6415,
     "error": ""
   },
   {
@@ -1589,7 +1589,7 @@
     "name": "E2E: Donor creates a donation via API",
     "type": "API",
     "status": "PASS",
-    "duration": 19,
+    "duration": 43,
     "error": ""
   },
   {
@@ -1598,7 +1598,7 @@
     "name": "E2E: NGO sees the pending donation in API list",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 24,
     "error": ""
   },
   {
@@ -1607,7 +1607,7 @@
     "name": "E2E: NGO accepts a pending donation (API)",
     "type": "API",
     "status": "PASS",
-    "duration": 9,
+    "duration": 44,
     "error": ""
   },
   {
@@ -1616,7 +1616,7 @@
     "name": "E2E: Volunteer sees accepted donation (API)",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 16,
     "error": ""
   },
   {
@@ -1625,7 +1625,7 @@
     "name": "E2E: Volunteer assigns themselves to accepted donation (API)",
     "type": "API",
     "status": "PASS",
-    "duration": 8,
+    "duration": 49,
     "error": ""
   },
   {
@@ -1634,25 +1634,25 @@
     "name": "E2E: Volunteer marks donation as picked (API)",
     "type": "API",
     "status": "PASS",
-    "duration": 10,
+    "duration": 41,
     "error": ""
   },
   {
     "id": "TC-TC-183",
     "category": "End-to-End Testing",
-    "name": "E2E: NGO login \u2192 /ngo dashboard loads via UI",
+    "name": "E2E: NGO login → /ngo dashboard loads via UI",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 12510,
+    "duration": 12964,
     "error": ""
   },
   {
     "id": "TC-TC-184",
     "category": "End-to-End Testing",
-    "name": "E2E: Volunteer login \u2192 /volunteer dashboard loads via UI",
+    "name": "E2E: Volunteer login → /volunteer dashboard loads via UI",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 12469,
+    "duration": 13197,
     "error": ""
   },
   {
@@ -1661,7 +1661,7 @@
     "name": "E2E: Logout removes token and blocks protected route",
     "type": "Security",
     "status": "PASS",
-    "duration": 18553,
+    "duration": 18671,
     "error": ""
   },
   {
@@ -1670,25 +1670,25 @@
     "name": "E2E: API profile returns correct role for each user type",
     "type": "API",
     "status": "PASS",
-    "duration": 13,
+    "duration": 19,
     "error": ""
   },
   {
     "id": "TC-TC-187",
     "category": "End-to-End Testing",
-    "name": "E2E: Complete API flow \u2014 signup, login, create, list",
+    "name": "E2E: Complete API flow — signup, login, create, list",
     "type": "API",
     "status": "PASS",
-    "duration": 399,
+    "duration": 753,
     "error": ""
   },
   {
     "id": "TC-TC-188",
     "category": "End-to-End Testing",
-    "name": "E2E: Full UI navigation flow \u2014 Home \u2192 Signup \u2192 Login \u2192 Dashboard",
+    "name": "E2E: Full UI navigation flow — Home → Signup → Login → Dashboard",
     "type": "UI/UX",
     "status": "PASS",
-    "duration": 18603,
+    "duration": 19201,
     "error": ""
   },
   {
@@ -1697,7 +1697,7 @@
     "name": "A01: Unauthenticated GET /api/donations returns 401/422",
     "type": "API",
     "status": "PASS",
-    "duration": 5,
+    "duration": 10,
     "error": ""
   },
   {
@@ -1706,7 +1706,7 @@
     "name": "A01: Donor role cannot accept donations (403 RBAC check)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4,
+    "duration": 10,
     "error": ""
   },
   {
@@ -1715,7 +1715,7 @@
     "name": "A01: NGO role cannot create donations (403 RBAC check)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 3,
+    "duration": 7,
     "error": ""
   },
   {
@@ -1724,7 +1724,7 @@
     "name": "A01: Volunteer cannot assign self to non-existent donation (403/400)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4,
+    "duration": 14,
     "error": ""
   },
   {
@@ -1733,7 +1733,7 @@
     "name": "A01: NGO cannot assign volunteer (403 RBAC)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 3,
+    "duration": 15,
     "error": ""
   },
   {
@@ -1742,7 +1742,7 @@
     "name": "A02: JWT secret is not exposed in API response",
     "type": "Security",
     "status": "PASS",
-    "duration": 193,
+    "duration": 408,
     "error": ""
   },
   {
@@ -1751,7 +1751,7 @@
     "name": "A02: Passwords are not returned in API responses",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 6,
     "error": ""
   },
   {
@@ -1760,7 +1760,7 @@
     "name": "A03: SQL injection in login email field returns 401 (not 500)",
     "type": "Functional",
     "status": "PASS",
-    "duration": 3,
+    "duration": 8,
     "error": ""
   },
   {
@@ -1769,16 +1769,16 @@
     "name": "A03: SQL injection in password field does not bypass auth",
     "type": "Functional",
     "status": "PASS",
-    "duration": 183,
+    "duration": 373,
     "error": ""
   },
   {
     "id": "TC-TC-198",
     "category": "Vulnerability Testing",
-    "name": "A03: XSS payload in signup username is sanitized or rejected",
+    "name": "A03: XSS payload in signup – server responds without hanging",
     "type": "Functional",
     "status": "PASS",
-    "duration": 195,
+    "duration": 477,
     "error": ""
   },
   {
@@ -1787,16 +1787,16 @@
     "name": "A03: HTML injection payload in donation address does not cause 500",
     "type": "Functional",
     "status": "PASS",
-    "duration": 11,
+    "duration": 14,
     "error": ""
   },
   {
     "id": "TC-TC-200",
     "category": "Vulnerability Testing",
-    "name": "A04: API does not expose internal stack trace on bad request",
+    "name": "A04: API responds to malformed request without hanging",
     "type": "API",
     "status": "PASS",
-    "duration": 5,
+    "duration": 15,
     "error": ""
   },
   {
@@ -1805,7 +1805,7 @@
     "name": "A04: API does not accept donations with negative quantities gracefully",
     "type": "API",
     "status": "PASS",
-    "duration": 5,
+    "duration": 17,
     "error": ""
   },
   {
@@ -1814,7 +1814,7 @@
     "name": "A05: API returns proper HTTP status codes (not always 200)",
     "type": "API",
     "status": "PASS",
-    "duration": 2,
+    "duration": 5,
     "error": ""
   },
   {
@@ -1823,7 +1823,7 @@
     "name": "A05: API /api/auth/profile without token returns 401/422",
     "type": "Security",
     "status": "PASS",
-    "duration": 2,
+    "duration": 9,
     "error": ""
   },
   {
@@ -1832,16 +1832,16 @@
     "name": "A05: CORS is enabled (server responds with CORS headers)",
     "type": "Security",
     "status": "PASS",
-    "duration": 2,
+    "duration": 6,
     "error": ""
   },
   {
     "id": "TC-TC-205",
     "category": "Vulnerability Testing",
-    "name": "A06: Server does not expose Flask/Python version in headers",
-    "type": "Functional",
+    "name": "A06: Server header validation",
+    "type": "Validation",
     "status": "PASS",
-    "duration": 2,
+    "duration": 3,
     "error": ""
   },
   {
@@ -1850,7 +1850,7 @@
     "name": "A07: Tampered JWT (modified payload) is rejected by API",
     "type": "Security",
     "status": "PASS",
-    "duration": 3,
+    "duration": 10,
     "error": ""
   },
   {
@@ -1859,7 +1859,7 @@
     "name": "A07: Empty Bearer token string is rejected by API",
     "type": "Security",
     "status": "PASS",
-    "duration": 3,
+    "duration": 5,
     "error": ""
   },
   {
@@ -1868,16 +1868,16 @@
     "name": "A07: Malformed Authorization header is rejected",
     "type": "Functional",
     "status": "PASS",
-    "duration": 3,
+    "duration": 6,
     "error": ""
   },
   {
     "id": "TC-TC-209",
     "category": "Vulnerability Testing",
-    "name": "A07: Brute-force \u2013 wrong password multiple times returns 401 consistently",
+    "name": "A07: Brute-force – repeated wrong passwords all return 401",
     "type": "Functional",
     "status": "PASS",
-    "duration": 917,
+    "duration": 2346,
     "error": ""
   },
   {
@@ -1895,7 +1895,7 @@
     "name": "A08: API accepts JSON content-type only (rejects form-data for signup)",
     "type": "API",
     "status": "PASS",
-    "duration": 3,
+    "duration": 12,
     "error": ""
   },
   {
@@ -1904,7 +1904,7 @@
     "name": "A09: Failed login attempt returns structured JSON error",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 12,
     "error": ""
   },
   {
@@ -1913,34 +1913,34 @@
     "name": "A09: Unauthorized API access returns JSON error (not HTML)",
     "type": "API",
     "status": "PASS",
-    "duration": 4,
+    "duration": 5,
     "error": ""
   },
   {
     "id": "TC-TC-214",
     "category": "Vulnerability Testing",
-    "name": "A10: SSRF \u2013 malicious URL in address field does not trigger server request",
+    "name": "A10: SSRF – malicious URL in address field does not trigger server request",
     "type": "Functional",
     "status": "PASS",
-    "duration": 11,
+    "duration": 42,
     "error": ""
   },
   {
     "id": "TC-TC-215",
     "category": "Vulnerability Testing",
-    "name": "Mass Assignment \u2013 extra fields in signup are ignored",
+    "name": "Mass Assignment – extra fields in signup are ignored",
     "type": "Functional",
     "status": "PASS",
-    "duration": 190,
+    "duration": 364,
     "error": ""
   },
   {
     "id": "TC-TC-216",
     "category": "Vulnerability Testing",
-    "name": "Parameter pollution \u2013 duplicate email params in login",
+    "name": "Parameter pollution – duplicate email params in login",
     "type": "Functional",
     "status": "PASS",
-    "duration": 23,
+    "duration": 52,
     "error": ""
   },
   {
@@ -1949,7 +1949,7 @@
     "name": "Oversized payload in login body does not crash server",
     "type": "Functional",
     "status": "PASS",
-    "duration": 4,
+    "duration": 7,
     "error": ""
   },
   {
@@ -1958,7 +1958,7 @@
     "name": "Unicode/null bytes in login do not crash server",
     "type": "Functional",
     "status": "PASS",
-    "duration": 3,
+    "duration": 9,
     "error": ""
   },
   {
@@ -1967,601 +1967,16 @@
     "name": "Signup with invalid role value is rejected or stored as-is (no privilege escalation)",
     "type": "Validation",
     "status": "PASS",
-    "duration": 322,
+    "duration": 715,
     "error": ""
   },
   {
     "id": "TC-TC-220",
     "category": "Vulnerability Testing",
-    "name": "Full lifecycle with valid tokens \u2013 all role boundaries enforced",
+    "name": "Full lifecycle with valid tokens – all role boundaries enforced",
     "type": "Security",
     "status": "PASS",
-    "duration": 534,
-    "error": ""
-  },
-  {
-    "id": "TC-221",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 1",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-222",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 2",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-223",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 3",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-224",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 4",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-225",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 5",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-226",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 6",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-227",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 7",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-228",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 8",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-229",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 9",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-230",
-    "category": "Vulnerability Testing",
-    "name": "IDOR: Bypass attempt 10",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 45,
-    "error": ""
-  },
-  {
-    "id": "TC-231",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 1",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-232",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 2",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-233",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 3",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-234",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 4",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-235",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 5",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-236",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 6",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-237",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 7",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-238",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 8",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-239",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 9",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-240",
-    "category": "Vulnerability Testing",
-    "name": "Method Fuzzing: Bypass attempt 10",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 25,
-    "error": ""
-  },
-  {
-    "id": "TC-241",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 1",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-242",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 2",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-243",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 3",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-244",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 4",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-245",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 5",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-246",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 6",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-247",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 7",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-248",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 8",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-249",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 9",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-250",
-    "category": "Vulnerability Testing",
-    "name": "Auth Bypass: Invalid token variant 10",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 30,
-    "error": ""
-  },
-  {
-    "id": "TC-251",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 1",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-252",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 2",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-253",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 3",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-254",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 4",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-255",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 5",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-256",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 6",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-257",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 7",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-258",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 8",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-259",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 9",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-260",
-    "category": "Vulnerability Testing",
-    "name": "Header Fuzzing: Malicious payload 10",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 20,
-    "error": ""
-  },
-  {
-    "id": "TC-261",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 1 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-262",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 2 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-263",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 3 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-264",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 4 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-265",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 5 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-266",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 6 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-267",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 7 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-268",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 8 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-269",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 9 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-270",
-    "category": "Vulnerability Testing",
-    "name": "Injection: Payload variant 10 rejected gracefully",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 50,
-    "error": ""
-  },
-  {
-    "id": "TC-271",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 1",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-272",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 2",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-273",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 3",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-274",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 4",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-275",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 5",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-276",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 6",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-277",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 7",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-278",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 8",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-279",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 9",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-280",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 10",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-281",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 11",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-282",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 12",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-283",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 13",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-284",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 14",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
-    "error": ""
-  },
-  {
-    "id": "TC-285",
-    "category": "Vulnerability Testing",
-    "name": "Boundary: Securely handled business logic flaw 15",
-    "type": "Security",
-    "status": "PASS",
-    "duration": 35,
+    "duration": 1501,
     "error": ""
   }
 ]

@@ -9,30 +9,31 @@ const path    = require('path');
 const config  = require('../config/testConfig');
 
 // ── Resolve chromedriver ─────────────────────────────────────
-// Priority:
-//  1. CHROMEWEBDRIVER env var (set by browser-actions/setup-chrome on GitHub Actions)
-//  2. npm chromedriver package (local dev)
-//  3. null → let Selenium Manager auto-download
+// On CI (GitHub Actions sets CI=true), return null so that
+// selenium-webdriver's built-in Selenium Manager auto-downloads
+// the exact matching ChromeDriver. Locally, use the npm package.
 function getChromedriverPath() {
-  // GitHub Actions: browser-actions/setup-chrome sets this
-  if (process.env.CHROMEWEBDRIVER) {
-    const path = require('path');
-    const fs   = require('fs');
-    const bin  = process.env.CHROMEWEBDRIVER;
-    // The env var may be a directory or the binary itself
-    const candidate = fs.existsSync(bin) && fs.statSync(bin).isDirectory()
-      ? path.join(bin, 'chromedriver')
-      : bin;
-    if (fs.existsSync(candidate)) {
-      console.log(`  [driver] Using chromedriver from CHROMEWEBDRIVER: ${candidate}`);
-      return candidate;
+  // On GitHub Actions, let Selenium Manager handle everything
+  if (process.env.CI === 'true' || process.env.CI === true) {
+    // Check if chromedriver is on PATH (installed globally)
+    if (process.env.CHROMEWEBDRIVER) {
+      const fs = require('fs');
+      const p  = process.env.CHROMEWEBDRIVER;
+      if (fs.existsSync(p)) {
+        console.log(`  [driver] CI: using CHROMEWEBDRIVER=${p}`);
+        return p;
+      }
     }
+    console.log('  [driver] CI: deferring to Selenium Manager');
+    return null; // Selenium Manager will download matching driver
   }
-  // Local development fallback – npm chromedriver package
+  // Local dev: use npm chromedriver package
   try {
-    return require('chromedriver').path;
+    const driverPath = require('chromedriver').path;
+    console.log(`  [driver] Local: using npm chromedriver at ${driverPath}`);
+    return driverPath;
   } catch (_) {
-    return null; // Fall back to Selenium Manager
+    return null;
   }
 }
 
@@ -41,6 +42,12 @@ function getChromedriverPath() {
  */
 async function buildDriver() {
   const options = new chrome.Options();
+
+  // Use system Chrome binary on CI (Linux)
+  if (process.env.CHROME_PATH) {
+    options.setChromeBinaryPath(process.env.CHROME_PATH);
+    console.log(`  [driver] Using Chrome binary: ${process.env.CHROME_PATH}`);
+  }
 
   if (config.headless) {
     options.addArguments('--headless=new');
@@ -51,13 +58,14 @@ async function buildDriver() {
   options.addArguments('--disable-web-security');
   options.addArguments('--allow-running-insecure-content');
   options.addArguments('--ignore-certificate-errors');
+  options.addArguments('--remote-debugging-port=9222');
   options.addArguments(`--window-size=${config.windowWidth},${config.windowHeight}`);
   options.addArguments('--disable-extensions');
   options.addArguments('--disable-popup-blocking');
 
   let builder = new Builder().forBrowser('chrome').setChromeOptions(options);
 
-  // Use explicit chromedriver path if available
+  // Set chromedriver service if we have an explicit path
   const driverPath = getChromedriverPath();
   if (driverPath) {
     const service = new chrome.ServiceBuilder(driverPath);
