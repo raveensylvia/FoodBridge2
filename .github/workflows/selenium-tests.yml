@@ -24,56 +24,59 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install backend dependencies
+    - name: Install All Dependencies
       run: |
+        echo "Installing backend dependencies..."
         cd backend
         pip install -r requirements.txt
-
-    - name: Start backend
-      run: |
-        cd backend
-        nohup python app.py > backend.log 2>&1 &
-
-    - name: Install frontend dependencies
-      run: |
-        cd frontend
+        
+        echo "Installing frontend dependencies..."
+        cd ../frontend
         npm install
-
-    - name: Start frontend
-      run: |
-        cd frontend
-        nohup npm run dev > frontend.log 2>&1 &
-
-    - name: Wait for servers to be ready
-      run: npx wait-on http://localhost:5000 http://localhost:5173 -t 60000
-
-    - name: Install Selenium Test Dependencies
-      run: |
-        cd selenium-tests
+        
+        echo "Installing Selenium test dependencies..."
+        cd ../selenium-tests
         npm install
-
-    - name: Run E2E Tests
-      run: |
-        cd selenium-tests
-        npm test
-      continue-on-error: true
-
-    - name: Install Appium Python test dependencies
-      run: |
-        cd appium-python-tests
+        
+        echo "Installing Appium Python test dependencies..."
+        cd ../appium-python-tests
         pip install -r requirements.txt
 
-    - name: Run Appium Python E2E Tests
+    - name: Run E2E Tests and Generate Reports
       run: |
-        cd appium-python-tests
-        python run_tests.py
-      continue-on-error: true
+        echo "Starting backend..."
+        cd backend
+        nohup python app.py > ../backend.log 2>&1 &
+        
+        echo "Starting frontend..."
+        cd ../frontend
+        nohup npm run dev > ../frontend.log 2>&1 &
+        
+        echo "Waiting for servers to be ready..."
+        cd ..
+        npx wait-on http://localhost:5000 http://localhost:5173 -t 60000
+        
+        echo "Running Selenium Web E2E Tests..."
+        cd selenium-tests
+        SELENIUM_EXIT=0
+        npm test || SELENIUM_EXIT=$?
+        
+        echo "Running Appium Mobile E2E Tests..."
+        cd ../appium-python-tests
+        APPIUM_EXIT=0
+        python run_tests.py || APPIUM_EXIT=$?
+        
+        echo "Generating aggregated reports..."
+        cd ..
+        python generate_reports.py || true
+        
+        # Exit with failure if either test suite failed
+        if [ "$SELENIUM_EXIT" -ne 0 ] || [ "$APPIUM_EXIT" -ne 0 ]; then
+          echo "Test execution failed! Selenium exit code: $SELENIUM_EXIT, Appium exit code: $APPIUM_EXIT"
+          exit 1
+        fi
 
-    - name: Generate Aggregated Excel Reports & Summary
-      run: python generate_reports.py
-      continue-on-error: true
-
-    - name: Upload Test Reports
+    - name: Upload Test Reports & Logs
       uses: actions/upload-artifact@v4
       if: always()
       with:
@@ -82,3 +85,5 @@ jobs:
           reports/
           .web_results.json
           appium-python-tests/.pytest_results.json
+          backend.log
+          frontend.log
