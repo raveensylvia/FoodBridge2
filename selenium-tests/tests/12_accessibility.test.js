@@ -56,6 +56,7 @@ describe('12 — Accessibility Testing', () => {
 
   record('TC-156', 'Submit buttons have meaningful text', 'Accessibility', async () => {
     await goTo(driver, '/login');
+    await sleep(config.shortWait);
     const btns = await driver.findElements(By.css('button[type="submit"]'));
     if (btns.length === 0) { assert.ok(true, 'No submit buttons found'); return; }
     const text = await btns[0].getText();

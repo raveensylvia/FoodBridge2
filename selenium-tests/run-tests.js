@@ -27,6 +27,7 @@ const TEST_FILES = [
   'tests/13_regression.test.js',    // Regression      TC-164–173
   'tests/14_e2e_fullflow.test.js',  // E2E Full Flow   TC-174–188
   'tests/15_vulnerability.test.js', // Vulnerability   TC-189–220
+  'tests/16_vulnerability_ext.test.js', // Vulnerability   TC-221–285
 ];
 
 // ── Category label map ───────────────────────────────────────
@@ -46,6 +47,7 @@ const FILE_CATEGORY = {
   '13_regression.test.js':     'Regression Testing',
   '14_e2e_fullflow.test.js':   'End-to-End Testing',
   '15_vulnerability.test.js':  'Vulnerability Testing',
+  '16_vulnerability_ext.test.js': 'Vulnerability Testing',
 };
 
 // ── Console colours ──────────────────────────────────────────
@@ -82,7 +84,7 @@ function detectType(title) {
 async function main() {
   banner('🍱 FoodBridge — Complete Selenium E2E Test Runner (All 15 Categories)');
   log(`  📋 Total Suites  : ${TEST_FILES.length}`, C.white);
-  log(`  🧪 Planned Tests : 220 (TC-001 to TC-220)`, C.white);
+  log(`  🧪 Planned Tests : 285 (TC-001 to TC-285)`, C.white);
   log(`  🌐 Frontend URL  : http://localhost:5173`, C.white);
   log(`  🔌 Backend URL   : http://localhost:5000\n`, C.white);
 
@@ -225,7 +227,7 @@ async function main() {
       failed:   totalFailed,
       skipped:  totalSkipped,
       duration: totalDuration,
-      suite:    'FoodBridge Web E2E — All 15 Categories (TC-001 to TC-220)'
+      suite:    'FoodBridge Web E2E — All 16 Categories (TC-001 to TC-285)'
     });
     log(`  ✅ Excel report saved → ${reportPath}`, C.green);
   } catch (err) {
