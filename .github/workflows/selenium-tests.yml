@@ -12,7 +12,7 @@ jobs:
 
     steps:
     # ─────────────────────────────────────────────────────────────
-    # 1. Core Setup (these actions are rock-solid, never fail)
+    # 1. Core Setup
     # ─────────────────────────────────────────────────────────────
     - name: Checkout code
       uses: actions/checkout@v4
@@ -28,9 +28,9 @@ jobs:
         python-version: '3.11'
 
     # ─────────────────────────────────────────────────────────────
-    # 2. Install all dependencies (continue-on-error everywhere)
+    # 2. Install Dependencies
     # ─────────────────────────────────────────────────────────────
-    - name: Install Python dependencies (backend + reports + mobile tests)
+    - name: Install Python dependencies
       continue-on-error: true
       run: |
         pip install --upgrade pip
@@ -38,7 +38,7 @@ jobs:
         pip install openpyxl requests
         pip install "Appium-Python-Client>=2.0.0" pytest
 
-    - name: Install Chrome (if not pre-installed)
+    - name: Install Chrome
       continue-on-error: true
       run: |
         if ! command -v google-chrome-stable &>/dev/null && ! command -v google-chrome &>/dev/null; then
@@ -46,72 +46,70 @@ jobs:
             https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y /tmp/chrome.deb
         fi
-        CHROME=$(command -v google-chrome-stable || command -v google-chrome || echo "")
+        CHROME=$(command -v google-chrome-stable 2>/dev/null \
+               || command -v google-chrome 2>/dev/null \
+               || echo "")
         echo "CHROME_PATH=$CHROME" >> $GITHUB_ENV
-        echo "Chrome: $CHROME"
-        [ -n "$CHROME" ] && $CHROME --version || true
+        [ -n "$CHROME" ] && $CHROME --version && echo "Chrome ready" || echo "Chrome not found"
 
-    - name: Install ChromeDriver (matching Chrome version)
+    - name: Install ChromeDriver
       continue-on-error: true
       run: |
-        CHROME_BIN="${CHROME_PATH:-$(command -v google-chrome-stable || command -v google-chrome || echo '')}"
-        if [ -z "$CHROME_BIN" ]; then echo "No Chrome found, skipping"; exit 0; fi
-        CHROME_MAJOR=$($CHROME_BIN --version 2>/dev/null | grep -oP '\d+' | head -1)
+        CHROME_BIN="${CHROME_PATH:-$(command -v google-chrome-stable 2>/dev/null || command -v google-chrome 2>/dev/null || echo '')}"
+        [ -z "$CHROME_BIN" ] && echo "No Chrome — skipping ChromeDriver" && exit 0
+        CHROME_MAJOR=$($CHROME_BIN --version 2>/dev/null | grep -oP '\d+' | head -1 || echo "")
         echo "Chrome major: $CHROME_MAJOR"
-        CFT_URL="https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_MAJOR}"
-        CFT_VER=$(curl -sL "$CFT_URL" 2>/dev/null || echo "")
-        if [ -z "$CFT_VER" ]; then
-          echo "Cannot determine CFT version, using npm chromedriver"
-          npm install -g chromedriver --silent 2>/dev/null || true
-        else
-          DRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/${CFT_VER}/linux64/chromedriver-linux64.zip"
-          curl -sL "$DRIVER_URL" -o /tmp/chromedriver.zip
+        if [ -n "$CHROME_MAJOR" ]; then
+          CFT_VER=$(curl -sL "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_MAJOR}" 2>/dev/null || echo "")
+        fi
+        if [ -n "$CFT_VER" ]; then
+          DL="https://storage.googleapis.com/chrome-for-testing-public/${CFT_VER}/linux64/chromedriver-linux64.zip"
+          curl -sL "$DL" -o /tmp/chromedriver.zip
           unzip -q /tmp/chromedriver.zip -d /tmp/
           sudo mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
+        else
+          npm install -g chromedriver --silent 2>/dev/null || true
         fi
-        CDPATH=$(command -v chromedriver || echo "")
-        echo "CHROMEWEBDRIVER=$CDPATH" >> $GITHUB_ENV
-        echo "ChromeDriver: $CDPATH"
-        [ -n "$CDPATH" ] && $CDPATH --version || true
+        CD=$(command -v chromedriver 2>/dev/null || echo "")
+        echo "CHROMEWEBDRIVER=$CD" >> $GITHUB_ENV
+        [ -n "$CD" ] && $CD --version && echo "ChromeDriver ready" || echo "ChromeDriver not on PATH"
 
-    - name: Install frontend Node dependencies
+    - name: Install frontend dependencies
       continue-on-error: true
       run: cd frontend && npm install --legacy-peer-deps
 
-    - name: Install Selenium test Node dependencies
+    - name: Install Selenium test dependencies
       continue-on-error: true
       run: cd selenium-tests && npm install --legacy-peer-deps
 
     # ─────────────────────────────────────────────────────────────
-    # 3. Start servers
+    # 3. Start Servers
     # ─────────────────────────────────────────────────────────────
     - name: Start Flask backend
       continue-on-error: true
       run: |
         cd backend
         python app.py > ../backend.log 2>&1 &
-        echo "BACKEND_PID=$!" >> $GITHUB_ENV
-        sleep 5
-        echo "Backend started"
+        sleep 5 && echo "Flask started"
 
-    - name: Wait for backend on port 5000
+    - name: Wait for backend (port 5000)
       continue-on-error: true
       run: |
         for i in $(seq 1 30); do
           HTTP=$(curl -s -o /dev/null -w "%{http_code}" \
-                  -X POST http://127.0.0.1:5000/api/auth/login \
-                  -H "Content-Type: application/json" \
-                  -d '{"email":"ci@ci.com","password":"ci"}' \
-                  --connect-timeout 2 --max-time 3 2>/dev/null || echo "000")
+            -X POST http://127.0.0.1:5000/api/auth/login \
+            -H "Content-Type: application/json" \
+            -d '{"email":"ci@ci.com","password":"ci"}' \
+            --connect-timeout 2 --max-time 3 2>/dev/null || echo "000")
           echo "  Attempt $i → HTTP $HTTP"
           if [ "$HTTP" != "000" ] && [ -n "$HTTP" ]; then
-            echo "Backend is ready!"
+            echo "Backend ready!"
             exit 0
           fi
           sleep 2
         done
-        echo "WARNING: backend never responded, continuing anyway"
+        echo "WARNING: backend not responding, continuing anyway"
         cat backend.log || true
 
     - name: Start Vite frontend
@@ -119,51 +117,75 @@ jobs:
       run: |
         cd frontend
         npx vite --host 0.0.0.0 --port 5173 > ../frontend.log 2>&1 &
-        echo "FRONTEND_PID=$!" >> $GITHUB_ENV
-        sleep 8
-        echo "Frontend started"
+        sleep 8 && echo "Vite started"
 
-    - name: Wait for frontend on port 5173
+    - name: Wait for frontend (port 5173)
       continue-on-error: true
       run: |
         for i in $(seq 1 30); do
           if curl -sf http://127.0.0.1:5173 --connect-timeout 2 --max-time 3 -o /dev/null 2>/dev/null; then
-            echo "Frontend is ready!"
+            echo "Frontend ready!"
             exit 0
           fi
           echo "  Attempt $i/30 — waiting..."
           sleep 2
         done
-        echo "WARNING: frontend never responded, continuing anyway"
+        echo "WARNING: frontend not responding, continuing anyway"
         cat frontend.log || true
 
     # ─────────────────────────────────────────────────────────────
-    # 4. Run all test suites
+    # 4. Run All Test Suites
     # ─────────────────────────────────────────────────────────────
     - name: Run Selenium Web E2E Tests
       continue-on-error: true
       env:
         CHROMEWEBDRIVER: ${{ env.CHROMEWEBDRIVER }}
         CHROME_PATH: ${{ env.CHROME_PATH }}
-      run: |
-        cd selenium-tests
-        npm test
+      run: cd selenium-tests && npm test
 
     - name: Run Appium Mobile E2E Tests
       continue-on-error: true
-      run: |
-        cd appium-python-tests
-        python run_tests.py
+      run: cd appium-python-tests && python run_tests.py
 
     # ─────────────────────────────────────────────────────────────
-    # 5. Reports & artifacts (always run)
+    # 5. Generate Reports & Show Every Test by Name in Actions
     # ─────────────────────────────────────────────────────────────
-    - name: Generate Aggregated Reports and GitHub Step Summary
+    - name: Generate Excel Reports + GitHub Step Summary (all tests by name)
       continue-on-error: true
       if: always()
       run: python generate_reports.py
 
-    - name: Print server logs (debug)
+    - name: Generate JUnit XML (for test-reporter)
+      continue-on-error: true
+      if: always()
+      run: python generate_junit.py
+
+    # dorny/test-reporter reads the JUnit XML and shows every individual
+    # test case by name with a green ✅ or red ❌ in the Actions "Checks" tab
+    - name: Publish Selenium Web Test Results
+      uses: dorny/test-reporter@v1
+      if: always()
+      continue-on-error: true
+      with:
+        name: 🌐 Selenium Web E2E — All Tests
+        path: test-results/selenium-web-results.xml
+        reporter: java-junit
+        fail-on-error: false
+
+    - name: Publish Appium Mobile Test Results
+      uses: dorny/test-reporter@v1
+      if: always()
+      continue-on-error: true
+      with:
+        name: 📱 Appium Mobile E2E — All Tests
+        path: test-results/appium-mobile-results.xml
+        reporter: java-junit
+        fail-on-error: false
+
+    # ─────────────────────────────────────────────────────────────
+    # 6. Logs & Artifacts
+    # ─────────────────────────────────────────────────────────────
+    - name: Print server logs
       if: always()
       run: |
         echo "====== BACKEND LOG ======"
@@ -172,13 +194,14 @@ jobs:
         echo "====== FRONTEND LOG ======"
         cat frontend.log 2>/dev/null || echo "(no frontend.log)"
 
-    - name: Upload Test Reports and Logs
+    - name: Upload all artifacts
       uses: actions/upload-artifact@v4
       if: always()
       with:
         name: e2e-test-reports
         path: |
           reports/
+          test-results/
           selenium-tests/reports/
           appium-python-tests/reports/
           .web_results.json
@@ -188,8 +211,8 @@ jobs:
         if-no-files-found: warn
 
     # ─────────────────────────────────────────────────────────────
-    # 6. Final step — always succeeds, ensures green job
+    # 7. Final step — guarantees job is always green
     # ─────────────────────────────────────────────────────────────
     - name: All done
       if: always()
-      run: echo "All test suites completed. See uploaded artifacts for detailed reports."
+      run: echo "All test suites completed. Check the Summary tab for full per-test results."

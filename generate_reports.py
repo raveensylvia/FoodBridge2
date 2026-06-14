@@ -114,94 +114,142 @@ def create_excel_report(data, filename, report_title):
 
 
 def generate_github_summary(web_data, mobile_data):
+    """Write a comprehensive per-test Step Summary and GitHub annotations."""
     summary_env = os.environ.get("GITHUB_STEP_SUMMARY")
-    if not summary_env:
-        return
 
-    # Calculate Web stats
-    web_total = len(web_data)
-    web_passed = sum(1 for d in web_data if d.get("status") == "PASS")
-    web_failed = sum(1 for d in web_data if d.get("status") == "FAIL")
+    # ── Stats ───────────────────────────────────────────────────
+    web_total   = len(web_data)
+    web_passed  = sum(1 for d in web_data if d.get("status") == "PASS")
+    web_failed  = sum(1 for d in web_data if d.get("status") == "FAIL")
     web_skipped = sum(1 for d in web_data if d.get("status") == "SKIP")
-    web_pct = (web_passed / web_total * 100) if web_total > 0 else 0
+    web_pct     = (web_passed / web_total * 100) if web_total > 0 else 0
 
-    # Calculate Mobile stats
-    mob_total = len(mobile_data)
-    mob_passed = sum(1 for d in mobile_data if d.get("status") == "PASS")
-    mob_failed = sum(1 for d in mobile_data if d.get("status") == "FAIL")
+    mob_total   = len(mobile_data)
+    mob_passed  = sum(1 for d in mobile_data if d.get("status") == "PASS")
+    mob_failed  = sum(1 for d in mobile_data if d.get("status") == "FAIL")
     mob_skipped = sum(1 for d in mobile_data if d.get("status") == "SKIP")
-    mob_pct = (mob_passed / mob_total * 100) if mob_total > 0 else 0
+    mob_pct     = (mob_passed / mob_total * 100) if mob_total > 0 else 0
 
-    markdown = []
-    markdown.append("# 🍱 FoodBridge Test Execution Summary\n")
-    
-    # Summary Table
-    markdown.append("### 📊 Test Suite Metrics\n")
-    markdown.append("| Test Suite | Total Tests | Passed ✅ | Failed ❌ | Skipped ⏭ | Pass Rate % |")
-    markdown.append("| :--- | :---: | :---: | :---: | :---: | :---: |")
-    markdown.append(f"| **Selenium Web E2E** | {web_total} | {web_passed} | {web_failed} | {web_skipped} | {web_pct:.1f}% |")
-    markdown.append(f"| **Appium Mobile E2E** | {mob_total} | {mob_passed} | {mob_failed} | {mob_skipped} | {mob_pct:.1f}% |")
-    markdown.append("\n")
+    grand_total  = web_total  + mob_total
+    grand_passed = web_passed + mob_passed
+    grand_failed = web_failed + mob_failed
 
-    # Combine all results to display failed tests if any
-    all_failed = [d for d in web_data + mobile_data if d.get("status") == "FAIL"]
-    if all_failed:
-        markdown.append("### ⚠️ Failed Tests Details\n")
-        markdown.append("| Test ID | Suite | Category | Test Name | Error / Details |")
-        markdown.append("| :--- | :--- | :--- | :--- | :--- |")
-        for f in all_failed:
-            suite_name = "Selenium Web" if f in web_data else "Appium Mobile"
-            err_msg = f.get("error", "No error message provided").replace("\n", " ")
-            markdown.append(f"| `{f.get('id', 'N/A')}` | {suite_name} | {f.get('category', 'General')} | {f.get('name', 'N/A')} | {err_msg} |")
-        markdown.append("\n")
+    md = []
+
+    # ── Header ──────────────────────────────────────────────────
+    md.append("# 🍱 FoodBridge — Complete Test Results\n")
+    md.append(f"> **{grand_passed}/{grand_total}** tests passed  |  "
+              f"Run: `{datetime.now().strftime('%Y-%m-%d %H:%M UTC')}`\n")
+
+    # ── Overall summary table ────────────────────────────────────
+    md.append("## 📊 Suite Overview\n")
+    md.append("| Suite | Total | ✅ Passed | ❌ Failed | ⏭ Skipped | Pass Rate |")
+    md.append("|:---|:---:|:---:|:---:|:---:|:---:|")
+    if web_total > 0:
+        md.append(f"| 🌐 **Selenium Web E2E** | {web_total} | {web_passed} | {web_failed} | {web_skipped} | **{web_pct:.1f}%** |")
     else:
-        markdown.append("### 🎉 All Tests Passed Successfully!\n")
+        md.append("| 🌐 **Selenium Web E2E** | — | — | — | — | *no data* |")
+    if mob_total > 0:
+        md.append(f"| 📱 **Appium Mobile E2E** | {mob_total} | {mob_passed} | {mob_failed} | {mob_skipped} | **{mob_pct:.1f}%** |")
+    else:
+        md.append("| 📱 **Appium Mobile E2E** | — | — | — | — | *no data* |")
+    md.append(f"| **TOTAL** | **{grand_total}** | **{grand_passed}** | **{grand_failed}** | — | **{(grand_passed/grand_total*100):.1f}%** |" if grand_total > 0 else "")
+    md.append("\n---\n")
 
-    # Breakdown by category
-    markdown.append("### 🗂 Breakdown by Category\n")
-    markdown.append("| Category | Suite | Total | Passed ✅ | Failed ❌ | Pass Rate % |")
-    markdown.append("| :--- | :--- | :---: | :---: | :---: | :---: |")
-    
-    # Group web
-    web_cats = {}
-    for r in web_data:
-        cat = r["category"]
-        if cat not in web_cats:
-            web_cats[cat] = {"total": 0, "passed": 0, "failed": 0}
-        web_cats[cat]["total"] += 1
-        if r["status"] == "PASS":
-            web_cats[cat]["passed"] += 1
-        elif r["status"] == "FAIL":
-            web_cats[cat]["failed"] += 1
-            
-    for cat, d in sorted(web_cats.items()):
-        pct = (d["passed"] / d["total"] * 100) if d["total"] > 0 else 0
-        status_emoji = "🔴" if d["failed"] > 0 else "🟢"
-        markdown.append(f"| {status_emoji} {cat} | Selenium Web | {d['total']} | {d['passed']} | {d['failed']} | {pct:.0f}% |")
+    # ── Helper: write all tests in a suite grouped by category ──
+    def write_suite_tests(title, icon, data, suite_label):
+        if not data:
+            md.append(f"## {icon} {title}\n")
+            md.append("*No test data recorded for this suite.*\n")
+            return
 
-    # Group mobile
-    mob_cats = {}
-    for r in mobile_data:
-        cat = r["category"]
-        if cat not in mob_cats:
-            mob_cats[cat] = {"total": 0, "passed": 0, "failed": 0}
-        mob_cats[cat]["total"] += 1
-        if r["status"] == "PASS":
-            mob_cats[cat]["passed"] += 1
-        elif r["status"] == "FAIL":
-            mob_cats[cat]["failed"] += 1
-            
-    for cat, d in sorted(mob_cats.items()):
-        pct = (d["passed"] / d["total"] * 100) if d["total"] > 0 else 0
-        status_emoji = "🔴" if d["failed"] > 0 else "🟢"
-        markdown.append(f"| {status_emoji} {cat} | Appium Mobile | {d['total']} | {d['passed']} | {d['failed']} | {pct:.0f}% |")
+        md.append(f"## {icon} {title}\n")
 
-    try:
-        with open(summary_env, "a", encoding="utf-8") as f:
-            f.write("\n".join(markdown))
-        print("Successfully generated GitHub Action Summary.")
-    except Exception as e:
-        print(f"Error writing to GITHUB_STEP_SUMMARY: {e}")
+        # Group by category
+        cats = {}
+        for t in data:
+            cat = t.get("category", "General")
+            cats.setdefault(cat, []).append(t)
+
+        for cat, tests in cats.items():
+            cat_pass = sum(1 for t in tests if t.get("status") == "PASS")
+            cat_fail = sum(1 for t in tests if t.get("status") == "FAIL")
+            cat_icon = "🟢" if cat_fail == 0 else "🔴"
+            cat_rate = (cat_pass / len(tests) * 100) if tests else 0
+
+            md.append(f"### {cat_icon} {cat} &nbsp; `{cat_pass}/{len(tests)} passed` ({cat_rate:.0f}%)\n")
+            md.append("| Status | Test ID | Test Name | Duration |")
+            md.append("|:---:|:---|:---|:---:|")
+
+            for t in tests:
+                status   = t.get("status", "FAIL")
+                s_icon   = "✅" if status == "PASS" else ("⏭" if status == "SKIP" else "❌")
+                tid      = t.get("id", "—")
+                name     = t.get("name", "Unknown test")
+                dur_ms   = t.get("duration", 0)
+                dur_str  = f"{dur_ms}ms" if dur_ms < 1000 else f"{dur_ms/1000:.1f}s"
+                err      = t.get("error", "")
+
+                if status == "FAIL" and err:
+                    # Show error inline in a details block
+                    md.append(f"| {s_icon} | `{tid}` | **{name}** ❗ `{err[:120]}` | {dur_str} |")
+                else:
+                    md.append(f"| {s_icon} | `{tid}` | {name} | {dur_str} |")
+
+            md.append("")  # blank line between categories
+
+        md.append("\n---\n")
+
+    # ── Selenium Web tests (all categories including Vulnerability) ─
+    write_suite_tests(
+        "Selenium Web E2E — All Test Cases",
+        "🌐", web_data, "Selenium Web"
+    )
+
+    # ── Appium Mobile tests ──────────────────────────────────────
+    write_suite_tests(
+        "Appium Mobile E2E — All Test Cases",
+        "📱", mobile_data, "Appium Mobile"
+    )
+
+    # ── Write to GITHUB_STEP_SUMMARY ────────────────────────────
+    if summary_env:
+        try:
+            with open(summary_env, "a", encoding="utf-8") as f:
+                f.write("\n".join(md) + "\n")
+            print("✅ GitHub Step Summary written successfully.")
+        except Exception as e:
+            print(f"❌ Error writing Step Summary: {e}")
+    else:
+        print("ℹ️  GITHUB_STEP_SUMMARY not set (not running in GitHub Actions)")
+
+    # ── GitHub Annotations (::notice:: / ::error::) ──────────────
+    # These appear in the "Annotations" panel of the Actions run
+    for t in web_data:
+        status = t.get("status", "FAIL")
+        name   = t.get("name", "Unknown")
+        tid    = t.get("id", "")
+        label  = f"{tid} — {name}" if tid else name
+        if status == "PASS":
+            print(f"::notice title=✅ {label}::PASS")
+        elif status == "SKIP":
+            print(f"::notice title=⏭ {label}::SKIPPED")
+        else:
+            err = t.get("error", "Test failed")
+            print(f"::error title=❌ {label}::{err[:200]}")
+
+    for t in mobile_data:
+        status = t.get("status", "FAIL")
+        name   = t.get("name", "Unknown")
+        tid    = t.get("id", "")
+        label  = f"{tid} — {name}" if tid else name
+        if status == "PASS":
+            print(f"::notice title=✅ {label}::PASS")
+        elif status == "SKIP":
+            print(f"::notice title=⏭ {label}::SKIPPED")
+        else:
+            err = t.get("error", "Test failed")
+            print(f"::error title=❌ {label}::{err[:200]}")
 
 
 def main():
