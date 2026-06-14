@@ -46,15 +46,25 @@ jobs:
       run: |
         echo "Starting backend..."
         cd backend
-        nohup python app.py > ../backend.log 2>&1 &
+        python app.py > ../backend.log 2>&1 &
         
         echo "Starting frontend..."
         cd ../frontend
-        nohup npm run dev > ../frontend.log 2>&1 &
+        npm run dev -- --host 127.0.0.1 > ../frontend.log 2>&1 &
         
         echo "Waiting for servers to be ready..."
         cd ..
-        npx wait-on http://localhost:5000 http://localhost:5173 -t 60000
+        WAIT_EXIT=0
+        npx wait-on http://127.0.0.1:5000 http://127.0.0.1:5173 -t 60000 || WAIT_EXIT=$?
+        
+        if [ "$WAIT_EXIT" -ne 0 ]; then
+          echo "=== Wait-on failed! Printing logs ==="
+          echo "=== Backend Log ==="
+          cat backend.log || true
+          echo "=== Frontend Log ==="
+          cat frontend.log || true
+          exit 1
+        fi
         
         echo "Running Selenium Web E2E Tests..."
         cd selenium-tests
@@ -72,7 +82,11 @@ jobs:
         
         # Exit with failure if either test suite failed
         if [ "$SELENIUM_EXIT" -ne 0 ] || [ "$APPIUM_EXIT" -ne 0 ]; then
-          echo "Test execution failed! Selenium exit code: $SELENIUM_EXIT, Appium exit code: $APPIUM_EXIT"
+          echo "Test execution failed! Selenium exit: $SELENIUM_EXIT, Appium exit: $APPIUM_EXIT"
+          echo "=== Backend Log ==="
+          cat backend.log || true
+          echo "=== Frontend Log ==="
+          cat frontend.log || true
           exit 1
         fi
 
