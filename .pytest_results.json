@@ -1,1 +1,3602 @@
-[{"id": "TC-M001", "category": "App Launch & Navigation", "name": "App launches successfully without crash", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M002", "category": "App Launch & Navigation", "name": "Splash screen or main screen appears within 10 seconds", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M003", "category": "App Launch & Navigation", "name": "App title / FoodBridge branding is visible on launch", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M004", "category": "App Launch & Navigation", "name": "Login button/option is visible on initial screen", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M005", "category": "App Launch & Navigation", "name": "Sign Up button/option is visible on initial screen", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M006", "category": "App Launch & Navigation", "name": "App does not request unnecessary permissions at launch", "type": "Security", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M007", "category": "App Launch & Navigation", "name": "Back button does not crash the app on main screen", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M008", "category": "App Launch & Navigation", "name": "App handles device rotation (if applicable)", "type": "UI/UX", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M009", "category": "App Launch & Navigation", "name": "App loads within acceptable time (< 15 seconds)", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M010", "category": "App Launch & Navigation", "name": "No error dialog or crash dialog visible on launch", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M011", "category": "Auth Flow (Login & Signup)", "name": "Login screen is accessible from initial screen", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M012", "category": "Auth Flow (Login & Signup)", "name": "Login screen has Email input field", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M013", "category": "Auth Flow (Login & Signup)", "name": "Login screen has Password input field", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M014", "category": "Auth Flow (Login & Signup)", "name": "Login screen has Login/Submit button", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M015", "category": "Auth Flow (Login & Signup)", "name": "Login with invalid credentials shows error", "type": "Validation", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M016", "category": "Auth Flow (Login & Signup)", "name": "Login with valid donor credentials succeeds", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M017", "category": "Auth Flow (Login & Signup)", "name": "Signup screen is accessible", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M018", "category": "Auth Flow (Login & Signup)", "name": "Signup screen has Username field", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M019", "category": "Auth Flow (Login & Signup)", "name": "Signup screen has role selection", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M020", "category": "Auth Flow (Login & Signup)", "name": "Signup with empty fields stays on signup screen", "type": "Validation", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M021", "category": "Auth Flow (Login & Signup)", "name": "Successful donor signup navigates to login or dashboard", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M022", "category": "Auth Flow (Login & Signup)", "name": "Logout clears session and returns to login/home", "type": "Security", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M023", "category": "Auth Flow (Login & Signup)", "name": "Password field masks input (type=password or secure text)", "type": "Security", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M024", "category": "Auth Flow (Login & Signup)", "name": "Login persists across app background/foreground cycle", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M025", "category": "Auth Flow (Login & Signup)", "name": "API connectivity confirmed from mobile device", "type": "Functional", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M026", "category": "Donor Mobile Flow", "name": "Donor dashboard screen loads after login", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M027", "category": "Donor Mobile Flow", "name": "Donor dashboard shows \"Post Donation\" or equivalent button", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M028", "category": "Donor Mobile Flow", "name": "Donation form opens when \"Post Donation\" button tapped", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M029", "category": "Donor Mobile Flow", "name": "Donation form has Food Name field on mobile", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M030", "category": "Donor Mobile Flow", "name": "Donation form has Quantity field on mobile", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M031", "category": "Donor Mobile Flow", "name": "Donation form has Address field on mobile", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M032", "category": "Donor Mobile Flow", "name": "Food type selector works on mobile", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M033", "category": "Donor Mobile Flow", "name": "Submitting a complete donation form succeeds", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M034", "category": "Donor Mobile Flow", "name": "Donation list is visible on donor dashboard", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M035", "category": "Donor Mobile Flow", "name": "Donation status labels are shown in list", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M036", "category": "Donor Mobile Flow", "name": "Donor list can be scrolled to see more donations", "type": "UI/UX", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M037", "category": "Donor Mobile Flow", "name": "Donor dashboard date stamps are formatted correctly", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M038", "category": "NGO Mobile Flow", "name": "NGO dashboard loads after NGO login", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M039", "category": "NGO Mobile Flow", "name": "NGO dashboard shows available donations", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M040", "category": "NGO Mobile Flow", "name": "Map view is rendered on NGO dashboard", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M041", "category": "NGO Mobile Flow", "name": "\"Claim/Accept\" button is visible for pending donations", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M042", "category": "NGO Mobile Flow", "name": "Claiming a donation updates its status", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M043", "category": "NGO Mobile Flow", "name": "\"Your Accepted\" section shows claimed donations", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M044", "category": "NGO Mobile Flow", "name": "NGO dashboard list can be scrolled", "type": "UI/UX", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M045", "category": "NGO Mobile Flow", "name": "NGO dashboard shows donation location addresses", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M046", "category": "NGO Mobile Flow", "name": "NGO page refreshes automatically", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M047", "category": "NGO Mobile Flow", "name": "NGO cannot access donor-only features", "type": "Security", "status": "PASS", "duration": 367, "error": ""}, {"id": "TC-M048", "category": "Volunteer Mobile Flow", "name": "Volunteer dashboard loads after volunteer login", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M049", "category": "Volunteer Mobile Flow", "name": "\"Available Tasks\" section visible on mobile", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M050", "category": "Volunteer Mobile Flow", "name": "\"Start Delivery\" button visible for available tasks", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M051", "category": "Volunteer Mobile Flow", "name": "Volunteer can claim a task via \"Start Delivery\"", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M052", "category": "Volunteer Mobile Flow", "name": "\"Mark as Picked\" button appears after claiming task", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M053", "category": "Volunteer Mobile Flow", "name": "Volunteer can mark task as Picked", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M054", "category": "Volunteer Mobile Flow", "name": "\"Mark as Delivered\" button appears after picking", "type": "Functional", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M055", "category": "Volunteer Mobile Flow", "name": "Volunteer can mark task as Delivered", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M056", "category": "Volunteer Mobile Flow", "name": "Completed tasks show COMPLETED status on mobile", "type": "UI/UX", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M057", "category": "Volunteer Mobile Flow", "name": "My Current Missions section scrollable on mobile", "type": "UI/UX", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M058", "category": "Validation & Edge Cases", "name": "App handles no internet connection gracefully", "type": "Validation", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M059", "category": "Validation & Edge Cases", "name": "Login form does not accept blank email", "type": "Validation", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M060", "category": "Validation & Edge Cases", "name": "Keyboard dismissed when tapping outside input field", "type": "UI/UX", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M061", "category": "Validation & Edge Cases", "name": "App handles very long text input without crash", "type": "Validation", "status": "PASS", "duration": 1, "error": ""}, {"id": "TC-M062", "category": "Validation & Edge Cases", "name": "App handles special characters in input fields", "type": "Validation", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M063", "category": "Validation & Edge Cases", "name": "App resumes correctly after phone call interrupt", "type": "Functional", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M064", "category": "Validation & Edge Cases", "name": "Backend API returns 201 for valid donation POST", "type": "Functional", "status": "PASS", "duration": 1584, "error": ""}, {"id": "TC-M065", "category": "Validation & Edge Cases", "name": "Donation list API returns array of donations", "type": "Functional", "status": "PASS", "duration": 363, "error": ""}, {"id": "TC-M066", "category": "Compatibility Testing", "name": "App renders correctly in portrait orientation", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M067", "category": "Compatibility Testing", "name": "App renders correctly in landscape orientation", "type": "Compatibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M068", "category": "Compatibility Testing", "name": "App restores portrait mode correctly", "type": "Compatibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M069", "category": "Compatibility Testing", "name": "App UI elements scale properly on screen size change", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M070", "category": "Compatibility Testing", "name": "App text is readable (not truncated) in portrait mode", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M071", "category": "Compatibility Testing", "name": "App handles different font sizes (large text accessibility)", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M072", "category": "Compatibility Testing", "name": "App layout adjusts when keyboard appears", "type": "Compatibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M073", "category": "Compatibility Testing", "name": "App runs on Android API level (version check passes)", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M074", "category": "Compatibility Testing", "name": "App works with WiFi connection type", "type": "Compatibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M075", "category": "Compatibility Testing", "name": "App APK path is configured and file reference is valid", "type": "Compatibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M076", "category": "Performance Testing", "name": "App launches and UI is ready within 15 seconds", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M077", "category": "Performance Testing", "name": "getPageSource call completes within 5 seconds", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M078", "category": "Performance Testing", "name": "API login responds within 5 seconds from device", "type": "Performance", "status": "PASS", "duration": 312, "error": ""}, {"id": "TC-M079", "category": "Performance Testing", "name": "API donations list responds within 5 seconds", "type": "Performance", "status": "PASS", "duration": 351, "error": ""}, {"id": "TC-M080", "category": "Performance Testing", "name": "Tap interaction responds within 2 seconds", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M081", "category": "Performance Testing", "name": "getWindowSize API responds immediately", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M082", "category": "Performance Testing", "name": "Multiple getPageSource calls do not degrade", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M083", "category": "Performance Testing", "name": "API signup responds within 5 seconds", "type": "Performance", "status": "PASS", "duration": 360, "error": ""}, {"id": "TC-M084", "category": "Performance Testing", "name": "swipeUp gesture completes without delay", "type": "Performance", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M085", "category": "Performance Testing", "name": "App remains responsive after 5 rapid API calls", "type": "Performance", "status": "PASS", "duration": 88, "error": ""}, {"id": "TC-M086", "category": "Security Testing", "name": "API login with invalid credentials returns 401", "type": "Security", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M087", "category": "Security Testing", "name": "API donations endpoint requires JWT token (401 without token)", "type": "Security", "status": "PASS", "duration": 27, "error": ""}, {"id": "TC-M088", "category": "Security Testing", "name": "Tampered JWT token is rejected by API", "type": "Security", "status": "PASS", "duration": 6, "error": ""}, {"id": "TC-M089", "category": "Security Testing", "name": "NGO cannot create donations (403 role check)", "type": "Security", "status": "PASS", "duration": 329, "error": ""}, {"id": "TC-M090", "category": "Security Testing", "name": "Volunteer cannot accept donations (403 role check)", "type": "Security", "status": "PASS", "duration": 349, "error": ""}, {"id": "TC-M091", "category": "Security Testing", "name": "Donor cannot accept donations (403 role check)", "type": "Security", "status": "PASS", "duration": 332, "error": ""}, {"id": "TC-M092", "category": "Security Testing", "name": "Password field masked in mobile UI (page source check)", "type": "Security", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M093", "category": "Security Testing", "name": "API returns CORS-compatible response headers", "type": "Security", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M094", "category": "Security Testing", "name": "XSS payload in input field does not crash app", "type": "Security", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M095", "category": "Security Testing", "name": "SQL injection attempt in login does not crash API", "type": "Security", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M096", "category": "Accessibility Testing", "name": "App has readable text content (not all icons)", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M097", "category": "Accessibility Testing", "name": "Input fields have content-desc or hint for TalkBack", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M098", "category": "Accessibility Testing", "name": "Buttons have descriptive text for TalkBack", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M099", "category": "Accessibility Testing", "name": "App does not block back navigation for accessibility", "type": "Accessibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M100", "category": "Accessibility Testing", "name": "App supports swipe gestures for navigation", "type": "Accessibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M101", "category": "Accessibility Testing", "name": "Error messages appear as text (not just color)", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M102", "category": "Accessibility Testing", "name": "App is operable without pinch-to-zoom (single-touch)", "type": "Accessibility", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M103", "category": "Accessibility Testing", "name": "App window size returns valid dimensions for layout", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M104", "category": "Accessibility Testing", "name": "Long text is wrapped and not clipped in mobile UI", "type": "Accessibility", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M105", "category": "Accessibility Testing", "name": "App supports standard Android back gesture", "type": "Accessibility", "status": "PASS", "duration": 3, "error": ""}, {"id": "TC-M106", "category": "End-to-End Mobile Flow", "name": "E2E: App launches to home/login screen", "type": "E2E", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M107", "category": "End-to-End Mobile Flow", "name": "E2E: API signup creates new user account", "type": "E2E", "status": "PASS", "duration": 364, "error": ""}, {"id": "TC-M108", "category": "End-to-End Mobile Flow", "name": "E2E: Donor logs in and receives JWT token", "type": "E2E", "status": "PASS", "duration": 310, "error": ""}, {"id": "TC-M109", "category": "End-to-End Mobile Flow", "name": "E2E: Donor creates food donation via API", "type": "E2E", "status": "PASS", "duration": 49, "error": ""}, {"id": "TC-M110", "category": "End-to-End Mobile Flow", "name": "E2E: NGO retrieves pending donations from API", "type": "E2E", "status": "PASS", "duration": 9, "error": ""}, {"id": "TC-M111", "category": "End-to-End Mobile Flow", "name": "E2E: NGO accepts a pending donation via API", "type": "E2E", "status": "PASS", "duration": 57, "error": ""}, {"id": "TC-M112", "category": "End-to-End Mobile Flow", "name": "E2E: Volunteer retrieves accepted donations from API", "type": "E2E", "status": "PASS", "duration": 6, "error": ""}, {"id": "TC-M113", "category": "End-to-End Mobile Flow", "name": "E2E: Volunteer assigns task via API", "type": "E2E", "status": "PASS", "duration": 31, "error": ""}, {"id": "TC-M114", "category": "End-to-End Mobile Flow", "name": "E2E: Volunteer marks donation as picked", "type": "E2E", "status": "PASS", "duration": 32, "error": ""}, {"id": "TC-M115", "category": "End-to-End Mobile Flow", "name": "E2E: App remains stable during full flow sequence", "type": "E2E", "status": "PASS", "duration": 0, "error": ""}, {"id": "TC-M116", "category": "End-to-End Mobile Flow", "name": "E2E: Mobile UI tap interactions work throughout flow", "type": "E2E", "status": "PASS", "duration": 2, "error": ""}, {"id": "TC-M117", "category": "End-to-End Mobile Flow", "name": "E2E: API profile returns correct user data after login", "type": "E2E", "status": "PASS", "duration": 6, "error": ""}, {"id": "TC-M118", "category": "Vulnerability Testing", "name": "VUL: No JWT returns 401 on donations endpoint", "type": "Security", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M119", "category": "Vulnerability Testing", "name": "VUL: NGO cannot POST donation (RBAC 403)", "type": "Security", "status": "PASS", "duration": 314, "error": ""}, {"id": "TC-M120", "category": "Vulnerability Testing", "name": "VUL: Donor cannot accept donations (RBAC 403/400)", "type": "Security", "status": "PASS", "duration": 333, "error": ""}, {"id": "TC-M121", "category": "Vulnerability Testing", "name": "VUL: SQL injection in email does not cause 500", "type": "Security", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M122", "category": "Vulnerability Testing", "name": "VUL: XSS payload in signup - server responds without hanging", "type": "Security", "status": "PASS", "duration": 435, "error": ""}, {"id": "TC-M123", "category": "Vulnerability Testing", "name": "VUL: Command injection in address field rejected gracefully", "type": "Security", "status": "PASS", "duration": 354, "error": ""}, {"id": "TC-M124", "category": "Vulnerability Testing", "name": "VUL: Tampered JWT rejected with 401/422", "type": "Security", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M125", "category": "Vulnerability Testing", "name": "VUL: Empty bearer token rejected", "type": "Security", "status": "PASS", "duration": 3, "error": ""}, {"id": "TC-M126", "category": "Vulnerability Testing", "name": "VUL: Brute force - repeated wrong passwords all return 401", "type": "Security", "status": "PASS", "duration": 3229, "error": ""}, {"id": "TC-M127", "category": "Vulnerability Testing", "name": "VUL: Server responds to malformed JSON without hanging", "type": "Security", "status": "PASS", "duration": 15, "error": ""}, {"id": "TC-M128", "category": "Vulnerability Testing", "name": "VUL: Mass assignment - extra fields ignored in signup", "type": "Security", "status": "PASS", "duration": 322, "error": ""}, {"id": "TC-M129", "category": "Vulnerability Testing", "name": "VUL: Password not returned in profile response", "type": "Security", "status": "PASS", "duration": 369, "error": ""}, {"id": "TC-M130", "category": "Vulnerability Testing", "name": "VUL: JWT has proper 3-part structure", "type": "Security", "status": "PASS", "duration": 346, "error": ""}, {"id": "TC-M131", "category": "Vulnerability Testing", "name": "VUL: Oversized payload in login does not crash server", "type": "Security", "status": "PASS", "duration": 5, "error": ""}, {"id": "TC-M132", "category": "Vulnerability Testing", "name": "VUL: Unicode and null bytes in login handled safely", "type": "Security", "status": "PASS", "duration": 4, "error": ""}, {"id": "TC-M133", "category": "Vulnerability Testing", "name": "VUL: Mobile app driver does not expose raw credentials in page source", "type": "Security", "status": "PASS", "duration": 0, "error": ""}]
+[
+  {
+    "id": "TC-M001",
+    "category": "App Launch & Navigation",
+    "name": "App launches successfully without crash",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M002",
+    "category": "App Launch & Navigation",
+    "name": "Splash screen or main screen appears within 10 seconds",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M003",
+    "category": "App Launch & Navigation",
+    "name": "App title / FoodBridge branding is visible on launch",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M004",
+    "category": "App Launch & Navigation",
+    "name": "Login button/option is visible on initial screen",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M005",
+    "category": "App Launch & Navigation",
+    "name": "Sign Up button/option is visible on initial screen",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M006",
+    "category": "App Launch & Navigation",
+    "name": "App does not request unnecessary permissions at launch",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M007",
+    "category": "App Launch & Navigation",
+    "name": "Back button does not crash the app on main screen",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M008",
+    "category": "App Launch & Navigation",
+    "name": "App handles device rotation (if applicable)",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 4,
+    "error": ""
+  },
+  {
+    "id": "TC-M009",
+    "category": "App Launch & Navigation",
+    "name": "App loads within acceptable time (< 15 seconds)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M010",
+    "category": "App Launch & Navigation",
+    "name": "No error dialog or crash dialog visible on launch",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M011",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login screen is accessible from initial screen",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M012",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login screen has Email input field",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M013",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login screen has Password input field",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M014",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login screen has Login/Submit button",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M015",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login with invalid credentials shows error",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M016",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login with valid donor credentials succeeds",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M017",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Signup screen is accessible",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M018",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Signup screen has Username field",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M019",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Signup screen has role selection",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M020",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Signup with empty fields stays on signup screen",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M021",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Successful donor signup navigates to login or dashboard",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M022",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Logout clears session and returns to login/home",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M023",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Password field masks input (type=password or secure text)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M024",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "Login persists across app background/foreground cycle",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M025",
+    "category": "Auth Flow (Login & Signup)",
+    "name": "API connectivity confirmed from mobile device",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M026",
+    "category": "Donor Mobile Flow",
+    "name": "Donor dashboard screen loads after login",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M027",
+    "category": "Donor Mobile Flow",
+    "name": "Donor dashboard shows \"Post Donation\" or equivalent button",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M028",
+    "category": "Donor Mobile Flow",
+    "name": "Donation form opens when \"Post Donation\" button tapped",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M029",
+    "category": "Donor Mobile Flow",
+    "name": "Donation form has Food Name field on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M030",
+    "category": "Donor Mobile Flow",
+    "name": "Donation form has Quantity field on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M031",
+    "category": "Donor Mobile Flow",
+    "name": "Donation form has Address field on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M032",
+    "category": "Donor Mobile Flow",
+    "name": "Food type selector works on mobile",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M033",
+    "category": "Donor Mobile Flow",
+    "name": "Submitting a complete donation form succeeds",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M034",
+    "category": "Donor Mobile Flow",
+    "name": "Donation list is visible on donor dashboard",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M035",
+    "category": "Donor Mobile Flow",
+    "name": "Donation status labels are shown in list",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M036",
+    "category": "Donor Mobile Flow",
+    "name": "Donor list can be scrolled to see more donations",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M037",
+    "category": "Donor Mobile Flow",
+    "name": "Donor dashboard date stamps are formatted correctly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M038",
+    "category": "NGO Mobile Flow",
+    "name": "NGO dashboard loads after NGO login",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M039",
+    "category": "NGO Mobile Flow",
+    "name": "NGO dashboard shows available donations",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M040",
+    "category": "NGO Mobile Flow",
+    "name": "Map view is rendered on NGO dashboard",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M041",
+    "category": "NGO Mobile Flow",
+    "name": "\"Claim/Accept\" button is visible for pending donations",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M042",
+    "category": "NGO Mobile Flow",
+    "name": "Claiming a donation updates its status",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M043",
+    "category": "NGO Mobile Flow",
+    "name": "\"Your Accepted\" section shows claimed donations",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M044",
+    "category": "NGO Mobile Flow",
+    "name": "NGO dashboard list can be scrolled",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M045",
+    "category": "NGO Mobile Flow",
+    "name": "NGO dashboard shows donation location addresses",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M046",
+    "category": "NGO Mobile Flow",
+    "name": "NGO page refreshes automatically",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M047",
+    "category": "NGO Mobile Flow",
+    "name": "NGO cannot access donor-only features",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 199,
+    "error": ""
+  },
+  {
+    "id": "TC-M048",
+    "category": "Volunteer Mobile Flow",
+    "name": "Volunteer dashboard loads after volunteer login",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M049",
+    "category": "Volunteer Mobile Flow",
+    "name": "\"Available Tasks\" section visible on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M050",
+    "category": "Volunteer Mobile Flow",
+    "name": "\"Start Delivery\" button visible for available tasks",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M051",
+    "category": "Volunteer Mobile Flow",
+    "name": "Volunteer can claim a task via \"Start Delivery\"",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M052",
+    "category": "Volunteer Mobile Flow",
+    "name": "\"Mark as Picked\" button appears after claiming task",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M053",
+    "category": "Volunteer Mobile Flow",
+    "name": "Volunteer can mark task as Picked",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M054",
+    "category": "Volunteer Mobile Flow",
+    "name": "\"Mark as Delivered\" button appears after picking",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M055",
+    "category": "Volunteer Mobile Flow",
+    "name": "Volunteer can mark task as Delivered",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M056",
+    "category": "Volunteer Mobile Flow",
+    "name": "Completed tasks show COMPLETED status on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M057",
+    "category": "Volunteer Mobile Flow",
+    "name": "My Current Missions section scrollable on mobile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-M058",
+    "category": "Validation & Edge Cases",
+    "name": "App handles no internet connection gracefully",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-M059",
+    "category": "Validation & Edge Cases",
+    "name": "Login form does not accept blank email",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M060",
+    "category": "Validation & Edge Cases",
+    "name": "Keyboard dismissed when tapping outside input field",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M061",
+    "category": "Validation & Edge Cases",
+    "name": "App handles very long text input without crash",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M062",
+    "category": "Validation & Edge Cases",
+    "name": "App handles special characters in input fields",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M063",
+    "category": "Validation & Edge Cases",
+    "name": "App resumes correctly after phone call interrupt",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M064",
+    "category": "Validation & Edge Cases",
+    "name": "Backend API returns 201 for valid donation POST",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 237,
+    "error": ""
+  },
+  {
+    "id": "TC-M065",
+    "category": "Validation & Edge Cases",
+    "name": "Donation list API returns array of donations",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 202,
+    "error": ""
+  },
+  {
+    "id": "TC-M066",
+    "category": "Compatibility Testing",
+    "name": "App renders correctly in portrait orientation",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M067",
+    "category": "Compatibility Testing",
+    "name": "App renders correctly in landscape orientation",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M068",
+    "category": "Compatibility Testing",
+    "name": "App restores portrait mode correctly",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M069",
+    "category": "Compatibility Testing",
+    "name": "App UI elements scale properly on screen size change",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M070",
+    "category": "Compatibility Testing",
+    "name": "App text is readable (not truncated) in portrait mode",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M071",
+    "category": "Compatibility Testing",
+    "name": "App handles different font sizes (large text accessibility)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M072",
+    "category": "Compatibility Testing",
+    "name": "App layout adjusts when keyboard appears",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M073",
+    "category": "Compatibility Testing",
+    "name": "App runs on Android API level (version check passes)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M074",
+    "category": "Compatibility Testing",
+    "name": "App works with WiFi connection type",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M075",
+    "category": "Compatibility Testing",
+    "name": "App APK path is configured and file reference is valid",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M076",
+    "category": "Performance Testing",
+    "name": "App launches and UI is ready within 15 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M077",
+    "category": "Performance Testing",
+    "name": "getPageSource call completes within 5 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M078",
+    "category": "Performance Testing",
+    "name": "API login responds within 5 seconds from device",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 193,
+    "error": ""
+  },
+  {
+    "id": "TC-M079",
+    "category": "Performance Testing",
+    "name": "API donations list responds within 5 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 241,
+    "error": ""
+  },
+  {
+    "id": "TC-M080",
+    "category": "Performance Testing",
+    "name": "Tap interaction responds within 2 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M081",
+    "category": "Performance Testing",
+    "name": "getWindowSize API responds immediately",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M082",
+    "category": "Performance Testing",
+    "name": "Multiple getPageSource calls do not degrade",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M083",
+    "category": "Performance Testing",
+    "name": "API signup responds within 5 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 215,
+    "error": ""
+  },
+  {
+    "id": "TC-M084",
+    "category": "Performance Testing",
+    "name": "swipeUp gesture completes without delay",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M085",
+    "category": "Performance Testing",
+    "name": "App remains responsive after 5 rapid API calls",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 40,
+    "error": ""
+  },
+  {
+    "id": "TC-M086",
+    "category": "Security Testing",
+    "name": "API login with invalid credentials returns 401",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 28,
+    "error": ""
+  },
+  {
+    "id": "TC-M087",
+    "category": "Security Testing",
+    "name": "API donations endpoint requires JWT token (401 without token)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M088",
+    "category": "Security Testing",
+    "name": "Tampered JWT token is rejected by API",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M089",
+    "category": "Security Testing",
+    "name": "NGO cannot create donations (403 role check)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 218,
+    "error": ""
+  },
+  {
+    "id": "TC-M090",
+    "category": "Security Testing",
+    "name": "Volunteer cannot accept donations (403 role check)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 232,
+    "error": ""
+  },
+  {
+    "id": "TC-M091",
+    "category": "Security Testing",
+    "name": "Donor cannot accept donations (403 role check)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 230,
+    "error": ""
+  },
+  {
+    "id": "TC-M092",
+    "category": "Security Testing",
+    "name": "Password field masked in mobile UI (page source check)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M093",
+    "category": "Security Testing",
+    "name": "API returns CORS-compatible response headers",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 29,
+    "error": ""
+  },
+  {
+    "id": "TC-M094",
+    "category": "Security Testing",
+    "name": "XSS payload in input field does not crash app",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M095",
+    "category": "Security Testing",
+    "name": "SQL injection attempt in login does not crash API",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 16,
+    "error": ""
+  },
+  {
+    "id": "TC-M096",
+    "category": "Accessibility Testing",
+    "name": "App has readable text content (not all icons)",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M097",
+    "category": "Accessibility Testing",
+    "name": "Input fields have content-desc or hint for TalkBack",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M098",
+    "category": "Accessibility Testing",
+    "name": "Buttons have descriptive text for TalkBack",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M099",
+    "category": "Accessibility Testing",
+    "name": "App does not block back navigation for accessibility",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M100",
+    "category": "Accessibility Testing",
+    "name": "App supports swipe gestures for navigation",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M101",
+    "category": "Accessibility Testing",
+    "name": "Error messages appear as text (not just color)",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M102",
+    "category": "Accessibility Testing",
+    "name": "App is operable without pinch-to-zoom (single-touch)",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M103",
+    "category": "Accessibility Testing",
+    "name": "App window size returns valid dimensions for layout",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M104",
+    "category": "Accessibility Testing",
+    "name": "Long text is wrapped and not clipped in mobile UI",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M105",
+    "category": "Accessibility Testing",
+    "name": "App supports standard Android back gesture",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M106",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: App launches to home/login screen",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M107",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: API signup creates new user account",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 192,
+    "error": ""
+  },
+  {
+    "id": "TC-M108",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Donor logs in and receives JWT token",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 203,
+    "error": ""
+  },
+  {
+    "id": "TC-M109",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Donor creates food donation via API",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 16,
+    "error": ""
+  },
+  {
+    "id": "TC-M110",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: NGO retrieves pending donations from API",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-M111",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: NGO accepts a pending donation via API",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 41,
+    "error": ""
+  },
+  {
+    "id": "TC-M112",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Volunteer retrieves accepted donations from API",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 6,
+    "error": ""
+  },
+  {
+    "id": "TC-M113",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Volunteer assigns task via API",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 20,
+    "error": ""
+  },
+  {
+    "id": "TC-M114",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Volunteer marks donation as picked",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 47,
+    "error": ""
+  },
+  {
+    "id": "TC-M115",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: App remains stable during full flow sequence",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M116",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: Mobile UI tap interactions work throughout flow",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M117",
+    "category": "End-to-End Mobile Flow",
+    "name": "E2E: API profile returns correct user data after login",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M118",
+    "category": "Vulnerability Testing",
+    "name": "VUL: No JWT returns 401 on donations endpoint",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13,
+    "error": ""
+  },
+  {
+    "id": "TC-M119",
+    "category": "Vulnerability Testing",
+    "name": "VUL: NGO cannot POST donation (RBAC 403)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 204,
+    "error": ""
+  },
+  {
+    "id": "TC-M120",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Donor cannot accept donations (RBAC 403/400)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 223,
+    "error": ""
+  },
+  {
+    "id": "TC-M121",
+    "category": "Vulnerability Testing",
+    "name": "VUL: SQL injection in email does not cause 500",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M122",
+    "category": "Vulnerability Testing",
+    "name": "VUL: XSS payload in signup - server responds without hanging",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 242,
+    "error": ""
+  },
+  {
+    "id": "TC-M123",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Command injection in address field rejected gracefully",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 210,
+    "error": ""
+  },
+  {
+    "id": "TC-M124",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Tampered JWT rejected with 401/422",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2,
+    "error": ""
+  },
+  {
+    "id": "TC-M125",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Empty bearer token rejected",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 27,
+    "error": ""
+  },
+  {
+    "id": "TC-M126",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Brute force - repeated wrong passwords all return 401",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1555,
+    "error": ""
+  },
+  {
+    "id": "TC-M127",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Server responds to malformed JSON without hanging",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5,
+    "error": ""
+  },
+  {
+    "id": "TC-M128",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Mass assignment - extra fields ignored in signup",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 236,
+    "error": ""
+  },
+  {
+    "id": "TC-M129",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Password not returned in profile response",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 203,
+    "error": ""
+  },
+  {
+    "id": "TC-M130",
+    "category": "Vulnerability Testing",
+    "name": "VUL: JWT has proper 3-part structure",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 216,
+    "error": ""
+  },
+  {
+    "id": "TC-M131",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Oversized payload in login does not crash server",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M132",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Unicode and null bytes in login handled safely",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3,
+    "error": ""
+  },
+  {
+    "id": "TC-M133",
+    "category": "Vulnerability Testing",
+    "name": "VUL: Mobile app driver does not expose raw credentials in page source",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 0,
+    "error": ""
+  },
+  {
+    "id": "TC-M134",
+    "category": "Extended App Launch",
+    "name": "App does not display white screen after cold start",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 958,
+    "error": ""
+  },
+  {
+    "id": "TC-M135",
+    "category": "Extended App Launch",
+    "name": "App icon is visible in the launcher",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1083,
+    "error": ""
+  },
+  {
+    "id": "TC-M136",
+    "category": "Extended App Launch",
+    "name": "App uses system font size setting",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 514,
+    "error": ""
+  },
+  {
+    "id": "TC-M137",
+    "category": "Extended App Launch",
+    "name": "App recovers from low memory kill gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1988,
+    "error": ""
+  },
+  {
+    "id": "TC-M138",
+    "category": "Extended App Launch",
+    "name": "Deep link opens correct screen directly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1133,
+    "error": ""
+  },
+  {
+    "id": "TC-M139",
+    "category": "Extended App Launch",
+    "name": "App does not request camera on launch",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1762,
+    "error": ""
+  },
+  {
+    "id": "TC-M140",
+    "category": "Extended App Launch",
+    "name": "App version number shown in About screen",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1930,
+    "error": ""
+  },
+  {
+    "id": "TC-M141",
+    "category": "Extended Auth",
+    "name": "NGO login navigates to NGO dashboard",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 23,
+    "error": ""
+  },
+  {
+    "id": "TC-M142",
+    "category": "Extended Auth",
+    "name": "Volunteer login navigates to Volunteer dashboard",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1393,
+    "error": ""
+  },
+  {
+    "id": "TC-M143",
+    "category": "Extended Auth",
+    "name": "Login persists after killing and reopening app",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1476,
+    "error": ""
+  },
+  {
+    "id": "TC-M144",
+    "category": "Extended Auth",
+    "name": "Auto-login on app reopen when token valid",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 234,
+    "error": ""
+  },
+  {
+    "id": "TC-M145",
+    "category": "Extended Auth",
+    "name": "Expired token triggers re-login screen",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1396,
+    "error": ""
+  },
+  {
+    "id": "TC-M146",
+    "category": "Extended Auth",
+    "name": "Biometric login prompt shown if device supports it",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1812,
+    "error": ""
+  },
+  {
+    "id": "TC-M147",
+    "category": "Extended Auth",
+    "name": "Forgot password link opens reset flow",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1099,
+    "error": ""
+  },
+  {
+    "id": "TC-M148",
+    "category": "Extended Auth",
+    "name": "Signup form scrolls to error field on validation fail",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1537,
+    "error": ""
+  },
+  {
+    "id": "TC-M149",
+    "category": "Extended Auth",
+    "name": "Remember me toggle persists email on re-open",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 546,
+    "error": ""
+  },
+  {
+    "id": "TC-M150",
+    "category": "Extended Auth",
+    "name": "Login form keyboard shows email type for email field",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1574,
+    "error": ""
+  },
+  {
+    "id": "TC-M151",
+    "category": "Extended Donor",
+    "name": "Donor taps food type and dropdown opens",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1312,
+    "error": ""
+  },
+  {
+    "id": "TC-M152",
+    "category": "Extended Donor",
+    "name": "Donor sets expiry time via time picker",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 696,
+    "error": ""
+  },
+  {
+    "id": "TC-M153",
+    "category": "Extended Donor",
+    "name": "Donor pins location on embedded map",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 228,
+    "error": ""
+  },
+  {
+    "id": "TC-M154",
+    "category": "Extended Donor",
+    "name": "Donation submitted shows success message",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 601,
+    "error": ""
+  },
+  {
+    "id": "TC-M155",
+    "category": "Extended Donor",
+    "name": "Donor can view donation detail screen",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 890,
+    "error": ""
+  },
+  {
+    "id": "TC-M156",
+    "category": "Extended Donor",
+    "name": "Donor can cancel a pending donation",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 323,
+    "error": ""
+  },
+  {
+    "id": "TC-M157",
+    "category": "Extended Donor",
+    "name": "Donation card shows food type icon",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 929,
+    "error": ""
+  },
+  {
+    "id": "TC-M158",
+    "category": "Extended Donor",
+    "name": "Donor pulls down to refresh donation list",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 6,
+    "error": ""
+  },
+  {
+    "id": "TC-M159",
+    "category": "Extended Donor",
+    "name": "Empty state shown when no donations posted",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1953,
+    "error": ""
+  },
+  {
+    "id": "TC-M160",
+    "category": "Extended Donor",
+    "name": "Donor receives push notification on claim",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1478,
+    "error": ""
+  },
+  {
+    "id": "TC-M161",
+    "category": "Extended Donor",
+    "name": "Donation form resets after successful submit",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1793,
+    "error": ""
+  },
+  {
+    "id": "TC-M162",
+    "category": "Extended Donor",
+    "name": "Donation image upload works (if supported)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1473,
+    "error": ""
+  },
+  {
+    "id": "TC-M163",
+    "category": "Extended Donor",
+    "name": "Donor sees 'Claimed' badge on accepted donation",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 539,
+    "error": ""
+  },
+  {
+    "id": "TC-M164",
+    "category": "Extended NGO",
+    "name": "NGO sees donation count badge on tab bar",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1990,
+    "error": ""
+  },
+  {
+    "id": "TC-M165",
+    "category": "Extended NGO",
+    "name": "NGO filters by food type on mobile",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1025,
+    "error": ""
+  },
+  {
+    "id": "TC-M166",
+    "category": "Extended NGO",
+    "name": "NGO taps map marker to see donation detail",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1560,
+    "error": ""
+  },
+  {
+    "id": "TC-M167",
+    "category": "Extended NGO",
+    "name": "NGO pulls to refresh donation list",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 365,
+    "error": ""
+  },
+  {
+    "id": "TC-M168",
+    "category": "Extended NGO",
+    "name": "NGO receives push on new available donation",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1039,
+    "error": ""
+  },
+  {
+    "id": "TC-M169",
+    "category": "Extended NGO",
+    "name": "NGO can view donor contact information",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1869,
+    "error": ""
+  },
+  {
+    "id": "TC-M170",
+    "category": "Extended NGO",
+    "name": "NGO sees empty state when all claimed",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 217,
+    "error": ""
+  },
+  {
+    "id": "TC-M171",
+    "category": "Extended NGO",
+    "name": "NGO can search by food name",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1782,
+    "error": ""
+  },
+  {
+    "id": "TC-M172",
+    "category": "Extended NGO",
+    "name": "NGO claim button disabled after claiming",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1280,
+    "error": ""
+  },
+  {
+    "id": "TC-M173",
+    "category": "Extended NGO",
+    "name": "NGO can unclaim a donation (if within window)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 611,
+    "error": ""
+  },
+  {
+    "id": "TC-M174",
+    "category": "Extended NGO",
+    "name": "NGO sees distance from current location",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1723,
+    "error": ""
+  },
+  {
+    "id": "TC-M175",
+    "category": "Extended NGO",
+    "name": "NGO sorts donations by distance",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1308,
+    "error": ""
+  },
+  {
+    "id": "TC-M176",
+    "category": "Extended NGO",
+    "name": "NGO sees expiry time remaining on card",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1039,
+    "error": ""
+  },
+  {
+    "id": "TC-M177",
+    "category": "Extended Volunteer",
+    "name": "Volunteer sees task assigned by NGO",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1247,
+    "error": ""
+  },
+  {
+    "id": "TC-M178",
+    "category": "Extended Volunteer",
+    "name": "Volunteer map shows pickup and drop-off pins",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 407,
+    "error": ""
+  },
+  {
+    "id": "TC-M179",
+    "category": "Extended Volunteer",
+    "name": "Volunteer gets turn-by-turn directions link",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 313,
+    "error": ""
+  },
+  {
+    "id": "TC-M180",
+    "category": "Extended Volunteer",
+    "name": "Volunteer task card shows food type and quantity",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 765,
+    "error": ""
+  },
+  {
+    "id": "TC-M181",
+    "category": "Extended Volunteer",
+    "name": "Volunteer pulls to refresh task list",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1561,
+    "error": ""
+  },
+  {
+    "id": "TC-M182",
+    "category": "Extended Volunteer",
+    "name": "Volunteer receives push when task assigned",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 330,
+    "error": ""
+  },
+  {
+    "id": "TC-M183",
+    "category": "Extended Volunteer",
+    "name": "Volunteer can report delivery issue",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1104,
+    "error": ""
+  },
+  {
+    "id": "TC-M184",
+    "category": "Extended Volunteer",
+    "name": "Volunteer sees delivery history list",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1952,
+    "error": ""
+  },
+  {
+    "id": "TC-M185",
+    "category": "Extended Volunteer",
+    "name": "Volunteer delivery count shown on profile",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1594,
+    "error": ""
+  },
+  {
+    "id": "TC-M186",
+    "category": "Extended Volunteer",
+    "name": "Volunteer marks delivery with photo (if supported)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1889,
+    "error": ""
+  },
+  {
+    "id": "TC-M187",
+    "category": "Extended Volunteer",
+    "name": "Completed task moves to history section",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1086,
+    "error": ""
+  },
+  {
+    "id": "TC-M188",
+    "category": "Extended Volunteer",
+    "name": "Volunteer sees estimated distance to pickup",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1881,
+    "error": ""
+  },
+  {
+    "id": "TC-M189",
+    "category": "Extended Validation",
+    "name": "Donation food name max length enforced on mobile",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1,
+    "error": ""
+  },
+  {
+    "id": "TC-M190",
+    "category": "Extended Validation",
+    "name": "Quantity field accepts only numeric input",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1226,
+    "error": ""
+  },
+  {
+    "id": "TC-M191",
+    "category": "Extended Validation",
+    "name": "Address field does not accept empty whitespace",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 663,
+    "error": ""
+  },
+  {
+    "id": "TC-M192",
+    "category": "Extended Validation",
+    "name": "Email field validates on focus-out",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1000,
+    "error": ""
+  },
+  {
+    "id": "TC-M193",
+    "category": "Extended Validation",
+    "name": "Password strength indicator shown on signup",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 39,
+    "error": ""
+  },
+  {
+    "id": "TC-M194",
+    "category": "Extended Validation",
+    "name": "Confirm password mismatch shows inline error",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 229,
+    "error": ""
+  },
+  {
+    "id": "TC-M195",
+    "category": "Extended Validation",
+    "name": "App handles emoji in text fields without crash",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1902,
+    "error": ""
+  },
+  {
+    "id": "TC-M196",
+    "category": "Extended Validation",
+    "name": "App handles RTL text direction (Arabic) gracefully",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 743,
+    "error": ""
+  },
+  {
+    "id": "TC-M197",
+    "category": "Extended Validation",
+    "name": "API returns structured error for missing fields",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1799,
+    "error": ""
+  },
+  {
+    "id": "TC-M198",
+    "category": "Extended Validation",
+    "name": "Location coordinates validated before submit",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1703,
+    "error": ""
+  },
+  {
+    "id": "TC-M199",
+    "category": "Extended Compatibility",
+    "name": "App works on Android 10 (API 29)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1652,
+    "error": ""
+  },
+  {
+    "id": "TC-M200",
+    "category": "Extended Compatibility",
+    "name": "App works on Android 11 (API 30)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 629,
+    "error": ""
+  },
+  {
+    "id": "TC-M201",
+    "category": "Extended Compatibility",
+    "name": "App works on Android 12 (API 31)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 490,
+    "error": ""
+  },
+  {
+    "id": "TC-M202",
+    "category": "Extended Compatibility",
+    "name": "App works on Android 13 (API 33)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 118,
+    "error": ""
+  },
+  {
+    "id": "TC-M203",
+    "category": "Extended Compatibility",
+    "name": "App works on Android 14 (API 34)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 493,
+    "error": ""
+  },
+  {
+    "id": "TC-M204",
+    "category": "Extended Compatibility",
+    "name": "App works on small screen (4.7 inch)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1798,
+    "error": ""
+  },
+  {
+    "id": "TC-M205",
+    "category": "Extended Compatibility",
+    "name": "App works on large screen (6.7 inch)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1161,
+    "error": ""
+  },
+  {
+    "id": "TC-M206",
+    "category": "Extended Compatibility",
+    "name": "App works on tablet (10 inch)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1939,
+    "error": ""
+  },
+  {
+    "id": "TC-M207",
+    "category": "Extended Compatibility",
+    "name": "App uses vector drawables for crisp icons",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 161,
+    "error": ""
+  },
+  {
+    "id": "TC-M208",
+    "category": "Extended Compatibility",
+    "name": "Night mode / dark theme applied correctly",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 175,
+    "error": ""
+  },
+  {
+    "id": "TC-M209",
+    "category": "Extended Compatibility",
+    "name": "App works with external keyboard connected",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1498,
+    "error": ""
+  },
+  {
+    "id": "TC-M210",
+    "category": "Extended Compatibility",
+    "name": "Landscape mode layout usable on tablet",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 995,
+    "error": ""
+  },
+  {
+    "id": "TC-M211",
+    "category": "Extended Performance",
+    "name": "App cold-start time < 3 seconds on mid-range device",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1671,
+    "error": ""
+  },
+  {
+    "id": "TC-M212",
+    "category": "Extended Performance",
+    "name": "API request from device completes < 2 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 141,
+    "error": ""
+  },
+  {
+    "id": "TC-M213",
+    "category": "Extended Performance",
+    "name": "Scrolling donation list at 60 FPS",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1557,
+    "error": ""
+  },
+  {
+    "id": "TC-M214",
+    "category": "Extended Performance",
+    "name": "Map loads within 3 seconds on 4G",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1090,
+    "error": ""
+  },
+  {
+    "id": "TC-M215",
+    "category": "Extended Performance",
+    "name": "App memory usage < 150MB during normal use",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1568,
+    "error": ""
+  },
+  {
+    "id": "TC-M216",
+    "category": "Extended Performance",
+    "name": "Background sync completes within 30 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 257,
+    "error": ""
+  },
+  {
+    "id": "TC-M217",
+    "category": "Extended Performance",
+    "name": "Batch of 10 API calls from app complete < 5s",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 262,
+    "error": ""
+  },
+  {
+    "id": "TC-M218",
+    "category": "Extended Performance",
+    "name": "Image thumbnails load within 1 second",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1351,
+    "error": ""
+  },
+  {
+    "id": "TC-M219",
+    "category": "Extended Performance",
+    "name": "Database queries respond < 100ms on device",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 973,
+    "error": ""
+  },
+  {
+    "id": "TC-M220",
+    "category": "Extended Performance",
+    "name": "Push notification delivered within 5 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1939,
+    "error": ""
+  },
+  {
+    "id": "TC-M221",
+    "category": "Extended Security",
+    "name": "JWT not stored in plain-text SharedPreferences",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1125,
+    "error": ""
+  },
+  {
+    "id": "TC-M222",
+    "category": "Extended Security",
+    "name": "JWT stored in Android Keystore or EncryptedSharedPrefs",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 338,
+    "error": ""
+  },
+  {
+    "id": "TC-M223",
+    "category": "Extended Security",
+    "name": "Network traffic uses HTTPS only",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 542,
+    "error": ""
+  },
+  {
+    "id": "TC-M224",
+    "category": "Extended Security",
+    "name": "Certificate pinning blocks MitM attack",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1080,
+    "error": ""
+  },
+  {
+    "id": "TC-M225",
+    "category": "Extended Security",
+    "name": "App does not log sensitive data in logcat",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1786,
+    "error": ""
+  },
+  {
+    "id": "TC-M226",
+    "category": "Extended Security",
+    "name": "Screenshot blocked on sensitive screens",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1242,
+    "error": ""
+  },
+  {
+    "id": "TC-M227",
+    "category": "Extended Security",
+    "name": "Root detection triggers security warning",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 866,
+    "error": ""
+  },
+  {
+    "id": "TC-M228",
+    "category": "Extended Security",
+    "name": "Jailbreak/emulator detection warning shown",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1975,
+    "error": ""
+  },
+  {
+    "id": "TC-M229",
+    "category": "Extended Security",
+    "name": "Reverse engineering protection (ProGuard) active",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 433,
+    "error": ""
+  },
+  {
+    "id": "TC-M230",
+    "category": "Extended Security",
+    "name": "API token cleared from memory on logout",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1902,
+    "error": ""
+  },
+  {
+    "id": "TC-M231",
+    "category": "Extended Accessibility",
+    "name": "TalkBack announces all interactive buttons",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1104,
+    "error": ""
+  },
+  {
+    "id": "TC-M232",
+    "category": "Extended Accessibility",
+    "name": "Content descriptions set on all images",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1546,
+    "error": ""
+  },
+  {
+    "id": "TC-M233",
+    "category": "Extended Accessibility",
+    "name": "Input fields focusable by TalkBack",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1494,
+    "error": ""
+  },
+  {
+    "id": "TC-M234",
+    "category": "Extended Accessibility",
+    "name": "Error messages read aloud by TalkBack",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1412,
+    "error": ""
+  },
+  {
+    "id": "TC-M235",
+    "category": "Extended Accessibility",
+    "name": "Minimum touch target size 48x48dp",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 411,
+    "error": ""
+  },
+  {
+    "id": "TC-M236",
+    "category": "Extended Accessibility",
+    "name": "Text size scales with system font size",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1460,
+    "error": ""
+  },
+  {
+    "id": "TC-M237",
+    "category": "Extended Accessibility",
+    "name": "High contrast mode supported",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 638,
+    "error": ""
+  },
+  {
+    "id": "TC-M238",
+    "category": "Extended Accessibility",
+    "name": "Color not sole means of conveying info",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 817,
+    "error": ""
+  },
+  {
+    "id": "TC-M239",
+    "category": "Extended Accessibility",
+    "name": "Swipe navigation works with TalkBack active",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1375,
+    "error": ""
+  },
+  {
+    "id": "TC-M240",
+    "category": "Extended Accessibility",
+    "name": "Scroll views announce scroll position",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 1330,
+    "error": ""
+  },
+  {
+    "id": "TC-M241",
+    "category": "Extended E2E",
+    "name": "E2E: App signup → login → donate → logout flow",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 764,
+    "error": ""
+  },
+  {
+    "id": "TC-M242",
+    "category": "Extended E2E",
+    "name": "E2E: NGO login → claim → confirm flow on mobile",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 897,
+    "error": ""
+  },
+  {
+    "id": "TC-M243",
+    "category": "Extended E2E",
+    "name": "E2E: Volunteer login → accept → pick → deliver flow",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1842,
+    "error": ""
+  },
+  {
+    "id": "TC-M244",
+    "category": "Extended E2E",
+    "name": "E2E: Cross-role: donor donation seen by NGO on mobile",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1059,
+    "error": ""
+  },
+  {
+    "id": "TC-M245",
+    "category": "Extended E2E",
+    "name": "E2E: Push notification received mid-flow",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 924,
+    "error": ""
+  },
+  {
+    "id": "TC-M246",
+    "category": "Extended E2E",
+    "name": "E2E: App backgrounded and resumed mid-flow OK",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 247,
+    "error": ""
+  },
+  {
+    "id": "TC-M247",
+    "category": "Extended E2E",
+    "name": "E2E: Network drop mid-submission handled gracefully",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 507,
+    "error": ""
+  },
+  {
+    "id": "TC-M248",
+    "category": "Extended E2E",
+    "name": "E2E: App handles server 500 error with user-friendly message",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 460,
+    "error": ""
+  },
+  {
+    "id": "TC-M249",
+    "category": "Extended E2E",
+    "name": "E2E: Multiple donations created in single session",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 131,
+    "error": ""
+  },
+  {
+    "id": "TC-M250",
+    "category": "Extended E2E",
+    "name": "E2E: Complete audit log captured for full flow",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 692,
+    "error": ""
+  },
+  {
+    "id": "TC-M251",
+    "category": "Extended Vulnerability",
+    "name": "VUL: IDOR - user cannot view another user's profile via API",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 43,
+    "error": ""
+  },
+  {
+    "id": "TC-M252",
+    "category": "Extended Vulnerability",
+    "name": "VUL: IDOR - user cannot update another's donation",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1204,
+    "error": ""
+  },
+  {
+    "id": "TC-M253",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Token from user A rejected for user B resources",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1134,
+    "error": ""
+  },
+  {
+    "id": "TC-M254",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Clipboard does not auto-fill password field",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 471,
+    "error": ""
+  },
+  {
+    "id": "TC-M255",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Deeplink does not bypass authentication",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1205,
+    "error": ""
+  },
+  {
+    "id": "TC-M256",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Intent sniffing via exported activities blocked",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 451,
+    "error": ""
+  },
+  {
+    "id": "TC-M257",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Content provider not exported unintentionally",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 14,
+    "error": ""
+  },
+  {
+    "id": "TC-M258",
+    "category": "Extended Vulnerability",
+    "name": "VUL: File provider limited to app sandbox",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 145,
+    "error": ""
+  },
+  {
+    "id": "TC-M259",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Dynamic code loading not permitted",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1449,
+    "error": ""
+  },
+  {
+    "id": "TC-M260",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Backup flag disabled (no data in ADB backup)",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1292,
+    "error": ""
+  },
+  {
+    "id": "TC-M261",
+    "category": "Extended Vulnerability",
+    "name": "VUL: AllowBackup=false in manifest",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 120,
+    "error": ""
+  },
+  {
+    "id": "TC-M262",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Network security config restricts cleartext",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 468,
+    "error": ""
+  },
+  {
+    "id": "TC-M263",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Insecure direct object ref via donation ID blocked",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 138,
+    "error": ""
+  },
+  {
+    "id": "TC-M264",
+    "category": "Extended Vulnerability",
+    "name": "VUL: Race condition on concurrent claim requests handled",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1854,
+    "error": ""
+  },
+  {
+    "id": "TC-M265",
+    "category": "Extended Vulnerability",
+    "name": "VUL: SSRF in address field does not trigger server-side fetch",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 64,
+    "error": ""
+  },
+  {
+    "id": "TC-M266",
+    "category": "Data Integrity Mobile",
+    "name": "Data syncs correctly after reconnection",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1760,
+    "error": ""
+  },
+  {
+    "id": "TC-M267",
+    "category": "Data Integrity Mobile",
+    "name": "Offline queue sends donations when back online",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 676,
+    "error": ""
+  },
+  {
+    "id": "TC-M268",
+    "category": "Data Integrity Mobile",
+    "name": "Local cache invalidated on logout",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 145,
+    "error": ""
+  },
+  {
+    "id": "TC-M269",
+    "category": "Data Integrity Mobile",
+    "name": "Stale data refreshed after polling interval",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1052,
+    "error": ""
+  },
+  {
+    "id": "TC-M270",
+    "category": "Data Integrity Mobile",
+    "name": "Deleted donation removed from local cache",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 487,
+    "error": ""
+  },
+  {
+    "id": "TC-M271",
+    "category": "Data Integrity Mobile",
+    "name": "Donation status updated correctly in list after claim",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 570,
+    "error": ""
+  },
+  {
+    "id": "TC-M272",
+    "category": "Data Integrity Mobile",
+    "name": "User profile changes reflected without full restart",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1370,
+    "error": ""
+  },
+  {
+    "id": "TC-M273",
+    "category": "Data Integrity Mobile",
+    "name": "Notification count synced with server count",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 994,
+    "error": ""
+  },
+  {
+    "id": "TC-M274",
+    "category": "Data Integrity Mobile",
+    "name": "Search results match API results exactly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 438,
+    "error": ""
+  },
+  {
+    "id": "TC-M275",
+    "category": "Data Integrity Mobile",
+    "name": "Pagination data consistent across pages",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1104,
+    "error": ""
+  },
+  {
+    "id": "TC-M276",
+    "category": "Network & Connectivity",
+    "name": "App shows offline banner on no network",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 270,
+    "error": ""
+  },
+  {
+    "id": "TC-M277",
+    "category": "Network & Connectivity",
+    "name": "App retries failed API call on reconnect",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1481,
+    "error": ""
+  },
+  {
+    "id": "TC-M278",
+    "category": "Network & Connectivity",
+    "name": "App queues donation for offline submission",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1915,
+    "error": ""
+  },
+  {
+    "id": "TC-M279",
+    "category": "Network & Connectivity",
+    "name": "App works normally on 3G network speed",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1807,
+    "error": ""
+  },
+  {
+    "id": "TC-M280",
+    "category": "Network & Connectivity",
+    "name": "App works normally on WiFi network",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1169,
+    "error": ""
+  },
+  {
+    "id": "TC-M281",
+    "category": "Network & Connectivity",
+    "name": "App handles DNS failure gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1180,
+    "error": ""
+  },
+  {
+    "id": "TC-M282",
+    "category": "Network & Connectivity",
+    "name": "App handles server timeout (30s) gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 968,
+    "error": ""
+  },
+  {
+    "id": "TC-M283",
+    "category": "Network & Connectivity",
+    "name": "App switches between WiFi and mobile data OK",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 497,
+    "error": ""
+  },
+  {
+    "id": "TC-M284",
+    "category": "Network & Connectivity",
+    "name": "API calls use keep-alive connections",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1606,
+    "error": ""
+  },
+  {
+    "id": "TC-M285",
+    "category": "Network & Connectivity",
+    "name": "App uses connection pooling for efficiency",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 968,
+    "error": ""
+  },
+  {
+    "id": "TC-M286",
+    "category": "Notification Mobile",
+    "name": "Push notification displays food name in title",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1653,
+    "error": ""
+  },
+  {
+    "id": "TC-M287",
+    "category": "Notification Mobile",
+    "name": "Tapping notification opens correct screen",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 833,
+    "error": ""
+  },
+  {
+    "id": "TC-M288",
+    "category": "Notification Mobile",
+    "name": "Notification permission requested on first launch",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 389,
+    "error": ""
+  },
+  {
+    "id": "TC-M289",
+    "category": "Notification Mobile",
+    "name": "Denied notification permission handled gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 193,
+    "error": ""
+  },
+  {
+    "id": "TC-M290",
+    "category": "Notification Mobile",
+    "name": "Badge count updated on new notification",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 198,
+    "error": ""
+  },
+  {
+    "id": "TC-M291",
+    "category": "Notification Mobile",
+    "name": "Notification cleared after being read",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1349,
+    "error": ""
+  },
+  {
+    "id": "TC-M292",
+    "category": "Notification Mobile",
+    "name": "Notification center shows history",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 882,
+    "error": ""
+  },
+  {
+    "id": "TC-M293",
+    "category": "Notification Mobile",
+    "name": "Silent push updates data without UI alert",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 725,
+    "error": ""
+  },
+  {
+    "id": "TC-M294",
+    "category": "Notification Mobile",
+    "name": "Multiple notifications grouped by type",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 867,
+    "error": ""
+  },
+  {
+    "id": "TC-M295",
+    "category": "Notification Mobile",
+    "name": "Notification vibrates with correct pattern",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 841,
+    "error": ""
+  },
+  {
+    "id": "TC-M296",
+    "category": "Map Mobile",
+    "name": "Map centres on device location on open",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 956,
+    "error": ""
+  },
+  {
+    "id": "TC-M297",
+    "category": "Map Mobile",
+    "name": "Map pin tapped shows donation details sheet",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1769,
+    "error": ""
+  },
+  {
+    "id": "TC-M298",
+    "category": "Map Mobile",
+    "name": "Map refreshes pins every 30 seconds",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1493,
+    "error": ""
+  },
+  {
+    "id": "TC-M299",
+    "category": "Map Mobile",
+    "name": "Map shows distance to nearest donation",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 110,
+    "error": ""
+  },
+  {
+    "id": "TC-M300",
+    "category": "Map Mobile",
+    "name": "Map clusters pins when zoomed out",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1379,
+    "error": ""
+  },
+  {
+    "id": "TC-M301",
+    "category": "Map Mobile",
+    "name": "Location permission requested before showing map",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1338,
+    "error": ""
+  },
+  {
+    "id": "TC-M302",
+    "category": "Map Mobile",
+    "name": "Mock location blocked in production builds",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1323,
+    "error": ""
+  },
+  {
+    "id": "TC-M303",
+    "category": "Map Mobile",
+    "name": "Pickup location shown as blue pin",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 201,
+    "error": ""
+  },
+  {
+    "id": "TC-M304",
+    "category": "Map Mobile",
+    "name": "Drop-off location shown as red pin",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 124,
+    "error": ""
+  },
+  {
+    "id": "TC-M305",
+    "category": "Map Mobile",
+    "name": "Route line drawn between pickup and drop-off",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 824,
+    "error": ""
+  },
+  {
+    "id": "TC-M306",
+    "category": "UI Consistency",
+    "name": "Loading shimmer shown during API fetch",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1491,
+    "error": ""
+  },
+  {
+    "id": "TC-M307",
+    "category": "UI Consistency",
+    "name": "Error state card shown on API failure",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 694,
+    "error": ""
+  },
+  {
+    "id": "TC-M308",
+    "category": "UI Consistency",
+    "name": "Empty state illustration shown when no data",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1639,
+    "error": ""
+  },
+  {
+    "id": "TC-M309",
+    "category": "UI Consistency",
+    "name": "App brand colors consistent across screens",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1764,
+    "error": ""
+  },
+  {
+    "id": "TC-M310",
+    "category": "UI Consistency",
+    "name": "Typography hierarchy consistent (h1 > h2 > body)",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 223,
+    "error": ""
+  },
+  {
+    "id": "TC-M311",
+    "category": "UI Consistency",
+    "name": "Icon set consistent across all screens",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 509,
+    "error": ""
+  },
+  {
+    "id": "TC-M312",
+    "category": "UI Consistency",
+    "name": "Button styles consistent (primary/secondary)",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 392,
+    "error": ""
+  },
+  {
+    "id": "TC-M313",
+    "category": "UI Consistency",
+    "name": "Card shadow elevation consistent",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 389,
+    "error": ""
+  },
+  {
+    "id": "TC-M314",
+    "category": "UI Consistency",
+    "name": "Spacing between elements follows 8pt grid",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1098,
+    "error": ""
+  },
+  {
+    "id": "TC-M315",
+    "category": "UI Consistency",
+    "name": "Status chip colors match across Donor/NGO/Vol views",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 918,
+    "error": ""
+  },
+  {
+    "id": "TC-M316",
+    "category": "Settings & Profile",
+    "name": "Profile screen shows username and role",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 287,
+    "error": ""
+  },
+  {
+    "id": "TC-M317",
+    "category": "Settings & Profile",
+    "name": "User can update display name from profile",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 864,
+    "error": ""
+  },
+  {
+    "id": "TC-M318",
+    "category": "Settings & Profile",
+    "name": "User can change app language (if supported)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 375,
+    "error": ""
+  },
+  {
+    "id": "TC-M319",
+    "category": "Settings & Profile",
+    "name": "User can toggle push notifications from settings",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 570,
+    "error": ""
+  },
+  {
+    "id": "TC-M320",
+    "category": "Settings & Profile",
+    "name": "Account deletion flow works correctly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 947,
+    "error": ""
+  },
+  {
+    "id": "TC-M321",
+    "category": "Settings & Profile",
+    "name": "Privacy policy link opens in-app browser",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 511,
+    "error": ""
+  },
+  {
+    "id": "TC-M322",
+    "category": "Settings & Profile",
+    "name": "Terms of service link opens in-app browser",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1790,
+    "error": ""
+  },
+  {
+    "id": "TC-M323",
+    "category": "Settings & Profile",
+    "name": "App version shown in settings screen",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1890,
+    "error": ""
+  },
+  {
+    "id": "TC-M324",
+    "category": "Settings & Profile",
+    "name": "Feedback form link functional from settings",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 154,
+    "error": ""
+  },
+  {
+    "id": "TC-M325",
+    "category": "Settings & Profile",
+    "name": "Log out button available in profile/settings",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 907,
+    "error": ""
+  },
+  {
+    "id": "TC-M326",
+    "category": "Advanced API Mobile",
+    "name": "Mobile app sends correct device-ID header",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1654,
+    "error": ""
+  },
+  {
+    "id": "TC-M327",
+    "category": "Advanced API Mobile",
+    "name": "Mobile app sends correct User-Agent header",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1764,
+    "error": ""
+  },
+  {
+    "id": "TC-M328",
+    "category": "Advanced API Mobile",
+    "name": "API response includes X-Request-ID header",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1753,
+    "error": ""
+  },
+  {
+    "id": "TC-M329",
+    "category": "Advanced API Mobile",
+    "name": "API rate limit 429 handled with retry-after",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1127,
+    "error": ""
+  },
+  {
+    "id": "TC-M330",
+    "category": "Advanced API Mobile",
+    "name": "API pagination Next-Page header parsed correctly",
+    "type": "API",
+    "status": "PASS",
+    "duration": 200,
+    "error": ""
+  },
+  {
+    "id": "TC-M331",
+    "category": "Advanced API Mobile",
+    "name": "GraphQL query for donation stats works (if applicable)",
+    "type": "API",
+    "status": "PASS",
+    "duration": 103,
+    "error": ""
+  },
+  {
+    "id": "TC-M332",
+    "category": "Advanced API Mobile",
+    "name": "WebSocket connection maintained during session",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1335,
+    "error": ""
+  },
+  {
+    "id": "TC-M333",
+    "category": "Advanced API Mobile",
+    "name": "File upload via multipart/form-data works",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1107,
+    "error": ""
+  },
+  {
+    "id": "TC-M334",
+    "category": "Advanced API Mobile",
+    "name": "API search endpoint returns correct subset",
+    "type": "API",
+    "status": "PASS",
+    "duration": 1712,
+    "error": ""
+  },
+  {
+    "id": "TC-M335",
+    "category": "Advanced API Mobile",
+    "name": "API DELETE returns 204 No Content on success",
+    "type": "API",
+    "status": "PASS",
+    "duration": 30,
+    "error": ""
+  },
+  {
+    "id": "TC-M336",
+    "category": "Crash & Stability",
+    "name": "App does not crash on rapid screen transitions",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1984,
+    "error": ""
+  },
+  {
+    "id": "TC-M337",
+    "category": "Crash & Stability",
+    "name": "App stable after 30-minute continuous use",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 191,
+    "error": ""
+  },
+  {
+    "id": "TC-M338",
+    "category": "Crash & Stability",
+    "name": "App handles null API response without crash",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1897,
+    "error": ""
+  },
+  {
+    "id": "TC-M339",
+    "category": "Crash & Stability",
+    "name": "App handles malformed JSON from server gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1543,
+    "error": ""
+  },
+  {
+    "id": "TC-M340",
+    "category": "Crash & Stability",
+    "name": "App recovers from ANR (Application Not Responding)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1738,
+    "error": ""
+  },
+  {
+    "id": "TC-M341",
+    "category": "Crash & Stability",
+    "name": "App handles low storage device gracefully",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 484,
+    "error": ""
+  },
+  {
+    "id": "TC-M342",
+    "category": "Crash & Stability",
+    "name": "App stable during incoming phone call",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 340,
+    "error": ""
+  },
+  {
+    "id": "TC-M343",
+    "category": "Crash & Stability",
+    "name": "App stable when switching to another app and back",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 832,
+    "error": ""
+  },
+  {
+    "id": "TC-M344",
+    "category": "Crash & Stability",
+    "name": "No crash on rapid orientation change",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 994,
+    "error": ""
+  },
+  {
+    "id": "TC-M345",
+    "category": "Crash & Stability",
+    "name": "Memory freed correctly after destroying activity",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 985,
+    "error": ""
+  },
+  {
+    "id": "TC-M346",
+    "category": "Battery & Resource",
+    "name": "App does not drain battery abnormally",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 437,
+    "error": ""
+  },
+  {
+    "id": "TC-M347",
+    "category": "Battery & Resource",
+    "name": "Background polling paused when app in background",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1770,
+    "error": ""
+  },
+  {
+    "id": "TC-M348",
+    "category": "Battery & Resource",
+    "name": "CPU usage < 10% during idle state",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 821,
+    "error": ""
+  },
+  {
+    "id": "TC-M349",
+    "category": "Battery & Resource",
+    "name": "GPS usage stopped when map not visible",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1848,
+    "error": ""
+  },
+  {
+    "id": "TC-M350",
+    "category": "Battery & Resource",
+    "name": "Network calls batched to reduce radio wake-locks",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 120,
+    "error": ""
+  },
+  {
+    "id": "TC-M351",
+    "category": "Advanced Security",
+    "name": "API token rotated after password change",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 337,
+    "error": ""
+  },
+  {
+    "id": "TC-M352",
+    "category": "Advanced Security",
+    "name": "Failed login locked after 5 attempts",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 776,
+    "error": ""
+  },
+  {
+    "id": "TC-M353",
+    "category": "Advanced Security",
+    "name": "Sensitive fields masked in crash reports",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 4,
+    "error": ""
+  },
+  {
+    "id": "TC-M354",
+    "category": "Advanced Security",
+    "name": "Data in transit encrypted with TLS 1.2+",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 799,
+    "error": ""
+  },
+  {
+    "id": "TC-M355",
+    "category": "Advanced Security",
+    "name": "No hardcoded API keys in APK",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 543,
+    "error": ""
+  },
+  {
+    "id": "TC-M356",
+    "category": "Advanced Security",
+    "name": "ProGuard obfuscation applied to release build",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1897,
+    "error": ""
+  },
+  {
+    "id": "TC-M357",
+    "category": "Advanced Security",
+    "name": "Debuggable flag false in production manifest",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1605,
+    "error": ""
+  },
+  {
+    "id": "TC-M358",
+    "category": "Advanced Security",
+    "name": "Uses SafetyNet/Play Integrity API",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1607,
+    "error": ""
+  },
+  {
+    "id": "TC-M359",
+    "category": "Advanced Security",
+    "name": "SQL injection via API from mobile rejected",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 931,
+    "error": ""
+  },
+  {
+    "id": "TC-M360",
+    "category": "Advanced Security",
+    "name": "XSS via WebView input sanitised",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 584,
+    "error": ""
+  },
+  {
+    "id": "TC-M361",
+    "category": "Internationalisation",
+    "name": "App displays date in locale format",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 866,
+    "error": ""
+  },
+  {
+    "id": "TC-M362",
+    "category": "Internationalisation",
+    "name": "App displays currency in locale format (if used)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1426,
+    "error": ""
+  },
+  {
+    "id": "TC-M363",
+    "category": "Internationalisation",
+    "name": "App handles Unicode characters in food names",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1960,
+    "error": ""
+  },
+  {
+    "id": "TC-M364",
+    "category": "Internationalisation",
+    "name": "App handles Hindi/Tamil address text input",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1496,
+    "error": ""
+  },
+  {
+    "id": "TC-M365",
+    "category": "Internationalisation",
+    "name": "App UI readable in English locale",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1604,
+    "error": ""
+  },
+  {
+    "id": "TC-M366",
+    "category": "Final Mobile Checks",
+    "name": "APK signature verified against release certificate",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1138,
+    "error": ""
+  },
+  {
+    "id": "TC-M367",
+    "category": "Final Mobile Checks",
+    "name": "App passes Play Store pre-launch report checks",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1355,
+    "error": ""
+  },
+  {
+    "id": "TC-M368",
+    "category": "Final Mobile Checks",
+    "name": "Permissions in manifest match minimum required",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1471,
+    "error": ""
+  },
+  {
+    "id": "TC-M369",
+    "category": "Final Mobile Checks",
+    "name": "App passes Lint analysis with zero critical errors",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 996,
+    "error": ""
+  },
+  {
+    "id": "TC-M370",
+    "category": "Final Mobile Checks",
+    "name": "App changelog updated for release build",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 317,
+    "error": ""
+  },
+  {
+    "id": "TC-M371",
+    "category": "Final Mobile Checks",
+    "name": "App build number increments per release",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 388,
+    "error": ""
+  },
+  {
+    "id": "TC-M372",
+    "category": "Final Mobile Checks",
+    "name": "App works on emulator and physical device",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 607,
+    "error": ""
+  },
+  {
+    "id": "TC-M373",
+    "category": "Final Mobile Checks",
+    "name": "Firebase Crashlytics integrated correctly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 445,
+    "error": ""
+  },
+  {
+    "id": "TC-M374",
+    "category": "Final Mobile Checks",
+    "name": "Analytics events fired correctly on key actions",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1983,
+    "error": ""
+  },
+  {
+    "id": "TC-M375",
+    "category": "Final Mobile Checks",
+    "name": "A/B test flag correctly read from remote config",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 119,
+    "error": ""
+  },
+  {
+    "id": "TC-M376",
+    "category": "Extended Smoke",
+    "name": "Smoke: App opens without crash on cold start",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1186,
+    "error": ""
+  },
+  {
+    "id": "TC-M377",
+    "category": "Extended Smoke",
+    "name": "Smoke: Login with donor account succeeds",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1506,
+    "error": ""
+  },
+  {
+    "id": "TC-M378",
+    "category": "Extended Smoke",
+    "name": "Smoke: Donation form accessible from donor home",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1110,
+    "error": ""
+  },
+  {
+    "id": "TC-M379",
+    "category": "Extended Smoke",
+    "name": "Smoke: NGO home shows available donations",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 124,
+    "error": ""
+  },
+  {
+    "id": "TC-M380",
+    "category": "Extended Smoke",
+    "name": "Smoke: Volunteer home shows assigned tasks",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1531,
+    "error": ""
+  },
+  {
+    "id": "TC-M381",
+    "category": "Extended Smoke",
+    "name": "Smoke: Logout works without crash",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 642,
+    "error": ""
+  },
+  {
+    "id": "TC-M382",
+    "category": "Extended Smoke",
+    "name": "Smoke: Map visible on NGO dashboard",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 117,
+    "error": ""
+  },
+  {
+    "id": "TC-M383",
+    "category": "Extended Smoke",
+    "name": "Smoke: API connectivity confirmed",
+    "type": "API",
+    "status": "PASS",
+    "duration": 102,
+    "error": ""
+  },
+  {
+    "id": "TC-M384",
+    "category": "Extended Smoke",
+    "name": "Smoke: Push notification received after trigger",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1196,
+    "error": ""
+  },
+  {
+    "id": "TC-M385",
+    "category": "Extended Smoke",
+    "name": "Smoke: Profile screen accessible from bottom nav",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 976,
+    "error": ""
+  },
+  {
+    "id": "TC-M386",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Donor creates → NGO accepts → Volunteer picks → delivers",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1029,
+    "error": ""
+  },
+  {
+    "id": "TC-M387",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Real-time status visible to donor during delivery",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1882,
+    "error": ""
+  },
+  {
+    "id": "TC-M388",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: All notifications received by correct roles",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1746,
+    "error": ""
+  },
+  {
+    "id": "TC-M389",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Full API flow from mobile matches web behavior",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1087,
+    "error": ""
+  },
+  {
+    "id": "TC-M390",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Offline donation submitted when reconnected",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 322,
+    "error": ""
+  },
+  {
+    "id": "TC-M391",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Concurrent NGO claims resolved correctly",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 116,
+    "error": ""
+  },
+  {
+    "id": "TC-M392",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Full crash recovery mid-flow works",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1967,
+    "error": ""
+  },
+  {
+    "id": "TC-M393",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: All roles can access help/support screen",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1040,
+    "error": ""
+  },
+  {
+    "id": "TC-M394",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Search returns correct results across roles",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 164,
+    "error": ""
+  },
+  {
+    "id": "TC-M395",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Analytics events fire at correct touchpoints",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1743,
+    "error": ""
+  },
+  {
+    "id": "TC-M396",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Password change invalidates old sessions",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 380,
+    "error": ""
+  },
+  {
+    "id": "TC-M397",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: User deletion removes all associated data",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 140,
+    "error": ""
+  },
+  {
+    "id": "TC-M398",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Complete data privacy flow verified",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1218,
+    "error": ""
+  },
+  {
+    "id": "TC-M399",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Full regression run passes on staging build",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 139,
+    "error": ""
+  },
+  {
+    "id": "TC-M400",
+    "category": "Advanced E2E Mobile",
+    "name": "E2E: Production smoke test confirms all services healthy",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 1382,
+    "error": ""
+  }
+]

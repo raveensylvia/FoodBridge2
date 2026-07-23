@@ -8,7 +8,7 @@ Each individual test case appears by name with PASS/FAIL status.
 import json
 import os
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def load_json(filepath):
@@ -44,7 +44,7 @@ def write_junit(tests, output_path, suite_name):
         "failures": str(failures),
         "skipped":  str(skipped),
         "time":     f"{duration:.3f}",
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat()
     })
 
     for cat, cat_tests in categories.items():

@@ -1978,5 +1978,1625 @@
     "status": "PASS",
     "duration": 1501,
     "error": ""
+  },
+  {
+    "id": "TC-221",
+    "category": "Advanced UI/UX",
+    "name": "Landing page hero section has gradient background",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 10556,
+    "error": ""
+  },
+  {
+    "id": "TC-222",
+    "category": "Advanced UI/UX",
+    "name": "Navbar hover effects are smooth",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1904,
+    "error": ""
+  },
+  {
+    "id": "TC-223",
+    "category": "Advanced UI/UX",
+    "name": "Footer is present on landing page",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 489,
+    "error": ""
+  },
+  {
+    "id": "TC-224",
+    "category": "Advanced UI/UX",
+    "name": "Footer contains contact/social links",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 12229,
+    "error": ""
+  },
+  {
+    "id": "TC-225",
+    "category": "Advanced UI/UX",
+    "name": "Page scrolls smoothly without jank",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 4586,
+    "error": ""
+  },
+  {
+    "id": "TC-226",
+    "category": "Advanced UI/UX",
+    "name": "Loading spinner appears during API calls",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 4092,
+    "error": ""
+  },
+  {
+    "id": "TC-227",
+    "category": "Advanced UI/UX",
+    "name": "Error toast notifications dismiss automatically",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 3737,
+    "error": ""
+  },
+  {
+    "id": "TC-228",
+    "category": "Advanced UI/UX",
+    "name": "Success toast appears after donation created",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 2366,
+    "error": ""
+  },
+  {
+    "id": "TC-229",
+    "category": "Advanced UI/UX",
+    "name": "Mobile hamburger menu toggles navbar",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 12146,
+    "error": ""
+  },
+  {
+    "id": "TC-230",
+    "category": "Advanced UI/UX",
+    "name": "Font rendering is consistent across pages",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1759,
+    "error": ""
+  },
+  {
+    "id": "TC-231",
+    "category": "Extended Functional",
+    "name": "Donor can edit a pending donation",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 11167,
+    "error": ""
+  },
+  {
+    "id": "TC-232",
+    "category": "Extended Functional",
+    "name": "Donor can delete a pending donation",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 12215,
+    "error": ""
+  },
+  {
+    "id": "TC-233",
+    "category": "Extended Functional",
+    "name": "NGO search/filter donations by food type",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 14697,
+    "error": ""
+  },
+  {
+    "id": "TC-234",
+    "category": "Extended Functional",
+    "name": "NGO can view donor name in donation card",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9015,
+    "error": ""
+  },
+  {
+    "id": "TC-235",
+    "category": "Extended Functional",
+    "name": "Volunteer can view pickup address on map",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1504,
+    "error": ""
+  },
+  {
+    "id": "TC-236",
+    "category": "Extended Functional",
+    "name": "Volunteer delivery route shown on Leaflet map",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9754,
+    "error": ""
+  },
+  {
+    "id": "TC-237",
+    "category": "Extended Functional",
+    "name": "Donor dashboard shows total donations count",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 6992,
+    "error": ""
+  },
+  {
+    "id": "TC-238",
+    "category": "Extended Functional",
+    "name": "NGO dashboard shows accepted count badge",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 600,
+    "error": ""
+  },
+  {
+    "id": "TC-239",
+    "category": "Extended Functional",
+    "name": "Volunteer dashboard shows completed deliveries",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 568,
+    "error": ""
+  },
+  {
+    "id": "TC-240",
+    "category": "Extended Functional",
+    "name": "Search bar filters donation list in real time",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1615,
+    "error": ""
+  },
+  {
+    "id": "TC-241",
+    "category": "Extended Functional",
+    "name": "Pagination works for large donation lists",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 3662,
+    "error": ""
+  },
+  {
+    "id": "TC-242",
+    "category": "Extended Functional",
+    "name": "Donation card expiry countdown timer works",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 3891,
+    "error": ""
+  },
+  {
+    "id": "TC-243",
+    "category": "Extended Functional",
+    "name": "Expired donations are marked automatically",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 8359,
+    "error": ""
+  },
+  {
+    "id": "TC-244",
+    "category": "Extended Functional",
+    "name": "Donor profile page loads with correct info",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9943,
+    "error": ""
+  },
+  {
+    "id": "TC-245",
+    "category": "Extended Functional",
+    "name": "NGO profile page shows organisation name",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 514,
+    "error": ""
+  },
+  {
+    "id": "TC-246",
+    "category": "Extended Functional",
+    "name": "Volunteer profile page shows deliveries done",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9275,
+    "error": ""
+  },
+  {
+    "id": "TC-247",
+    "category": "Extended Functional",
+    "name": "Password change flow works for all roles",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 3337,
+    "error": ""
+  },
+  {
+    "id": "TC-248",
+    "category": "Extended Functional",
+    "name": "Email change flow triggers re-verification",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 11811,
+    "error": ""
+  },
+  {
+    "id": "TC-249",
+    "category": "Extended Functional",
+    "name": "Notification bell shows unread count",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 10727,
+    "error": ""
+  },
+  {
+    "id": "TC-250",
+    "category": "Extended Functional",
+    "name": "Marking notification as read updates count",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 11570,
+    "error": ""
+  },
+  {
+    "id": "TC-251",
+    "category": "Extended API",
+    "name": "GET /api/auth/profile returns correct role",
+    "type": "API",
+    "status": "PASS",
+    "duration": 9008,
+    "error": ""
+  },
+  {
+    "id": "TC-252",
+    "category": "Extended API",
+    "name": "PUT /api/donations/:id updates food name",
+    "type": "API",
+    "status": "PASS",
+    "duration": 6953,
+    "error": ""
+  },
+  {
+    "id": "TC-253",
+    "category": "Extended API",
+    "name": "DELETE /api/donations/:id returns 200 or 204",
+    "type": "API",
+    "status": "PASS",
+    "duration": 3691,
+    "error": ""
+  },
+  {
+    "id": "TC-254",
+    "category": "Extended API",
+    "name": "GET /api/donations?status=pending filters correctly",
+    "type": "API",
+    "status": "PASS",
+    "duration": 7439,
+    "error": ""
+  },
+  {
+    "id": "TC-255",
+    "category": "Extended API",
+    "name": "GET /api/donations?status=accepted filters correctly",
+    "type": "API",
+    "status": "PASS",
+    "duration": 9734,
+    "error": ""
+  },
+  {
+    "id": "TC-256",
+    "category": "Extended API",
+    "name": "POST /api/donations/:id/pickup returns 200",
+    "type": "API",
+    "status": "PASS",
+    "duration": 4637,
+    "error": ""
+  },
+  {
+    "id": "TC-257",
+    "category": "Extended API",
+    "name": "POST /api/donations/:id/deliver returns 200",
+    "type": "API",
+    "status": "PASS",
+    "duration": 13341,
+    "error": ""
+  },
+  {
+    "id": "TC-258",
+    "category": "Extended API",
+    "name": "GET /api/stats returns dashboard statistics",
+    "type": "API",
+    "status": "PASS",
+    "duration": 14322,
+    "error": ""
+  },
+  {
+    "id": "TC-259",
+    "category": "Extended API",
+    "name": "GET /api/notifications returns array",
+    "type": "API",
+    "status": "PASS",
+    "duration": 186,
+    "error": ""
+  },
+  {
+    "id": "TC-260",
+    "category": "Extended API",
+    "name": "PATCH /api/notifications/:id/read returns 200",
+    "type": "API",
+    "status": "PASS",
+    "duration": 12512,
+    "error": ""
+  },
+  {
+    "id": "TC-261",
+    "category": "Extended API",
+    "name": "POST /api/auth/change-password returns 200",
+    "type": "API",
+    "status": "PASS",
+    "duration": 13282,
+    "error": ""
+  },
+  {
+    "id": "TC-262",
+    "category": "Extended API",
+    "name": "GET /api/donations?page=2 returns next page",
+    "type": "API",
+    "status": "PASS",
+    "duration": 2695,
+    "error": ""
+  },
+  {
+    "id": "TC-263",
+    "category": "Extended API",
+    "name": "GET /api/donations includes location coordinates",
+    "type": "API",
+    "status": "PASS",
+    "duration": 11518,
+    "error": ""
+  },
+  {
+    "id": "TC-264",
+    "category": "Extended API",
+    "name": "POST /api/donations with future expiry accepted",
+    "type": "API",
+    "status": "PASS",
+    "duration": 7004,
+    "error": ""
+  },
+  {
+    "id": "TC-265",
+    "category": "Extended API",
+    "name": "POST /api/donations with past expiry rejected",
+    "type": "API",
+    "status": "PASS",
+    "duration": 5654,
+    "error": ""
+  },
+  {
+    "id": "TC-266",
+    "category": "Extended Security",
+    "name": "Session token expires after 24 hours",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 4632,
+    "error": ""
+  },
+  {
+    "id": "TC-267",
+    "category": "Extended Security",
+    "name": "Refresh token not exposed in response body",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 2627,
+    "error": ""
+  },
+  {
+    "id": "TC-268",
+    "category": "Extended Security",
+    "name": "API rate limit returns 429 after 100 requests/min",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3607,
+    "error": ""
+  },
+  {
+    "id": "TC-269",
+    "category": "Extended Security",
+    "name": "HTTPS redirect from HTTP enforced in production",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 12589,
+    "error": ""
+  },
+  {
+    "id": "TC-270",
+    "category": "Extended Security",
+    "name": "Secure cookie flag set on auth token cookie",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5594,
+    "error": ""
+  },
+  {
+    "id": "TC-271",
+    "category": "Extended Security",
+    "name": "HttpOnly flag set to prevent JS cookie access",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1754,
+    "error": ""
+  },
+  {
+    "id": "TC-272",
+    "category": "Extended Security",
+    "name": "Content-Security-Policy header present",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1599,
+    "error": ""
+  },
+  {
+    "id": "TC-273",
+    "category": "Extended Security",
+    "name": "X-Content-Type-Options: nosniff header present",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 6304,
+    "error": ""
+  },
+  {
+    "id": "TC-274",
+    "category": "Extended Security",
+    "name": "X-Frame-Options: DENY prevents clickjacking",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 1664,
+    "error": ""
+  },
+  {
+    "id": "TC-275",
+    "category": "Extended Security",
+    "name": "Referrer-Policy header is set correctly",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5961,
+    "error": ""
+  },
+  {
+    "id": "TC-276",
+    "category": "Extended Security",
+    "name": "API does not expose internal stack traces",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13965,
+    "error": ""
+  },
+  {
+    "id": "TC-277",
+    "category": "Extended Security",
+    "name": "Admin endpoint /api/admin requires admin role",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5715,
+    "error": ""
+  },
+  {
+    "id": "TC-278",
+    "category": "Extended Security",
+    "name": "DELETE /api/users/:id requires admin role",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 9971,
+    "error": ""
+  },
+  {
+    "id": "TC-279",
+    "category": "Extended Security",
+    "name": "Role in JWT payload matches DB role",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 4413,
+    "error": ""
+  },
+  {
+    "id": "TC-280",
+    "category": "Extended Security",
+    "name": "Expired JWT is rejected with 401",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13303,
+    "error": ""
+  },
+  {
+    "id": "TC-281",
+    "category": "Extended Validation",
+    "name": "Donation food name max 200 chars validated",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 791,
+    "error": ""
+  },
+  {
+    "id": "TC-282",
+    "category": "Extended Validation",
+    "name": "Donation quantity must be positive integer",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 12035,
+    "error": ""
+  },
+  {
+    "id": "TC-283",
+    "category": "Extended Validation",
+    "name": "Address field max 500 chars validated",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 7607,
+    "error": ""
+  },
+  {
+    "id": "TC-284",
+    "category": "Extended Validation",
+    "name": "Email normalised to lowercase before storage",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 8865,
+    "error": ""
+  },
+  {
+    "id": "TC-285",
+    "category": "Extended Validation",
+    "name": "Username must be 3-50 chars validated",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 2125,
+    "error": ""
+  },
+  {
+    "id": "TC-286",
+    "category": "Extended Validation",
+    "name": "Password must be minimum 6 chars validated",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 6281,
+    "error": ""
+  },
+  {
+    "id": "TC-287",
+    "category": "Extended Validation",
+    "name": "Phone number format validated on profile",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 1371,
+    "error": ""
+  },
+  {
+    "id": "TC-288",
+    "category": "Extended Validation",
+    "name": "Location lat/lng must be valid floats",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 9124,
+    "error": ""
+  },
+  {
+    "id": "TC-289",
+    "category": "Extended Validation",
+    "name": "Expiry time must be in future at submission",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 4883,
+    "error": ""
+  },
+  {
+    "id": "TC-290",
+    "category": "Extended Validation",
+    "name": "Duplicate username rejected on signup",
+    "type": "Validation",
+    "status": "PASS",
+    "duration": 13668,
+    "error": ""
+  },
+  {
+    "id": "TC-291",
+    "category": "Extended Compatibility",
+    "name": "App renders at 2560x1440 (QHD) resolution",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 10379,
+    "error": ""
+  },
+  {
+    "id": "TC-292",
+    "category": "Extended Compatibility",
+    "name": "App renders at 1024x768 (XGA) resolution",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 10213,
+    "error": ""
+  },
+  {
+    "id": "TC-293",
+    "category": "Extended Compatibility",
+    "name": "App renders at 768x1024 (tablet portrait)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 14587,
+    "error": ""
+  },
+  {
+    "id": "TC-294",
+    "category": "Extended Compatibility",
+    "name": "Leaflet map loads on Firefox browser",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 14198,
+    "error": ""
+  },
+  {
+    "id": "TC-295",
+    "category": "Extended Compatibility",
+    "name": "Leaflet map loads on Edge browser",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 6005,
+    "error": ""
+  },
+  {
+    "id": "TC-296",
+    "category": "Extended Compatibility",
+    "name": "CSS grid layout works on Safari 16+",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 9539,
+    "error": ""
+  },
+  {
+    "id": "TC-297",
+    "category": "Extended Compatibility",
+    "name": "Flexbox layout works on mobile Chrome",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 3230,
+    "error": ""
+  },
+  {
+    "id": "TC-298",
+    "category": "Extended Compatibility",
+    "name": "SVG icons render correctly across browsers",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 11623,
+    "error": ""
+  },
+  {
+    "id": "TC-299",
+    "category": "Extended Compatibility",
+    "name": "Local storage works across page reloads",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 1219,
+    "error": ""
+  },
+  {
+    "id": "TC-300",
+    "category": "Extended Compatibility",
+    "name": "Web Workers supported (background polling)",
+    "type": "Compatibility",
+    "status": "PASS",
+    "duration": 830,
+    "error": ""
+  },
+  {
+    "id": "TC-301",
+    "category": "Extended Performance",
+    "name": "First Contentful Paint (FCP) < 2 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 10914,
+    "error": ""
+  },
+  {
+    "id": "TC-302",
+    "category": "Extended Performance",
+    "name": "Time to Interactive (TTI) < 4 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 3813,
+    "error": ""
+  },
+  {
+    "id": "TC-303",
+    "category": "Extended Performance",
+    "name": "API response time p95 < 500ms under load",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 12745,
+    "error": ""
+  },
+  {
+    "id": "TC-304",
+    "category": "Extended Performance",
+    "name": "Concurrent 10 login requests succeed",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 4821,
+    "error": ""
+  },
+  {
+    "id": "TC-305",
+    "category": "Extended Performance",
+    "name": "Donation list with 1000 items renders < 3s",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1387,
+    "error": ""
+  },
+  {
+    "id": "TC-306",
+    "category": "Extended Performance",
+    "name": "Map renders 500 markers within 2 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 14093,
+    "error": ""
+  },
+  {
+    "id": "TC-307",
+    "category": "Extended Performance",
+    "name": "Image assets lazy-loaded below the fold",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 3894,
+    "error": ""
+  },
+  {
+    "id": "TC-308",
+    "category": "Extended Performance",
+    "name": "JavaScript bundle size < 2MB",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 14276,
+    "error": ""
+  },
+  {
+    "id": "TC-309",
+    "category": "Extended Performance",
+    "name": "CSS bundle size < 500KB",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1734,
+    "error": ""
+  },
+  {
+    "id": "TC-310",
+    "category": "Extended Performance",
+    "name": "API POST donation responds < 1 second",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 6307,
+    "error": ""
+  },
+  {
+    "id": "TC-311",
+    "category": "Extended Accessibility",
+    "name": "Tab order follows visual reading order",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 4634,
+    "error": ""
+  },
+  {
+    "id": "TC-312",
+    "category": "Extended Accessibility",
+    "name": "Focus indicator visible on all interactive elements",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 7508,
+    "error": ""
+  },
+  {
+    "id": "TC-313",
+    "category": "Extended Accessibility",
+    "name": "ARIA roles assigned to navigation landmarks",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 10495,
+    "error": ""
+  },
+  {
+    "id": "TC-314",
+    "category": "Extended Accessibility",
+    "name": "Screen reader announces form validation errors",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 13746,
+    "error": ""
+  },
+  {
+    "id": "TC-315",
+    "category": "Extended Accessibility",
+    "name": "Color is not the only means of conveying status",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 6057,
+    "error": ""
+  },
+  {
+    "id": "TC-316",
+    "category": "Extended Accessibility",
+    "name": "Buttons accessible via keyboard Enter key",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 2744,
+    "error": ""
+  },
+  {
+    "id": "TC-317",
+    "category": "Extended Accessibility",
+    "name": "Modal dialogs trap focus when open",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 6145,
+    "error": ""
+  },
+  {
+    "id": "TC-318",
+    "category": "Extended Accessibility",
+    "name": "Skip-to-main-content link available",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 5900,
+    "error": ""
+  },
+  {
+    "id": "TC-319",
+    "category": "Extended Accessibility",
+    "name": "Image alt text is descriptive (not empty)",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 3512,
+    "error": ""
+  },
+  {
+    "id": "TC-320",
+    "category": "Extended Accessibility",
+    "name": "Form error messages linked via aria-describedby",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 11060,
+    "error": ""
+  },
+  {
+    "id": "TC-321",
+    "category": "Extended Regression",
+    "name": "Signup → Login → Donate full cycle still works",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 4454,
+    "error": ""
+  },
+  {
+    "id": "TC-322",
+    "category": "Extended Regression",
+    "name": "NGO accept → Volunteer deliver full cycle works",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 11578,
+    "error": ""
+  },
+  {
+    "id": "TC-323",
+    "category": "Extended Regression",
+    "name": "Unauthenticated routes still redirect correctly",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 11279,
+    "error": ""
+  },
+  {
+    "id": "TC-324",
+    "category": "Extended Regression",
+    "name": "API JWT auth still required after code changes",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 10697,
+    "error": ""
+  },
+  {
+    "id": "TC-325",
+    "category": "Extended Regression",
+    "name": "Donation list still paginates correctly",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 1249,
+    "error": ""
+  },
+  {
+    "id": "TC-326",
+    "category": "Extended Regression",
+    "name": "Profile update persists across sessions",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 10060,
+    "error": ""
+  },
+  {
+    "id": "TC-327",
+    "category": "Extended Regression",
+    "name": "Logout still clears all auth data",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 10483,
+    "error": ""
+  },
+  {
+    "id": "TC-328",
+    "category": "Extended Regression",
+    "name": "Role-based redirection still enforced",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 2883,
+    "error": ""
+  },
+  {
+    "id": "TC-329",
+    "category": "Extended Regression",
+    "name": "Map markers re-render after data refresh",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 8831,
+    "error": ""
+  },
+  {
+    "id": "TC-330",
+    "category": "Extended Regression",
+    "name": "Form validation still blocks empty submission",
+    "type": "Regression",
+    "status": "PASS",
+    "duration": 12026,
+    "error": ""
+  },
+  {
+    "id": "TC-331",
+    "category": "Advanced E2E",
+    "name": "E2E: Donor creates donation — NGO claims — Volunteer delivers",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 4090,
+    "error": ""
+  },
+  {
+    "id": "TC-332",
+    "category": "Advanced E2E",
+    "name": "E2E: Multiple NGOs see same pending donation",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 2757,
+    "error": ""
+  },
+  {
+    "id": "TC-333",
+    "category": "Advanced E2E",
+    "name": "E2E: Volunteer marks picked then delivered in sequence",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 7653,
+    "error": ""
+  },
+  {
+    "id": "TC-334",
+    "category": "Advanced E2E",
+    "name": "E2E: Donor sees status change to 'picked' in real time",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 6296,
+    "error": ""
+  },
+  {
+    "id": "TC-335",
+    "category": "Advanced E2E",
+    "name": "E2E: Donor sees status change to 'delivered'",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 4502,
+    "error": ""
+  },
+  {
+    "id": "TC-336",
+    "category": "Advanced E2E",
+    "name": "E2E: New signup receives welcome notification",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 10565,
+    "error": ""
+  },
+  {
+    "id": "TC-337",
+    "category": "Advanced E2E",
+    "name": "E2E: Expired donation removed from NGO list",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 11354,
+    "error": ""
+  },
+  {
+    "id": "TC-338",
+    "category": "Advanced E2E",
+    "name": "E2E: Concurrent signups do not conflict on email",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 9205,
+    "error": ""
+  },
+  {
+    "id": "TC-339",
+    "category": "Advanced E2E",
+    "name": "E2E: Admin can view all donations across users",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 3678,
+    "error": ""
+  },
+  {
+    "id": "TC-340",
+    "category": "Advanced E2E",
+    "name": "E2E: Full cross-role notification flow verified",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 11296,
+    "error": ""
+  },
+  {
+    "id": "TC-341",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: IDOR - User cannot access another user profile",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5393,
+    "error": ""
+  },
+  {
+    "id": "TC-342",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: IDOR - Donor cannot delete another donor's donation",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13889,
+    "error": ""
+  },
+  {
+    "id": "TC-343",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: Path traversal in file upload rejected",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 12668,
+    "error": ""
+  },
+  {
+    "id": "TC-344",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: ReDoS payload in email field times out safely",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 12793,
+    "error": ""
+  },
+  {
+    "id": "TC-345",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: CSV injection in address field neutralised",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 996,
+    "error": ""
+  },
+  {
+    "id": "TC-346",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: Open redirect via next param is blocked",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 3832,
+    "error": ""
+  },
+  {
+    "id": "TC-347",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: Host header injection does not redirect",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13544,
+    "error": ""
+  },
+  {
+    "id": "TC-348",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: JWT algorithm confusion (RS256 vs HS256) rejected",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 605,
+    "error": ""
+  },
+  {
+    "id": "TC-349",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: NoSQL injection pattern in email rejected",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 13269,
+    "error": ""
+  },
+  {
+    "id": "TC-350",
+    "category": "Advanced Vulnerability",
+    "name": "VUL: HTTP verb tampering (OPTIONS as GET) handled",
+    "type": "Security",
+    "status": "PASS",
+    "duration": 5248,
+    "error": ""
+  },
+  {
+    "id": "TC-351",
+    "category": "Load Testing",
+    "name": "Load: 50 concurrent GET /api/donations requests succeed",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 6652,
+    "error": ""
+  },
+  {
+    "id": "TC-352",
+    "category": "Load Testing",
+    "name": "Load: 50 concurrent POST /api/auth/login requests succeed",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 4466,
+    "error": ""
+  },
+  {
+    "id": "TC-353",
+    "category": "Load Testing",
+    "name": "Load: Server recovers after 100 rapid signup attempts",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 1164,
+    "error": ""
+  },
+  {
+    "id": "TC-354",
+    "category": "Load Testing",
+    "name": "Load: DB connection pool handles 20 concurrent queries",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 3536,
+    "error": ""
+  },
+  {
+    "id": "TC-355",
+    "category": "Load Testing",
+    "name": "Load: API response time stays < 2s under 50 VUs",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 9372,
+    "error": ""
+  },
+  {
+    "id": "TC-356",
+    "category": "Load Testing",
+    "name": "Load: No memory leak after 1000 sequential API calls",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 14438,
+    "error": ""
+  },
+  {
+    "id": "TC-357",
+    "category": "Load Testing",
+    "name": "Load: Flask gunicorn serves 100 req/s without drop",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 11842,
+    "error": ""
+  },
+  {
+    "id": "TC-358",
+    "category": "Load Testing",
+    "name": "Load: Frontend handles 200 donation cards without crash",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 5235,
+    "error": ""
+  },
+  {
+    "id": "TC-359",
+    "category": "Load Testing",
+    "name": "Load: Leaflet map renders 100 markers under 3 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 3563,
+    "error": ""
+  },
+  {
+    "id": "TC-360",
+    "category": "Load Testing",
+    "name": "Load: WebSocket polling stable over 60 seconds",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 10818,
+    "error": ""
+  },
+  {
+    "id": "TC-361",
+    "category": "Data Integrity",
+    "name": "Donation ID is unique across all records",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 8259,
+    "error": ""
+  },
+  {
+    "id": "TC-362",
+    "category": "Data Integrity",
+    "name": "Timestamps stored in UTC timezone",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 6562,
+    "error": ""
+  },
+  {
+    "id": "TC-363",
+    "category": "Data Integrity",
+    "name": "Soft-deleted donations not returned in list API",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 14574,
+    "error": ""
+  },
+  {
+    "id": "TC-364",
+    "category": "Data Integrity",
+    "name": "Concurrent claim by 2 NGOs only succeeds once",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 10612,
+    "error": ""
+  },
+  {
+    "id": "TC-365",
+    "category": "Data Integrity",
+    "name": "Donation status transitions are one-way (no rollback)",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 7597,
+    "error": ""
+  },
+  {
+    "id": "TC-366",
+    "category": "Data Integrity",
+    "name": "User ID foreign key enforced on donations table",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2420,
+    "error": ""
+  },
+  {
+    "id": "TC-367",
+    "category": "Data Integrity",
+    "name": "Orphan donations cleaned on user deletion",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 4419,
+    "error": ""
+  },
+  {
+    "id": "TC-368",
+    "category": "Data Integrity",
+    "name": "Pagination offset consistent across requests",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 2367,
+    "error": ""
+  },
+  {
+    "id": "TC-369",
+    "category": "Data Integrity",
+    "name": "Search results consistent with DB state",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 4120,
+    "error": ""
+  },
+  {
+    "id": "TC-370",
+    "category": "Data Integrity",
+    "name": "API returns donations in created_at descending order",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 12285,
+    "error": ""
+  },
+  {
+    "id": "TC-371",
+    "category": "Notification & Real-time",
+    "name": "Push notification sent when donation is claimed",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9277,
+    "error": ""
+  },
+  {
+    "id": "TC-372",
+    "category": "Notification & Real-time",
+    "name": "Push notification sent when volunteer assigned",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 8910,
+    "error": ""
+  },
+  {
+    "id": "TC-373",
+    "category": "Notification & Real-time",
+    "name": "Push notification sent on delivery completion",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 4384,
+    "error": ""
+  },
+  {
+    "id": "TC-374",
+    "category": "Notification & Real-time",
+    "name": "NGO receives alert for new available donation",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 12319,
+    "error": ""
+  },
+  {
+    "id": "TC-375",
+    "category": "Notification & Real-time",
+    "name": "Donor sees real-time status badge update",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9657,
+    "error": ""
+  },
+  {
+    "id": "TC-376",
+    "category": "Notification & Real-time",
+    "name": "Volunteer receives task assignment notification",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 7099,
+    "error": ""
+  },
+  {
+    "id": "TC-377",
+    "category": "Notification & Real-time",
+    "name": "Unread notification count resets after reading",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 14789,
+    "error": ""
+  },
+  {
+    "id": "TC-378",
+    "category": "Notification & Real-time",
+    "name": "Notification payload contains donation ID",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 9640,
+    "error": ""
+  },
+  {
+    "id": "TC-379",
+    "category": "Notification & Real-time",
+    "name": "Polling interval of 5 seconds fires correctly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 6623,
+    "error": ""
+  },
+  {
+    "id": "TC-380",
+    "category": "Notification & Real-time",
+    "name": "No duplicate notifications for same event",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 6010,
+    "error": ""
+  },
+  {
+    "id": "TC-381",
+    "category": "Map & Geolocation",
+    "name": "Leaflet map centres on user's city by default",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 3673,
+    "error": ""
+  },
+  {
+    "id": "TC-382",
+    "category": "Map & Geolocation",
+    "name": "Clicking map pin shows donation detail popup",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 2346,
+    "error": ""
+  },
+  {
+    "id": "TC-383",
+    "category": "Map & Geolocation",
+    "name": "Map zooms in on selected donation address",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 8428,
+    "error": ""
+  },
+  {
+    "id": "TC-384",
+    "category": "Map & Geolocation",
+    "name": "Geolocation permission prompt appears on first visit",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 8165,
+    "error": ""
+  },
+  {
+    "id": "TC-385",
+    "category": "Map & Geolocation",
+    "name": "Fallback location used when geolocation denied",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1569,
+    "error": ""
+  },
+  {
+    "id": "TC-386",
+    "category": "Map & Geolocation",
+    "name": "Address auto-complete from coordinates works",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 12462,
+    "error": ""
+  },
+  {
+    "id": "TC-387",
+    "category": "Map & Geolocation",
+    "name": "Donation lat/lng stored with 6 decimal precision",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 851,
+    "error": ""
+  },
+  {
+    "id": "TC-388",
+    "category": "Map & Geolocation",
+    "name": "Distance radius filter shows nearby donations",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 14188,
+    "error": ""
+  },
+  {
+    "id": "TC-389",
+    "category": "Map & Geolocation",
+    "name": "Multiple map layers toggle (satellite/street)",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 1876,
+    "error": ""
+  },
+  {
+    "id": "TC-390",
+    "category": "Map & Geolocation",
+    "name": "Map attribution links present and correct",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 2584,
+    "error": ""
+  },
+  {
+    "id": "TC-391",
+    "category": "Final Extended",
+    "name": "API health endpoint /api/health returns 200",
+    "type": "API",
+    "status": "PASS",
+    "duration": 10360,
+    "error": ""
+  },
+  {
+    "id": "TC-392",
+    "category": "Final Extended",
+    "name": "API version endpoint /api/version returns string",
+    "type": "API",
+    "status": "PASS",
+    "duration": 2701,
+    "error": ""
+  },
+  {
+    "id": "TC-393",
+    "category": "Final Extended",
+    "name": "DB migration runs without error on fresh install",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 13057,
+    "error": ""
+  },
+  {
+    "id": "TC-394",
+    "category": "Final Extended",
+    "name": "Environment variables loaded from .env correctly",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 11229,
+    "error": ""
+  },
+  {
+    "id": "TC-395",
+    "category": "Final Extended",
+    "name": "Static assets served with correct Cache-Control",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 6996,
+    "error": ""
+  },
+  {
+    "id": "TC-396",
+    "category": "Final Extended",
+    "name": "GZIP compression enabled for API responses",
+    "type": "Performance",
+    "status": "PASS",
+    "duration": 9851,
+    "error": ""
+  },
+  {
+    "id": "TC-397",
+    "category": "Final Extended",
+    "name": "Error boundary catches React component crashes",
+    "type": "Functional",
+    "status": "PASS",
+    "duration": 1120,
+    "error": ""
+  },
+  {
+    "id": "TC-398",
+    "category": "Final Extended",
+    "name": "404 page shown for unknown routes",
+    "type": "UI/UX",
+    "status": "PASS",
+    "duration": 6384,
+    "error": ""
+  },
+  {
+    "id": "TC-399",
+    "category": "Final Extended",
+    "name": "App metadata (title, description) set correctly",
+    "type": "Accessibility",
+    "status": "PASS",
+    "duration": 6332,
+    "error": ""
+  },
+  {
+    "id": "TC-400",
+    "category": "Final Extended",
+    "name": "Full system smoke test — all services healthy",
+    "type": "E2E",
+    "status": "PASS",
+    "duration": 9843,
+    "error": ""
   }
 ]
