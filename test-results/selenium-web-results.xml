@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="FoodBridge Selenium Web E2E Tests" tests="400" failures="0" skipped="0" time="2064.548" timestamp="2026-07-23T05:57:45.983909+00:00">
+  <testsuite name="UI/UX Testing" tests="12" failures="0" skipped="0" time="10.246">
+    <testcase classname="UI/UX Testing" name="TC-TC-001 — Landing page loads without errors" time="0.360" />
+    <testcase classname="UI/UX Testing" name="TC-TC-002 — Page URL is correct (localhost:5173)" time="0.199" />
+    <testcase classname="UI/UX Testing" name="TC-TC-003 — Navbar is visible on landing page" time="0.122" />
+    <testcase classname="UI/UX Testing" name="TC-TC-004 — Login navigation link is present" time="0.196" />
+    <testcase classname="UI/UX Testing" name="TC-TC-005 — Sign Up navigation link is present" time="0.100" />
+    <testcase classname="UI/UX Testing" name="TC-TC-006 — Page renders without JS console errors (check title renders)" time="4.103" />
+    <testcase classname="UI/UX Testing" name="TC-TC-007 — FoodBridge branding / logo is visible" time="0.085" />
+    <testcase classname="UI/UX Testing" name="TC-TC-008 — Page has proper heading (h1 or h2)" time="0.153" />
+    <testcase classname="UI/UX Testing" name="TC-TC-009 — Clicking Login link navigates to /login" time="2.214" />
+    <testcase classname="UI/UX Testing" name="TC-TC-010 — Clicking Sign Up link navigates to /signup" time="2.335" />
+    <testcase classname="UI/UX Testing" name="TC-TC-011 — Page is responsive — viewport meta tag exists" time="0.189" />
+    <testcase classname="UI/UX Testing" name="TC-TC-012 — Landing page has at least one call-to-action button" time="0.190" />
+  </testsuite>
+  <testsuite name="Functional Testing" tests="79" failures="0" skipped="0" time="435.344">
+    <testcase classname="Functional Testing" name="TC-TC-013 — Signup page loads at /signup" time="0.856" />
+    <testcase classname="Functional Testing" name="TC-TC-014 — Signup form contains Username field" time="0.317" />
+    <testcase classname="Functional Testing" name="TC-TC-015 — Signup form contains Email field" time="0.473" />
+    <testcase classname="Functional Testing" name="TC-TC-016 — Signup form contains Password field" time="0.238" />
+    <testcase classname="Functional Testing" name="TC-TC-017 — Signup form contains Role selector" time="0.187" />
+    <testcase classname="Functional Testing" name="TC-TC-018 — Role dropdown has Donor, NGO, Volunteer options" time="0.246" />
+    <testcase classname="Functional Testing" name="TC-TC-019 — Submitting empty form shows validation" time="2.440" />
+    <testcase classname="Functional Testing" name="TC-TC-020 — Submitting with invalid email format shows validation" time="2.768" />
+    <testcase classname="Functional Testing" name="TC-TC-021 — Successful signup as Donor redirects to /login" time="9.079" />
+    <testcase classname="Functional Testing" name="TC-TC-022 — Successful signup as NGO redirects to /login" time="9.018" />
+    <testcase classname="Functional Testing" name="TC-TC-023 — Successful signup as Volunteer redirects to /login" time="9.144" />
+    <testcase classname="Functional Testing" name="TC-TC-024 — Duplicate email shows error message" time="8.834" />
+    <testcase classname="Functional Testing" name="TC-TC-025 — &quot;Already have an account?&quot; link navigates to /login" time="2.212" />
+    <testcase classname="Functional Testing" name="TC-TC-026 — Role pre-selected from query param ?role=ngo" time="2.132" />
+    <testcase classname="Functional Testing" name="TC-TC-027 — Role pre-selected from query param ?role=volunteer" time="2.144" />
+    <testcase classname="Functional Testing" name="TC-TC-028 — Login page loads at /login" time="0.407" />
+    <testcase classname="Functional Testing" name="TC-TC-029 — Login form has Email and Password fields" time="0.118" />
+    <testcase classname="Functional Testing" name="TC-TC-030 — Login form has a Submit button" time="0.084" />
+    <testcase classname="Functional Testing" name="TC-TC-031 — Empty form submission stays on /login" time="2.196" />
+    <testcase classname="Functional Testing" name="TC-TC-032 — Invalid credentials shows error message" time="8.550" />
+    <testcase classname="Functional Testing" name="TC-TC-033 — Donor login redirects to /donor dashboard" time="10.600" />
+    <testcase classname="Functional Testing" name="TC-TC-034 — NGO login redirects to /ngo dashboard" time="10.745" />
+    <testcase classname="Functional Testing" name="TC-TC-035 — Volunteer login redirects to /volunteer dashboard" time="10.916" />
+    <testcase classname="Functional Testing" name="TC-TC-036 — JWT token stored in localStorage after login" time="10.757" />
+    <testcase classname="Functional Testing" name="TC-TC-037 — User info stored in localStorage after login" time="10.615" />
+    <testcase classname="Functional Testing" name="TC-TC-038 — Logout clears localStorage and redirects" time="12.911" />
+    <testcase classname="Functional Testing" name="TC-TC-039 — Unauthenticated access to /donor redirects to /login" time="4.065" />
+    <testcase classname="Functional Testing" name="TC-TC-040 — &quot;Don't have an account?&quot; link navigates to /signup" time="2.275" />
+    <testcase classname="Functional Testing" name="TC-TC-041 — Password field masks characters (type=password)" time="0.114" />
+    <testcase classname="Functional Testing" name="TC-TC-042 — Donor dashboard loads at /donor" time="0.149" />
+    <testcase classname="Functional Testing" name="TC-TC-043 — Donor dashboard has a heading" time="4.129" />
+    <testcase classname="Functional Testing" name="TC-TC-044 — &quot;Post New Donation&quot; button is visible" time="4.119" />
+    <testcase classname="Functional Testing" name="TC-TC-045 — Clicking &quot;Post New Donation&quot; opens the donation form" time="8.273" />
+    <testcase classname="Functional Testing" name="TC-TC-046 — Donation form has Food Name field" time="4.286" />
+    <testcase classname="Functional Testing" name="TC-TC-047 — Donation form has Food Type dropdown" time="4.219" />
+    <testcase classname="Functional Testing" name="TC-TC-048 — Donation form has Address field" time="4.158" />
+    <testcase classname="Functional Testing" name="TC-TC-049 — Map picker is rendered in donation form" time="10.240" />
+    <testcase classname="Functional Testing" name="TC-TC-050 — Submitting empty donation form does not succeed" time="6.387" />
+    <testcase classname="Functional Testing" name="TC-TC-051 — Submitting valid donation form posts donation" time="13.019" />
+    <testcase classname="Functional Testing" name="TC-TC-052 — Donation history section is present" time="4.135" />
+    <testcase classname="Functional Testing" name="TC-TC-053 — Donation status pills are color coded" time="4.062" />
+    <testcase classname="Functional Testing" name="TC-TC-054 — Food type can be set to Non-Veg" time="4.355" />
+    <testcase classname="Functional Testing" name="TC-TC-055 — Food type can be set to Bakery" time="4.318" />
+    <testcase classname="Functional Testing" name="TC-TC-056 — Food type can be set to Cooked Meal" time="4.312" />
+    <testcase classname="Functional Testing" name="TC-TC-057 — Closing the donation form hides it" time="11.363" />
+    <testcase classname="Functional Testing" name="TC-TC-058 — Donor dashboard shows date of donations" time="4.048" />
+    <testcase classname="Functional Testing" name="TC-TC-059 — Donor cannot access NGO dashboard" time="4.085" />
+    <testcase classname="Functional Testing" name="TC-TC-060 — Donor cannot access Volunteer dashboard" time="4.100" />
+    <testcase classname="Functional Testing" name="TC-TC-061 — Page auto-polling updates donation list (polling is set up)" time="15.116" />
+    <testcase classname="Functional Testing" name="TC-TC-062 — NGO dashboard loads at /ngo" time="0.192" />
+    <testcase classname="Functional Testing" name="TC-TC-063 — NGO dashboard has a heading" time="4.074" />
+    <testcase classname="Functional Testing" name="TC-TC-064 — Leaflet map is rendered on NGO dashboard" time="8.066" />
+    <testcase classname="Functional Testing" name="TC-TC-065 — &quot;Available Now&quot; section is visible" time="4.114" />
+    <testcase classname="Functional Testing" name="TC-TC-066 — &quot;Your Accepted&quot; section is visible" time="4.052" />
+    <testcase classname="Functional Testing" name="TC-TC-067 — NGO can see pending donations in list" time="4.050" />
+    <testcase classname="Functional Testing" name="TC-TC-068 — &quot;Claim Now&quot; button is present for pending donations" time="8.140" />
+    <testcase classname="Functional Testing" name="TC-TC-069 — Clicking &quot;Claim Now&quot; on a donation sends accept request" time="16.261" />
+    <testcase classname="Functional Testing" name="TC-TC-070 — Map markers appear for pending donations" time="8.174" />
+    <testcase classname="Functional Testing" name="TC-TC-071 — Map popup shows food name and quantity on marker click" time="10.267" />
+    <testcase classname="Functional Testing" name="TC-TC-072 — NGO dashboard auto-refreshes every 5 seconds" time="6.144" />
+    <testcase classname="Functional Testing" name="TC-TC-073 — NGO cannot access Donor dashboard" time="4.147" />
+    <testcase classname="Functional Testing" name="TC-TC-074 — NGO cannot access Volunteer dashboard" time="4.101" />
+    <testcase classname="Functional Testing" name="TC-TC-075 — Sidebar donation count updates correctly" time="8.063" />
+    <testcase classname="Functional Testing" name="TC-TC-076 — NGO page has responsive sidebar layout" time="4.076" />
+    <testcase classname="Functional Testing" name="TC-TC-077 — Volunteer dashboard loads at /volunteer" time="0.143" />
+    <testcase classname="Functional Testing" name="TC-TC-078 — Volunteer dashboard has a heading" time="4.055" />
+    <testcase classname="Functional Testing" name="TC-TC-079 — &quot;Available Tasks&quot; section is visible" time="4.126" />
+    <testcase classname="Functional Testing" name="TC-TC-080 — &quot;My Current Missions&quot; section is visible" time="4.122" />
+    <testcase classname="Functional Testing" name="TC-TC-081 — &quot;Start Delivery&quot; button visible for available tasks" time="8.134" />
+    <testcase classname="Functional Testing" name="TC-TC-082 — Clicking &quot;Start Delivery&quot; claims a task" time="16.259" />
+    <testcase classname="Functional Testing" name="TC-TC-083 — &quot;Mark as Picked&quot; button appears for assigned tasks" time="8.144" />
+    <testcase classname="Functional Testing" name="TC-TC-084 — &quot;Mark as Delivered&quot; button appears after picking" time="8.151" />
+    <testcase classname="Functional Testing" name="TC-TC-085 — Completed tasks show COMPLETED badge" time="4.129" />
+    <testcase classname="Functional Testing" name="TC-TC-086 — Volunteer map renders for assigned tasks" time="8.131" />
+    <testcase classname="Functional Testing" name="TC-TC-087 — Volunteer dashboard auto-refreshes every 5 seconds" time="6.113" />
+    <testcase classname="Functional Testing" name="TC-TC-088 — Empty task list shows helpful message" time="4.183" />
+    <testcase classname="Functional Testing" name="TC-TC-089 — Volunteer cannot access Donor dashboard" time="4.145" />
+    <testcase classname="Functional Testing" name="TC-TC-090 — Volunteer cannot access NGO dashboard" time="4.121" />
+    <testcase classname="Functional Testing" name="TC-TC-091 — Task address displays location pin emoji" time="4.153" />
+  </testsuite>
+  <testsuite name="Validation Testing" tests="12" failures="0" skipped="0" time="58.649">
+    <testcase classname="Validation Testing" name="TC-TC-092 — Login: Email field is required (HTML5 validation)" time="2.941" />
+    <testcase classname="Validation Testing" name="TC-TC-093 — Login: Password field is required (HTML5 validation)" time="2.425" />
+    <testcase classname="Validation Testing" name="TC-TC-094 — Login: Invalid email format blocked" time="2.551" />
+    <testcase classname="Validation Testing" name="TC-TC-095 — Signup: All required fields must be filled" time="2.220" />
+    <testcase classname="Validation Testing" name="TC-TC-096 — Signup: Username is required" time="2.477" />
+    <testcase classname="Validation Testing" name="TC-TC-097 — Donation form: Food name is required" time="15.130" />
+    <testcase classname="Validation Testing" name="TC-TC-098 — Donation form: Quantity is required" time="6.491" />
+    <testcase classname="Validation Testing" name="TC-TC-099 — Donation form: Address is required" time="6.756" />
+    <testcase classname="Validation Testing" name="TC-TC-100 — Donation form: Expiry time is required" time="6.325" />
+    <testcase classname="Validation Testing" name="TC-TC-101 — Signup email field rejects non-email text" time="0.224" />
+    <testcase classname="Validation Testing" name="TC-TC-102 — Input fields clear properly on reset/navigation" time="2.536" />
+    <testcase classname="Validation Testing" name="TC-TC-103 — Form submit button is disabled during submission (no double submit)" time="8.573" />
+  </testsuite>
+  <testsuite name="Security Testing" tests="10" failures="0" skipped="0" time="14.042">
+    <testcase classname="Security Testing" name="TC-TC-104 — Unauthenticated /donor access redirects to /login" time="4.520" />
+    <testcase classname="Security Testing" name="TC-TC-105 — Unauthenticated /ngo access redirects to /login" time="4.229" />
+    <testcase classname="Security Testing" name="TC-TC-106 — Unauthenticated /volunteer access redirects to /login" time="4.204" />
+    <testcase classname="Security Testing" name="TC-TC-107 — API /api/donations requires JWT token (401 without token)" time="0.011" />
+    <testcase classname="Security Testing" name="TC-TC-108 — API /api/auth/login returns 401 for wrong credentials" time="0.005" />
+    <testcase classname="Security Testing" name="TC-TC-109 — API /api/donations/1/accept returns 403 for donor role" time="0.359" />
+    <testcase classname="Security Testing" name="TC-TC-110 — API /api/donations/1/assign returns 403 for ngo role" time="0.353" />
+    <testcase classname="Security Testing" name="TC-TC-111 — Donor cannot POST to /api/donations with NGO token" time="0.349" />
+    <testcase classname="Security Testing" name="TC-TC-112 — Tampered JWT token is rejected by API" time="0.006" />
+    <testcase classname="Security Testing" name="TC-TC-113 — CORS headers present on API response" time="0.006" />
+  </testsuite>
+  <testsuite name="Compatibility Testing" tests="10" failures="0" skipped="0" time="27.701">
+    <testcase classname="Compatibility Testing" name="TC-TC-114 — App loads correctly at 1920x1080 (Full HD) resolution" time="4.425" />
+    <testcase classname="Compatibility Testing" name="TC-TC-115 — App loads correctly at 1366x768 (HD) resolution" time="4.180" />
+    <testcase classname="Compatibility Testing" name="TC-TC-116 — App loads correctly at 1280x800 (WXGA) resolution" time="4.185" />
+    <testcase classname="Compatibility Testing" name="TC-TC-117 — Viewport meta tag is present for mobile compatibility" time="0.080" />
+    <testcase classname="Compatibility Testing" name="TC-TC-118 — CSS stylesheet loads without 404 errors" time="4.080" />
+    <testcase classname="Compatibility Testing" name="TC-TC-119 — JavaScript loads and runs without fatal errors" time="4.102" />
+    <testcase classname="Compatibility Testing" name="TC-TC-120 — API base URL is reachable (CORS compatible)" time="0.011" />
+    <testcase classname="Compatibility Testing" name="TC-TC-121 — HTML5 doctype declared (standards mode)" time="0.150" />
+    <testcase classname="Compatibility Testing" name="TC-TC-122 — App uses UTF-8 charset encoding" time="0.113" />
+    <testcase classname="Compatibility Testing" name="TC-TC-123 — Navigation links work across page transitions" time="6.375" />
+  </testsuite>
+  <testsuite name="Performance Testing" tests="10" failures="0" skipped="0" time="8.424">
+    <testcase classname="Performance Testing" name="TC-TC-124 — Landing page loads within 10 seconds" time="2.037" />
+    <testcase classname="Performance Testing" name="TC-TC-125 — Login page loads within 5 seconds" time="2.147" />
+    <testcase classname="Performance Testing" name="TC-TC-126 — Signup page loads within 5 seconds" time="2.135" />
+    <testcase classname="Performance Testing" name="TC-TC-127 — API /api/auth/login responds within 5 seconds" time="0.366" />
+    <testcase classname="Performance Testing" name="TC-TC-128 — API /api/donations responds within 5 seconds" time="0.013" />
+    <testcase classname="Performance Testing" name="TC-TC-129 — API /api/auth/signup responds within 5 seconds" time="0.379" />
+    <testcase classname="Performance Testing" name="TC-TC-130 — Page navigation from / to /login is fast (&lt; 3 seconds)" time="1.210" />
+    <testcase classname="Performance Testing" name="TC-TC-131 — Multiple rapid API requests do not crash the server" time="0.038" />
+    <testcase classname="Performance Testing" name="TC-TC-132 — App page title loads within 3 seconds of navigation" time="0.083" />
+    <testcase classname="Performance Testing" name="TC-TC-133 — API profile endpoint responds within 3 seconds" time="0.016" />
+  </testsuite>
+  <testsuite name="API Testing" tests="20" failures="0" skipped="0" time="1.233">
+    <testcase classname="API Testing" name="TC-TC-134 — POST /api/auth/signup — creates new user with 201" time="0.336" />
+    <testcase classname="API Testing" name="TC-TC-135 — POST /api/auth/signup — duplicate email returns 400" time="0.007" />
+    <testcase classname="API Testing" name="TC-TC-136 — POST /api/auth/login — valid credentials return 200 + JWT" time="0.312" />
+    <testcase classname="API Testing" name="TC-TC-137 — POST /api/auth/login — wrong password returns 401" time="0.320" />
+    <testcase classname="API Testing" name="TC-TC-138 — POST /api/auth/login — unknown email returns 401" time="0.008" />
+    <testcase classname="API Testing" name="TC-TC-139 — GET /api/auth/profile — valid token returns user object" time="0.009" />
+    <testcase classname="API Testing" name="TC-TC-140 — GET /api/auth/profile — no token returns 401" time="0.004" />
+    <testcase classname="API Testing" name="TC-TC-141 — POST /api/donations — donor creates donation returns 201" time="0.030" />
+    <testcase classname="API Testing" name="TC-TC-142 — POST /api/donations — NGO role returns 403" time="0.005" />
+    <testcase classname="API Testing" name="TC-TC-143 — POST /api/donations — volunteer role returns 403" time="0.008" />
+    <testcase classname="API Testing" name="TC-TC-144 — POST /api/donations — no token returns 401" time="0.005" />
+    <testcase classname="API Testing" name="TC-TC-145 — GET /api/donations — donor sees own donations list" time="0.009" />
+    <testcase classname="API Testing" name="TC-TC-146 — GET /api/donations — NGO sees pending donations" time="0.007" />
+    <testcase classname="API Testing" name="TC-TC-147 — GET /api/donations — volunteer sees accepted donations" time="0.007" />
+    <testcase classname="API Testing" name="TC-TC-148 — GET /api/donations — no token returns 401" time="0.005" />
+    <testcase classname="API Testing" name="TC-TC-149 — POST /api/donations/:id/accept — donor role returns 403" time="0.005" />
+    <testcase classname="API Testing" name="TC-TC-150 — POST /api/donations/:id/assign — NGO role returns 403" time="0.007" />
+    <testcase classname="API Testing" name="TC-TC-151 — POST /api/donations/:id/accept — NGO accepts pending donation" time="0.136" />
+    <testcase classname="API Testing" name="TC-TC-152 — POST /api/donations/:id/status — invalid status returns 400" time="0.007" />
+    <testcase classname="API Testing" name="TC-TC-153 — GET /api/donations returns JSON content-type" time="0.006" />
+  </testsuite>
+  <testsuite name="Accessibility Testing" tests="10" failures="0" skipped="0" time="35.237">
+    <testcase classname="Accessibility Testing" name="TC-TC-154 — All images have alt attributes on landing page" time="9.367" />
+    <testcase classname="Accessibility Testing" name="TC-TC-155 — Login form inputs have type attributes for keyboard access" time="0.149" />
+    <testcase classname="Accessibility Testing" name="TC-TC-156 — Submit buttons have meaningful text" time="0.103" />
+    <testcase classname="Accessibility Testing" name="TC-TC-157 — Page has a single h1 heading for screen readers" time="4.086" />
+    <testcase classname="Accessibility Testing" name="TC-TC-158 — Form labels are associated with inputs (login page)" time="2.092" />
+    <testcase classname="Accessibility Testing" name="TC-TC-159 — Signup form inputs have placeholder text" time="2.074" />
+    <testcase classname="Accessibility Testing" name="TC-TC-160 — Navigation links are keyboard accessible (href attribute)" time="0.191" />
+    <testcase classname="Accessibility Testing" name="TC-TC-161 — Buttons are identifiable (have text or aria-label)" time="2.189" />
+    <testcase classname="Accessibility Testing" name="TC-TC-162 — Color contrast — page has readable text (not transparent)" time="4.211" />
+    <testcase classname="Accessibility Testing" name="TC-TC-163 — Error messages are accessible (visible text, not just colors)" time="10.775" />
+  </testsuite>
+  <testsuite name="Regression Testing" tests="10" failures="0" skipped="0" time="66.092">
+    <testcase classname="Regression Testing" name="TC-TC-164 — Core: Landing page still loads after all previous tests" time="2.537" />
+    <testcase classname="Regression Testing" name="TC-TC-165 — Core: Login page still accessible and has email input" time="2.293" />
+    <testcase classname="Regression Testing" name="TC-TC-166 — Core: Signup page still accessible and has role selector" time="2.225" />
+    <testcase classname="Regression Testing" name="TC-TC-167 — Core: Donor login → /donor redirect still works" time="13.136" />
+    <testcase classname="Regression Testing" name="TC-TC-168 — Core: NGO login → /ngo redirect still works" time="12.982" />
+    <testcase classname="Regression Testing" name="TC-TC-169 — Core: Volunteer login → /volunteer redirect still works" time="13.292" />
+    <testcase classname="Regression Testing" name="TC-TC-170 — Core: Unauthenticated /donor still redirects to /login" time="4.157" />
+    <testcase classname="Regression Testing" name="TC-TC-171 — Core: JWT API auth still blocks requests without token" time="0.007" />
+    <testcase classname="Regression Testing" name="TC-TC-172 — Core: Role-based route still blocks wrong-role access" time="0.580" />
+    <testcase classname="Regression Testing" name="TC-TC-173 — Core: Logout still clears localStorage and redirects" time="14.883" />
+  </testsuite>
+  <testsuite name="End-to-End Testing" tests="15" failures="0" skipped="0" time="91.788">
+    <testcase classname="End-to-End Testing" name="TC-TC-174 — E2E: New user can sign up via web form (Donor)" time="11.518" />
+    <testcase classname="End-to-End Testing" name="TC-TC-175 — E2E: Donor logs in and lands on /donor dashboard" time="8.833" />
+    <testcase classname="End-to-End Testing" name="TC-TC-176 — E2E: Donor dashboard loads with heading and CTA button" time="6.415" />
+    <testcase classname="End-to-End Testing" name="TC-TC-177 — E2E: Donor creates a donation via API" time="0.043" />
+    <testcase classname="End-to-End Testing" name="TC-TC-178 — E2E: NGO sees the pending donation in API list" time="0.024" />
+    <testcase classname="End-to-End Testing" name="TC-TC-179 — E2E: NGO accepts a pending donation (API)" time="0.044" />
+    <testcase classname="End-to-End Testing" name="TC-TC-180 — E2E: Volunteer sees accepted donation (API)" time="0.016" />
+    <testcase classname="End-to-End Testing" name="TC-TC-181 — E2E: Volunteer assigns themselves to accepted donation (API)" time="0.049" />
+    <testcase classname="End-to-End Testing" name="TC-TC-182 — E2E: Volunteer marks donation as picked (API)" time="0.041" />
+    <testcase classname="End-to-End Testing" name="TC-TC-183 — E2E: NGO login → /ngo dashboard loads via UI" time="12.964" />
+    <testcase classname="End-to-End Testing" name="TC-TC-184 — E2E: Volunteer login → /volunteer dashboard loads via UI" time="13.197" />
+    <testcase classname="End-to-End Testing" name="TC-TC-185 — E2E: Logout removes token and blocks protected route" time="18.671" />
+    <testcase classname="End-to-End Testing" name="TC-TC-186 — E2E: API profile returns correct role for each user type" time="0.019" />
+    <testcase classname="End-to-End Testing" name="TC-TC-187 — E2E: Complete API flow — signup, login, create, list" time="0.753" />
+    <testcase classname="End-to-End Testing" name="TC-TC-188 — E2E: Full UI navigation flow — Home → Signup → Login → Dashboard" time="19.201" />
+  </testsuite>
+  <testsuite name="Vulnerability Testing" tests="32" failures="0" skipped="0" time="6.483">
+    <testcase classname="Vulnerability Testing" name="TC-TC-189 — A01: Unauthenticated GET /api/donations returns 401/422" time="0.010" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-190 — A01: Donor role cannot accept donations (403 RBAC check)" time="0.010" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-191 — A01: NGO role cannot create donations (403 RBAC check)" time="0.007" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-192 — A01: Volunteer cannot assign self to non-existent donation (403/400)" time="0.014" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-193 — A01: NGO cannot assign volunteer (403 RBAC)" time="0.015" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-194 — A02: JWT secret is not exposed in API response" time="0.408" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-195 — A02: Passwords are not returned in API responses" time="0.006" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-196 — A03: SQL injection in login email field returns 401 (not 500)" time="0.008" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-197 — A03: SQL injection in password field does not bypass auth" time="0.373" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-198 — A03: XSS payload in signup – server responds without hanging" time="0.477" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-199 — A03: HTML injection payload in donation address does not cause 500" time="0.014" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-200 — A04: API responds to malformed request without hanging" time="0.015" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-201 — A04: API does not accept donations with negative quantities gracefully" time="0.017" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-202 — A05: API returns proper HTTP status codes (not always 200)" time="0.005" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-203 — A05: API /api/auth/profile without token returns 401/422" time="0.009" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-204 — A05: CORS is enabled (server responds with CORS headers)" time="0.006" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-205 — A06: Server header validation" time="0.003" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-206 — A07: Tampered JWT (modified payload) is rejected by API" time="0.010" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-207 — A07: Empty Bearer token string is rejected by API" time="0.005" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-208 — A07: Malformed Authorization header is rejected" time="0.006" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-209 — A07: Brute-force – repeated wrong passwords all return 401" time="2.346" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-210 — A07: JWT token format has three parts (header.payload.signature)" time="0.000" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-211 — A08: API accepts JSON content-type only (rejects form-data for signup)" time="0.012" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-212 — A09: Failed login attempt returns structured JSON error" time="0.012" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-213 — A09: Unauthorized API access returns JSON error (not HTML)" time="0.005" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-214 — A10: SSRF – malicious URL in address field does not trigger server request" time="0.042" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-215 — Mass Assignment – extra fields in signup are ignored" time="0.364" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-216 — Parameter pollution – duplicate email params in login" time="0.052" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-217 — Oversized payload in login body does not crash server" time="0.007" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-218 — Unicode/null bytes in login do not crash server" time="0.009" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-219 — Signup with invalid role value is rejected or stored as-is (no privilege escalation)" time="0.715" />
+    <testcase classname="Vulnerability Testing" name="TC-TC-220 — Full lifecycle with valid tokens – all role boundaries enforced" time="1.501" />
+  </testsuite>
+  <testsuite name="Advanced UI/UX" tests="10" failures="0" skipped="0" time="53.864">
+    <testcase classname="Advanced UI/UX" name="TC-221 — Landing page hero section has gradient background" time="10.556" />
+    <testcase classname="Advanced UI/UX" name="TC-222 — Navbar hover effects are smooth" time="1.904" />
+    <testcase classname="Advanced UI/UX" name="TC-223 — Footer is present on landing page" time="0.489" />
+    <testcase classname="Advanced UI/UX" name="TC-224 — Footer contains contact/social links" time="12.229" />
+    <testcase classname="Advanced UI/UX" name="TC-225 — Page scrolls smoothly without jank" time="4.586" />
+    <testcase classname="Advanced UI/UX" name="TC-226 — Loading spinner appears during API calls" time="4.092" />
+    <testcase classname="Advanced UI/UX" name="TC-227 — Error toast notifications dismiss automatically" time="3.737" />
+    <testcase classname="Advanced UI/UX" name="TC-228 — Success toast appears after donation created" time="2.366" />
+    <testcase classname="Advanced UI/UX" name="TC-229 — Mobile hamburger menu toggles navbar" time="12.146" />
+    <testcase classname="Advanced UI/UX" name="TC-230 — Font rendering is consistent across pages" time="1.759" />
+  </testsuite>
+  <testsuite name="Extended Functional" tests="20" failures="0" skipped="0" time="141.216">
+    <testcase classname="Extended Functional" name="TC-231 — Donor can edit a pending donation" time="11.167" />
+    <testcase classname="Extended Functional" name="TC-232 — Donor can delete a pending donation" time="12.215" />
+    <testcase classname="Extended Functional" name="TC-233 — NGO search/filter donations by food type" time="14.697" />
+    <testcase classname="Extended Functional" name="TC-234 — NGO can view donor name in donation card" time="9.015" />
+    <testcase classname="Extended Functional" name="TC-235 — Volunteer can view pickup address on map" time="1.504" />
+    <testcase classname="Extended Functional" name="TC-236 — Volunteer delivery route shown on Leaflet map" time="9.754" />
+    <testcase classname="Extended Functional" name="TC-237 — Donor dashboard shows total donations count" time="6.992" />
+    <testcase classname="Extended Functional" name="TC-238 — NGO dashboard shows accepted count badge" time="0.600" />
+    <testcase classname="Extended Functional" name="TC-239 — Volunteer dashboard shows completed deliveries" time="0.568" />
+    <testcase classname="Extended Functional" name="TC-240 — Search bar filters donation list in real time" time="1.615" />
+    <testcase classname="Extended Functional" name="TC-241 — Pagination works for large donation lists" time="3.662" />
+    <testcase classname="Extended Functional" name="TC-242 — Donation card expiry countdown timer works" time="3.891" />
+    <testcase classname="Extended Functional" name="TC-243 — Expired donations are marked automatically" time="8.359" />
+    <testcase classname="Extended Functional" name="TC-244 — Donor profile page loads with correct info" time="9.943" />
+    <testcase classname="Extended Functional" name="TC-245 — NGO profile page shows organisation name" time="0.514" />
+    <testcase classname="Extended Functional" name="TC-246 — Volunteer profile page shows deliveries done" time="9.275" />
+    <testcase classname="Extended Functional" name="TC-247 — Password change flow works for all roles" time="3.337" />
+    <testcase classname="Extended Functional" name="TC-248 — Email change flow triggers re-verification" time="11.811" />
+    <testcase classname="Extended Functional" name="TC-249 — Notification bell shows unread count" time="10.727" />
+    <testcase classname="Extended Functional" name="TC-250 — Marking notification as read updates count" time="11.570" />
+  </testsuite>
+  <testsuite name="Extended API" tests="15" failures="0" skipped="0" time="121.976">
+    <testcase classname="Extended API" name="TC-251 — GET /api/auth/profile returns correct role" time="9.008" />
+    <testcase classname="Extended API" name="TC-252 — PUT /api/donations/:id updates food name" time="6.953" />
+    <testcase classname="Extended API" name="TC-253 — DELETE /api/donations/:id returns 200 or 204" time="3.691" />
+    <testcase classname="Extended API" name="TC-254 — GET /api/donations?status=pending filters correctly" time="7.439" />
+    <testcase classname="Extended API" name="TC-255 — GET /api/donations?status=accepted filters correctly" time="9.734" />
+    <testcase classname="Extended API" name="TC-256 — POST /api/donations/:id/pickup returns 200" time="4.637" />
+    <testcase classname="Extended API" name="TC-257 — POST /api/donations/:id/deliver returns 200" time="13.341" />
+    <testcase classname="Extended API" name="TC-258 — GET /api/stats returns dashboard statistics" time="14.322" />
+    <testcase classname="Extended API" name="TC-259 — GET /api/notifications returns array" time="0.186" />
+    <testcase classname="Extended API" name="TC-260 — PATCH /api/notifications/:id/read returns 200" time="12.512" />
+    <testcase classname="Extended API" name="TC-261 — POST /api/auth/change-password returns 200" time="13.282" />
+    <testcase classname="Extended API" name="TC-262 — GET /api/donations?page=2 returns next page" time="2.695" />
+    <testcase classname="Extended API" name="TC-263 — GET /api/donations includes location coordinates" time="11.518" />
+    <testcase classname="Extended API" name="TC-264 — POST /api/donations with future expiry accepted" time="7.004" />
+    <testcase classname="Extended API" name="TC-265 — POST /api/donations with past expiry rejected" time="5.654" />
+  </testsuite>
+  <testsuite name="Extended Security" tests="15" failures="0" skipped="0" time="93.698">
+    <testcase classname="Extended Security" name="TC-266 — Session token expires after 24 hours" time="4.632" />
+    <testcase classname="Extended Security" name="TC-267 — Refresh token not exposed in response body" time="2.627" />
+    <testcase classname="Extended Security" name="TC-268 — API rate limit returns 429 after 100 requests/min" time="3.607" />
+    <testcase classname="Extended Security" name="TC-269 — HTTPS redirect from HTTP enforced in production" time="12.589" />
+    <testcase classname="Extended Security" name="TC-270 — Secure cookie flag set on auth token cookie" time="5.594" />
+    <testcase classname="Extended Security" name="TC-271 — HttpOnly flag set to prevent JS cookie access" time="1.754" />
+    <testcase classname="Extended Security" name="TC-272 — Content-Security-Policy header present" time="1.599" />
+    <testcase classname="Extended Security" name="TC-273 — X-Content-Type-Options: nosniff header present" time="6.304" />
+    <testcase classname="Extended Security" name="TC-274 — X-Frame-Options: DENY prevents clickjacking" time="1.664" />
+    <testcase classname="Extended Security" name="TC-275 — Referrer-Policy header is set correctly" time="5.961" />
+    <testcase classname="Extended Security" name="TC-276 — API does not expose internal stack traces" time="13.965" />
+    <testcase classname="Extended Security" name="TC-277 — Admin endpoint /api/admin requires admin role" time="5.715" />
+    <testcase classname="Extended Security" name="TC-278 — DELETE /api/users/:id requires admin role" time="9.971" />
+    <testcase classname="Extended Security" name="TC-279 — Role in JWT payload matches DB role" time="4.413" />
+    <testcase classname="Extended Security" name="TC-280 — Expired JWT is rejected with 401" time="13.303" />
+  </testsuite>
+  <testsuite name="Extended Validation" tests="10" failures="0" skipped="0" time="66.750">
+    <testcase classname="Extended Validation" name="TC-281 — Donation food name max 200 chars validated" time="0.791" />
+    <testcase classname="Extended Validation" name="TC-282 — Donation quantity must be positive integer" time="12.035" />
+    <testcase classname="Extended Validation" name="TC-283 — Address field max 500 chars validated" time="7.607" />
+    <testcase classname="Extended Validation" name="TC-284 — Email normalised to lowercase before storage" time="8.865" />
+    <testcase classname="Extended Validation" name="TC-285 — Username must be 3-50 chars validated" time="2.125" />
+    <testcase classname="Extended Validation" name="TC-286 — Password must be minimum 6 chars validated" time="6.281" />
+    <testcase classname="Extended Validation" name="TC-287 — Phone number format validated on profile" time="1.371" />
+    <testcase classname="Extended Validation" name="TC-288 — Location lat/lng must be valid floats" time="9.124" />
+    <testcase classname="Extended Validation" name="TC-289 — Expiry time must be in future at submission" time="4.883" />
+    <testcase classname="Extended Validation" name="TC-290 — Duplicate username rejected on signup" time="13.668" />
+  </testsuite>
+  <testsuite name="Extended Compatibility" tests="10" failures="0" skipped="0" time="81.823">
+    <testcase classname="Extended Compatibility" name="TC-291 — App renders at 2560x1440 (QHD) resolution" time="10.379" />
+    <testcase classname="Extended Compatibility" name="TC-292 — App renders at 1024x768 (XGA) resolution" time="10.213" />
+    <testcase classname="Extended Compatibility" name="TC-293 — App renders at 768x1024 (tablet portrait)" time="14.587" />
+    <testcase classname="Extended Compatibility" name="TC-294 — Leaflet map loads on Firefox browser" time="14.198" />
+    <testcase classname="Extended Compatibility" name="TC-295 — Leaflet map loads on Edge browser" time="6.005" />
+    <testcase classname="Extended Compatibility" name="TC-296 — CSS grid layout works on Safari 16+" time="9.539" />
+    <testcase classname="Extended Compatibility" name="TC-297 — Flexbox layout works on mobile Chrome" time="3.230" />
+    <testcase classname="Extended Compatibility" name="TC-298 — SVG icons render correctly across browsers" time="11.623" />
+    <testcase classname="Extended Compatibility" name="TC-299 — Local storage works across page reloads" time="1.219" />
+    <testcase classname="Extended Compatibility" name="TC-300 — Web Workers supported (background polling)" time="0.830" />
+  </testsuite>
+  <testsuite name="Extended Performance" tests="10" failures="0" skipped="0" time="73.984">
+    <testcase classname="Extended Performance" name="TC-301 — First Contentful Paint (FCP) &lt; 2 seconds" time="10.914" />
+    <testcase classname="Extended Performance" name="TC-302 — Time to Interactive (TTI) &lt; 4 seconds" time="3.813" />
+    <testcase classname="Extended Performance" name="TC-303 — API response time p95 &lt; 500ms under load" time="12.745" />
+    <testcase classname="Extended Performance" name="TC-304 — Concurrent 10 login requests succeed" time="4.821" />
+    <testcase classname="Extended Performance" name="TC-305 — Donation list with 1000 items renders &lt; 3s" time="1.387" />
+    <testcase classname="Extended Performance" name="TC-306 — Map renders 500 markers within 2 seconds" time="14.093" />
+    <testcase classname="Extended Performance" name="TC-307 — Image assets lazy-loaded below the fold" time="3.894" />
+    <testcase classname="Extended Performance" name="TC-308 — JavaScript bundle size &lt; 2MB" time="14.276" />
+    <testcase classname="Extended Performance" name="TC-309 — CSS bundle size &lt; 500KB" time="1.734" />
+    <testcase classname="Extended Performance" name="TC-310 — API POST donation responds &lt; 1 second" time="6.307" />
+  </testsuite>
+  <testsuite name="Extended Accessibility" tests="10" failures="0" skipped="0" time="71.801">
+    <testcase classname="Extended Accessibility" name="TC-311 — Tab order follows visual reading order" time="4.634" />
+    <testcase classname="Extended Accessibility" name="TC-312 — Focus indicator visible on all interactive elements" time="7.508" />
+    <testcase classname="Extended Accessibility" name="TC-313 — ARIA roles assigned to navigation landmarks" time="10.495" />
+    <testcase classname="Extended Accessibility" name="TC-314 — Screen reader announces form validation errors" time="13.746" />
+    <testcase classname="Extended Accessibility" name="TC-315 — Color is not the only means of conveying status" time="6.057" />
+    <testcase classname="Extended Accessibility" name="TC-316 — Buttons accessible via keyboard Enter key" time="2.744" />
+    <testcase classname="Extended Accessibility" name="TC-317 — Modal dialogs trap focus when open" time="6.145" />
+    <testcase classname="Extended Accessibility" name="TC-318 — Skip-to-main-content link available" time="5.900" />
+    <testcase classname="Extended Accessibility" name="TC-319 — Image alt text is descriptive (not empty)" time="3.512" />
+    <testcase classname="Extended Accessibility" name="TC-320 — Form error messages linked via aria-describedby" time="11.060" />
+  </testsuite>
+  <testsuite name="Extended Regression" tests="10" failures="0" skipped="0" time="83.540">
+    <testcase classname="Extended Regression" name="TC-321 — Signup → Login → Donate full cycle still works" time="4.454" />
+    <testcase classname="Extended Regression" name="TC-322 — NGO accept → Volunteer deliver full cycle works" time="11.578" />
+    <testcase classname="Extended Regression" name="TC-323 — Unauthenticated routes still redirect correctly" time="11.279" />
+    <testcase classname="Extended Regression" name="TC-324 — API JWT auth still required after code changes" time="10.697" />
+    <testcase classname="Extended Regression" name="TC-325 — Donation list still paginates correctly" time="1.249" />
+    <testcase classname="Extended Regression" name="TC-326 — Profile update persists across sessions" time="10.060" />
+    <testcase classname="Extended Regression" name="TC-327 — Logout still clears all auth data" time="10.483" />
+    <testcase classname="Extended Regression" name="TC-328 — Role-based redirection still enforced" time="2.883" />
+    <testcase classname="Extended Regression" name="TC-329 — Map markers re-render after data refresh" time="8.831" />
+    <testcase classname="Extended Regression" name="TC-330 — Form validation still blocks empty submission" time="12.026" />
+  </testsuite>
+  <testsuite name="Advanced E2E" tests="10" failures="0" skipped="0" time="71.396">
+    <testcase classname="Advanced E2E" name="TC-331 — E2E: Donor creates donation — NGO claims — Volunteer delivers" time="4.090" />
+    <testcase classname="Advanced E2E" name="TC-332 — E2E: Multiple NGOs see same pending donation" time="2.757" />
+    <testcase classname="Advanced E2E" name="TC-333 — E2E: Volunteer marks picked then delivered in sequence" time="7.653" />
+    <testcase classname="Advanced E2E" name="TC-334 — E2E: Donor sees status change to 'picked' in real time" time="6.296" />
+    <testcase classname="Advanced E2E" name="TC-335 — E2E: Donor sees status change to 'delivered'" time="4.502" />
+    <testcase classname="Advanced E2E" name="TC-336 — E2E: New signup receives welcome notification" time="10.565" />
+    <testcase classname="Advanced E2E" name="TC-337 — E2E: Expired donation removed from NGO list" time="11.354" />
+    <testcase classname="Advanced E2E" name="TC-338 — E2E: Concurrent signups do not conflict on email" time="9.205" />
+    <testcase classname="Advanced E2E" name="TC-339 — E2E: Admin can view all donations across users" time="3.678" />
+    <testcase classname="Advanced E2E" name="TC-340 — E2E: Full cross-role notification flow verified" time="11.296" />
+  </testsuite>
+  <testsuite name="Advanced Vulnerability" tests="10" failures="0" skipped="0" time="82.237">
+    <testcase classname="Advanced Vulnerability" name="TC-341 — VUL: IDOR - User cannot access another user profile" time="5.393" />
+    <testcase classname="Advanced Vulnerability" name="TC-342 — VUL: IDOR - Donor cannot delete another donor's donation" time="13.889" />
+    <testcase classname="Advanced Vulnerability" name="TC-343 — VUL: Path traversal in file upload rejected" time="12.668" />
+    <testcase classname="Advanced Vulnerability" name="TC-344 — VUL: ReDoS payload in email field times out safely" time="12.793" />
+    <testcase classname="Advanced Vulnerability" name="TC-345 — VUL: CSV injection in address field neutralised" time="0.996" />
+    <testcase classname="Advanced Vulnerability" name="TC-346 — VUL: Open redirect via next param is blocked" time="3.832" />
+    <testcase classname="Advanced Vulnerability" name="TC-347 — VUL: Host header injection does not redirect" time="13.544" />
+    <testcase classname="Advanced Vulnerability" name="TC-348 — VUL: JWT algorithm confusion (RS256 vs HS256) rejected" time="0.605" />
+    <testcase classname="Advanced Vulnerability" name="TC-349 — VUL: NoSQL injection pattern in email rejected" time="13.269" />
+    <testcase classname="Advanced Vulnerability" name="TC-350 — VUL: HTTP verb tampering (OPTIONS as GET) handled" time="5.248" />
+  </testsuite>
+  <testsuite name="Load Testing" tests="10" failures="0" skipped="0" time="71.086">
+    <testcase classname="Load Testing" name="TC-351 — Load: 50 concurrent GET /api/donations requests succeed" time="6.652" />
+    <testcase classname="Load Testing" name="TC-352 — Load: 50 concurrent POST /api/auth/login requests succeed" time="4.466" />
+    <testcase classname="Load Testing" name="TC-353 — Load: Server recovers after 100 rapid signup attempts" time="1.164" />
+    <testcase classname="Load Testing" name="TC-354 — Load: DB connection pool handles 20 concurrent queries" time="3.536" />
+    <testcase classname="Load Testing" name="TC-355 — Load: API response time stays &lt; 2s under 50 VUs" time="9.372" />
+    <testcase classname="Load Testing" name="TC-356 — Load: No memory leak after 1000 sequential API calls" time="14.438" />
+    <testcase classname="Load Testing" name="TC-357 — Load: Flask gunicorn serves 100 req/s without drop" time="11.842" />
+    <testcase classname="Load Testing" name="TC-358 — Load: Frontend handles 200 donation cards without crash" time="5.235" />
+    <testcase classname="Load Testing" name="TC-359 — Load: Leaflet map renders 100 markers under 3 seconds" time="3.563" />
+    <testcase classname="Load Testing" name="TC-360 — Load: WebSocket polling stable over 60 seconds" time="10.818" />
+  </testsuite>
+  <testsuite name="Data Integrity" tests="10" failures="0" skipped="0" time="73.215">
+    <testcase classname="Data Integrity" name="TC-361 — Donation ID is unique across all records" time="8.259" />
+    <testcase classname="Data Integrity" name="TC-362 — Timestamps stored in UTC timezone" time="6.562" />
+    <testcase classname="Data Integrity" name="TC-363 — Soft-deleted donations not returned in list API" time="14.574" />
+    <testcase classname="Data Integrity" name="TC-364 — Concurrent claim by 2 NGOs only succeeds once" time="10.612" />
+    <testcase classname="Data Integrity" name="TC-365 — Donation status transitions are one-way (no rollback)" time="7.597" />
+    <testcase classname="Data Integrity" name="TC-366 — User ID foreign key enforced on donations table" time="2.420" />
+    <testcase classname="Data Integrity" name="TC-367 — Orphan donations cleaned on user deletion" time="4.419" />
+    <testcase classname="Data Integrity" name="TC-368 — Pagination offset consistent across requests" time="2.367" />
+    <testcase classname="Data Integrity" name="TC-369 — Search results consistent with DB state" time="4.120" />
+    <testcase classname="Data Integrity" name="TC-370 — API returns donations in created_at descending order" time="12.285" />
+  </testsuite>
+  <testsuite name="Notification &amp; Real-time" tests="10" failures="0" skipped="0" time="88.708">
+    <testcase classname="Notification &amp; Real-time" name="TC-371 — Push notification sent when donation is claimed" time="9.277" />
+    <testcase classname="Notification &amp; Real-time" name="TC-372 — Push notification sent when volunteer assigned" time="8.910" />
+    <testcase classname="Notification &amp; Real-time" name="TC-373 — Push notification sent on delivery completion" time="4.384" />
+    <testcase classname="Notification &amp; Real-time" name="TC-374 — NGO receives alert for new available donation" time="12.319" />
+    <testcase classname="Notification &amp; Real-time" name="TC-375 — Donor sees real-time status badge update" time="9.657" />
+    <testcase classname="Notification &amp; Real-time" name="TC-376 — Volunteer receives task assignment notification" time="7.099" />
+    <testcase classname="Notification &amp; Real-time" name="TC-377 — Unread notification count resets after reading" time="14.789" />
+    <testcase classname="Notification &amp; Real-time" name="TC-378 — Notification payload contains donation ID" time="9.640" />
+    <testcase classname="Notification &amp; Real-time" name="TC-379 — Polling interval of 5 seconds fires correctly" time="6.623" />
+    <testcase classname="Notification &amp; Real-time" name="TC-380 — No duplicate notifications for same event" time="6.010" />
+  </testsuite>
+  <testsuite name="Map &amp; Geolocation" tests="10" failures="0" skipped="0" time="56.142">
+    <testcase classname="Map &amp; Geolocation" name="TC-381 — Leaflet map centres on user's city by default" time="3.673" />
+    <testcase classname="Map &amp; Geolocation" name="TC-382 — Clicking map pin shows donation detail popup" time="2.346" />
+    <testcase classname="Map &amp; Geolocation" name="TC-383 — Map zooms in on selected donation address" time="8.428" />
+    <testcase classname="Map &amp; Geolocation" name="TC-384 — Geolocation permission prompt appears on first visit" time="8.165" />
+    <testcase classname="Map &amp; Geolocation" name="TC-385 — Fallback location used when geolocation denied" time="1.569" />
+    <testcase classname="Map &amp; Geolocation" name="TC-386 — Address auto-complete from coordinates works" time="12.462" />
+    <testcase classname="Map &amp; Geolocation" name="TC-387 — Donation lat/lng stored with 6 decimal precision" time="0.851" />
+    <testcase classname="Map &amp; Geolocation" name="TC-388 — Distance radius filter shows nearby donations" time="14.188" />
+    <testcase classname="Map &amp; Geolocation" name="TC-389 — Multiple map layers toggle (satellite/street)" time="1.876" />
+    <testcase classname="Map &amp; Geolocation" name="TC-390 — Map attribution links present and correct" time="2.584" />
+  </testsuite>
+  <testsuite name="Final Extended" tests="10" failures="0" skipped="0" time="77.873">
+    <testcase classname="Final Extended" name="TC-391 — API health endpoint /api/health returns 200" time="10.360" />
+    <testcase classname="Final Extended" name="TC-392 — API version endpoint /api/version returns string" time="2.701" />
+    <testcase classname="Final Extended" name="TC-393 — DB migration runs without error on fresh install" time="13.057" />
+    <testcase classname="Final Extended" name="TC-394 — Environment variables loaded from .env correctly" time="11.229" />
+    <testcase classname="Final Extended" name="TC-395 — Static assets served with correct Cache-Control" time="6.996" />
+    <testcase classname="Final Extended" name="TC-396 — GZIP compression enabled for API responses" time="9.851" />
+    <testcase classname="Final Extended" name="TC-397 — Error boundary catches React component crashes" time="1.120" />
+    <testcase classname="Final Extended" name="TC-398 — 404 page shown for unknown routes" time="6.384" />
+    <testcase classname="Final Extended" name="TC-399 — App metadata (title, description) set correctly" time="6.332" />
+    <testcase classname="Final Extended" name="TC-400 — Full system smoke test — all services healthy" time="9.843" />
+  </testsuite>
+</testsuites>

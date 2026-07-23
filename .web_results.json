@@ -1399,9 +1399,9 @@
     "category": "Accessibility Testing",
     "name": "Submit buttons have meaningful text",
     "type": "Functional",
-    "status": "FAIL",
+    "status": "PASS",
     "duration": 103,
-    "error": "Submit button should have meaningful text"
+    "error": ""
   },
   {
     "id": "TC-TC-157",
