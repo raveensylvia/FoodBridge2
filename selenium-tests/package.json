@@ -1,0 +1,33 @@
+{
+  "name": "foodbridge-selenium-tests",
+  "version": "2.0.0",
+  "description": "FoodBridge Web E2E Selenium test suite — 178 tests across 11 categories",
+  "main": "run-tests.js",
+  "scripts": {
+    "test": "node run-tests.js",
+    "report:generate": "node generate-web-report.js",
+    "test:landing": "mocha tests/01_landing.test.js --timeout 60000",
+    "test:signup": "mocha tests/02_signup.test.js --timeout 60000",
+    "test:login": "mocha tests/03_login.test.js --timeout 60000",
+    "test:donor": "mocha tests/04_donor.test.js --timeout 120000",
+    "test:ngo": "mocha tests/05_ngo.test.js --timeout 120000",
+    "test:volunteer": "mocha tests/06_volunteer.test.js --timeout 120000",
+    "test:validation": "mocha tests/07_validation.test.js --timeout 60000",
+    "test:security": "mocha tests/08_security.test.js --timeout 60000",
+    "test:compatibility": "mocha tests/09_compatibility.test.js --timeout 60000",
+    "test:performance": "mocha tests/10_performance.test.js --timeout 60000",
+    "test:api": "mocha tests/11_api.test.js --timeout 60000",
+    "test:accessibility": "mocha tests/12_accessibility.test.js --timeout 60000",
+    "test:regression": "mocha tests/13_regression.test.js --timeout 120000",
+    "test:e2e": "mocha tests/14_e2e_fullflow.test.js --timeout 180000"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "exceljs": "^4.4.0",
+    "mocha": "^10.4.0",
+    "selenium-webdriver": "^4.27.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^149.0.2"
+  }
+}
