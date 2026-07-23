@@ -324,15 +324,7 @@ jobs:
         continue-on-error: true
         run: python -X utf8 generate_junit.py
 
-      - name: Publish Selenium Test Results
-        uses: dorny/test-reporter@v1
-        if: always()
-        continue-on-error: true
-        with:
-          name: "Selenium Web E2E - All Tests"
-          path: test-results/selenium-web-results.xml
-          reporter: java-junit
-          fail-on-error: false
+
 
       - name: Upload Selenium report artifact
         uses: actions/upload-artifact@v4
@@ -398,15 +390,7 @@ jobs:
         continue-on-error: true
         run: python -X utf8 generate_junit.py
 
-      - name: Publish Mobile Test Results
-        uses: dorny/test-reporter@v1
-        if: always()
-        continue-on-error: true
-        with:
-          name: "Appium Mobile E2E - All Tests"
-          path: test-results/appium-mobile-results.xml
-          reporter: java-junit
-          fail-on-error: false
+
 
       - name: Upload Mobile report artifact
         uses: actions/upload-artifact@v4
